@@ -317,6 +317,9 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors-service.xiaomi-multihal
 
 PRODUCT_PACKAGES += \
+    sensors.xiaomi.v2:64
+
+PRODUCT_PACKAGES += \
     sensor-notifier
 
 PRODUCT_COPY_FILES += \
