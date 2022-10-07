@@ -1636,7 +1636,6 @@ system_ext/lib64/vendor.qti.imsrtpservice@3.1.so|d1b6a6eabf17e43e98dcc4372fdabea
 system_ext/priv-app/ims/ims.apk|6238d594b945b40b78ab74ef5739bda5fc76ce6f
 system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|d05990b6bc8c86f1368b8f243a6f6c7c6c3cf7e0
 vendor/app/IWlanService/IWlanService.apk|649a3ee3ceaa406a75268b7d3183761980b03d88
-vendor/bin/ATFWD-daemon|fdd62d6a09ef4673bc71405a7f26f72f8e322ffe
 vendor/bin/adpl|de4f8f57ce0d41cb0fc74aec6e5e7830d10157e7
 vendor/bin/hw/qcrilNrd|d526b1eea576ffb9f05fbb864d57d64a9f28321f
 vendor/bin/ims_rtp_daemon|f4a449c2e25e8e5720ee2d892659f3d884b3757c
@@ -1691,7 +1690,6 @@ vendor/etc/qcril_database/upgrade/other/6_version_change_property_table_qcrilnr.
 vendor/etc/qcril_database/upgrade/other/7_version_update_ecc_table_qcrilnr.sql|f558c567513a9a50ded3d4c34bc55006035b66e9
 vendor/etc/qcril_database/upgrade/other/8_version_update_ecc_table.sql|73e725eb9c2633ed30ca77307bc224e06c84f741
 vendor/etc/qcril_database/upgrade/other/9_version_update_ecc_table.sql|d349a4a526211739b521fb163f75ad9feda6b31d
-vendor/etc/seccomp_policy/atfwd@2.0.policy|b18a8d80fc6737193bf4c28f22043d30a4ca239c
 vendor/etc/seccomp_policy/imsrtp.policy|fb5f1f63dbc3a002ac0f203cce3b8d3434752fa2
 vendor/etc/seccomp_policy/qcrilnr@2.0.policy|b542d03090d703e20516b981f8193aa1bdb377b3
 vendor/etc/ssg/ta_config.json|3c6e42e2f3c7bcf4d8f65854efefc4a8d9b27938
@@ -1783,7 +1781,6 @@ vendor/lib64/vendor.qti.hardware.data.dataactivity-V1-ndk_platform.so|24bd59dd64
 vendor/lib64/vendor.qti.hardware.data.ka-V1-ndk_platform.so|c8d5a12b8915f86335f1dcb0d344e50793f3bad3
 vendor/lib64/vendor.qti.hardware.mwqemadapter@1.0.so|5a5a81d9815c0d42ab60a49b476785e2cfaefe88
 vendor/lib64/vendor.qti.hardware.radio.am@1.0.so|233b4494d532fd53657368225f2f1bcc2d1dcaf0
-vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so|70924199be6f8fceb6b3b87bccf31e55d82a2c70
 vendor/lib64/vendor.qti.hardware.radio.ims-V7-ndk_platform.so|12c7290d4623c42dcdb10a3e004507b317c70a01
 vendor/lib64/vendor.qti.hardware.radio.ims@1.0.so|ce4a14082873093db246588141d2c2088ce1b8ad
 vendor/lib64/vendor.qti.hardware.radio.ims@1.1.so|7d7dd8c4af25a6922d71dc86377b226ade8f2a52
