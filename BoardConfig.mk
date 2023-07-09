@@ -7,6 +7,9 @@
 # Inherit from the proprietary version
 include vendor/xiaomi/marble/BoardConfigVendor.mk
 
+# MiuiCamera
+-include device/xiaomi/miuicamera-marble/BoardConfig.mk
+
 DEVICE_PATH := device/xiaomi/marble
 
 # A/B
