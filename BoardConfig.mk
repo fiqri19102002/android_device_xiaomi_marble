@@ -42,7 +42,7 @@ TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a75
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := marble,marblein
+TARGET_OTA_ASSERT_DEVICE := marble|marblein
 
 # Audio
 $(call soong_config_set, android_hardware_audio, run_64bit, true)
