@@ -79,7 +79,5 @@ write_headers
 
 write_makefiles "${MY_DIR}/proprietary-files.txt"
 
-append_firmware_calls_to_makefiles "${MY_DIR}/proprietary-firmware.txt"
-
 # Finish
 write_footers
