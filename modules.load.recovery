@@ -85,7 +85,6 @@ lvstest.ko
 mac80211.ko
 mdt_loader.ko
 mem-hooks.ko
-mem-offline.ko
 mem_buf.ko
 mem_buf_dev.ko
 memlat.ko
