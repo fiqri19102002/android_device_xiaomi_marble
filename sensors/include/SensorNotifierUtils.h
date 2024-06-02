@@ -8,4 +8,5 @@
 
 #include <display/drm/mi_disp.h>
 
+bool readBool(int fd);
 disp_event_resp* parseDispEvent(int fd);

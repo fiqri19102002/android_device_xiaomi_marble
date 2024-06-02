@@ -10,6 +10,7 @@
 #include <android-base/properties.h>
 
 #include "SscCalApi.h"
+#include "notifiers/NonUiNotifier.h"
 #include "notifiers/RawLightNotifier.h"
 
 int main() {
@@ -22,10 +23,12 @@ int main() {
     SscCalApiWrapper::getInstance().initCurrentSensors(
             android::base::GetBoolProperty("persist.vendor.debug.ssccalapi", false));
 
-    // Always assume don't use more than one notifier
-    std::unique_ptr<RawLightNotifier> rawLightNotifier =
-            std::make_unique<RawLightNotifier>(manager);
-    rawLightNotifier->activate();
+    std::vector<std::unique_ptr<SensorNotifier>> notifiers;
+    notifiers.push_back(std::make_unique<NonUiNotifier>(manager));
+    notifiers.push_back(std::make_unique<RawLightNotifier>(manager));
+    for (const auto& notifier : notifiers) {
+        notifier->activate();
+    }
 
     while (true) {
         // Sleep to keep the notifiers alive
