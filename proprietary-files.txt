@@ -128,7 +128,6 @@ vendor/firmware/aw882xx_acf.bin
 
 # Audio graph manager
 -vendor/lib64/libagm.so
-vendor/lib64/libmisight.so
 -vendor/lib64/vendor.qti.hardware.AGMIPC@1.0-impl.so
 
 # Audio libraries
