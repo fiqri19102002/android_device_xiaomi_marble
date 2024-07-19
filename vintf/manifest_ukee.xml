@@ -65,26 +65,13 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         </interface>
     </hal>
     <!-- WFD HAL Service -->
-    <hal format="hidl" optional="true">
-        <name>vendor.qti.hardware.wifidisplaysession</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IWifiDisplaySession</name>
-            <instance>wifidisplaysession</instance>
-        </interface>
-        <interface>
-            <name>IWifiDisplaySessionVideoTrack</name>
-            <instance>wifidisplaysessionvideotrack</instance>
-        </interface>
-        <interface>
-            <name>IWifiDisplaySessionAudioTrack</name>
-            <instance>wifidisplaysessionaudiotrack</instance>
-        </interface>
-        <interface>
-            <name>IWifiDisplaySessionImageTrack</name>
-            <instance>wifidisplaysessionimagetrack</instance>
-        </interface>
+    <hal format="aidl" optional="true">
+        <name>vendor.qti.hardware.wifidisplaysession_aidl</name>
+        <version>1</version>
+        <fqname>IWifiDisplaySession/default</fqname>
+        <fqname>IWifiDisplaySessionVideoTrack/default</fqname>
+        <fqname>IWifiDisplaySessionAudioTrack/default</fqname>
+        <fqname>IWifiDisplaySessionImageTrack/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.keymaster</name>
