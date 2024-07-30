@@ -295,6 +295,9 @@ PRODUCT_PACKAGES += \
     android.hardware.security.rkp-V3-ndk.vendor:64 \
     libkeymaster_messages.vendor:64
 
+PRODUCT_PACKAGES += \
+    android.hardware.hardware_keystore.xml
+
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.keystore.app_attest_key.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.keystore.app_attest_key.xml
 
