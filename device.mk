@@ -436,13 +436,7 @@ PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0.vendor:64
 
 PRODUCT_PACKAGES += \
-    sensors.xiaomi:64
-
-PRODUCT_PACKAGES += \
     sensor-notifier
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.accelerometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_ukee/android.hardware.sensor.accelerometer.xml \
