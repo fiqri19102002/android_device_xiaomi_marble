@@ -9,7 +9,6 @@ include vendor/xiaomi/marble/BoardConfigVendor.mk
 
 DEVICE_PATH := device/xiaomi/marble
 
-BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
 # A/B
