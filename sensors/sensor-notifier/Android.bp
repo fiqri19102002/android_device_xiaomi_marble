@@ -4,25 +4,6 @@
 // SPDX-License-Identifier: Apache-2.0
 //
 
-soong_config_module_type {
-    name: "marble_sensor_notifier",
-    module_type: "cc_defaults",
-    config_namespace: "marbleSensorVars",
-    value_variables: ["extensionLibs"],
-    properties: [
-        "whole_static_libs",
-    ],
-}
-
-marble_sensor_notifier {
-    name: "marble_sensor_notifier_defaults",
-    soong_config_variables: {
-        extensionLibs: {
-            whole_static_libs: ["%s"],
-        },
-    },
-}
-
 cc_library_headers {
     name: "marble_sensor_notifier_headers",
     export_include_dirs: ["include"],
@@ -31,9 +12,6 @@ cc_library_headers {
 
 cc_binary {
     name: "sensor-notifier",
-    defaults: [
-        "marble_sensor_notifier_defaults",
-    ],
     vendor: true,
 
     init_rc: ["sensor-notifier.rc"],
@@ -43,6 +21,7 @@ cc_binary {
         "notifiers/AodNotifier.cpp",
         "notifiers/LightNotifier.cpp",
         "notifiers/NonUiNotifier.cpp",
+        "notifiers/RawLightNotifier.cpp",
         "SensorNotifier.cpp",
         "utils/SensorNotifierUtils.cpp",
         "utils/SscCalApiWrapper.cpp",
@@ -57,23 +36,6 @@ cc_binary {
 
     header_libs: [
         "generated_kernel_headers",
-        "marble_sensor_notifier_headers",
-    ],
-}
-
-cc_library_static {
-    name: "libsensor-notifier-ext",
-    vendor: true,
-
-    srcs: [
-        "SensorNotifierExt.cpp",
-    ],
-
-    shared_libs: [
-        "android.frameworks.sensorservice@1.0",
-    ],
-
-    header_libs: [
         "marble_sensor_notifier_headers",
     ],
 }
