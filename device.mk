@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2020 The LineageOS Project
+# Copyright (C) 2022-2023 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -24,7 +24,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_ven
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
 # Inherit from the proprietary version
-$(call inherit-product, vendor/xiaomi/sm8450-common/sm8450-common-vendor.mk)
+$(call inherit-product, vendor/xiaomi/marble/marble-vendor.mk)
 
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
@@ -166,6 +166,7 @@ PRODUCT_PACKAGES += \
     init.qti.display_boot.sh
 
 PRODUCT_PACKAGES += \
+    libdisplayconfig.qti:64 \
     vendor.display.config@1.11.vendor:64 \
     vendor.qti.hardware.display.config-V2-ndk.vendor:64 \
     vendor.qti.hardware.display.mapper@2.0.vendor:64
@@ -326,6 +327,8 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.ipsec_tunnels.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.ipsec_tunnels.xml
 
 # NFC / Secure Element
+TARGET_NFC_SUPPORTED_SKUS := marble
+
 PRODUCT_PACKAGES += \
     android.hardware.nfc-service.nxp \
     android.hardware.nfc@1.2.vendor:64 \
@@ -363,6 +366,17 @@ PRODUCT_PACKAGES += \
     TelecommResCommon \
     TelephonyResCommon \
     WifiResCommon
+
+PRODUCT_PACKAGES += \
+    ApertureResMarble \
+    FrameworksResMarble \
+    NfcResMarble \
+    SettingsProviderResMarble \
+    SettingsProviderResMarbleCN \
+    SettingsResMarble \
+    SystemUIResMarble \
+    WifiResMarble \
+    WifiResMarbleCN \
 
 PRODUCT_PACKAGES += \
     DialerResXiaomi \
@@ -444,6 +458,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     sensor-notifier
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
+
 $(foreach sku, taro diwali cape ukee, \
     $(eval PRODUCT_COPY_FILES += \
         frameworks/native/data/etc/android.hardware.sensor.accelerometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_$(sku)/android.hardware.sensor.accelerometer.xml \
@@ -463,6 +480,17 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/xiaomi
+
+# System properties
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/properties/build_CN.prop:$(TARGET_COPY_OUT_ODM)/etc/build_CN.prop \
+    $(LOCAL_PATH)/properties/build_GL.prop:$(TARGET_COPY_OUT_ODM)/etc/build_GL.prop \
+    $(LOCAL_PATH)/properties/build_IN.prop:$(TARGET_COPY_OUT_ODM)/etc/build_IN.prop
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/properties/build_CN.prop:$(TARGET_COPY_OUT_RECOVERY)/root/build_CN.prop \
+    $(LOCAL_PATH)/properties/build_GL.prop:$(TARGET_COPY_OUT_RECOVERY)/root/build_GL.prop \
+    $(LOCAL_PATH)/properties/build_IN.prop:$(TARGET_COPY_OUT_RECOVERY)/root/build_IN.prop
 
 # Telephony
 PRODUCT_PACKAGES += \
@@ -538,12 +566,12 @@ PRODUCT_PACKAGES += \
 
 # Vendor init
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/init.marble.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.marble.rc \
     $(LOCAL_PATH)/rootdir/etc/init.qcom.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.qcom.rc \
     $(LOCAL_PATH)/rootdir/etc/init.qti.kernel.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.qti.kernel.rc \
     $(LOCAL_PATH)/rootdir/etc/init.target.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.target.rc \
     $(LOCAL_PATH)/rootdir/etc/init.touch_report.rc:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/etc/init/init.touch_report.rc \
     $(LOCAL_PATH)/rootdir/etc/init.touch_report.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.touch_report.rc \
-    $(LOCAL_PATH)/rootdir/etc/init.xiaomi_sm8450.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.xiaomi_sm8450.rc \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/bin/init.class_main.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.class_main.sh \
