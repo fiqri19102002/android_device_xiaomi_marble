@@ -106,30 +106,6 @@ service vendor.nv_mac /vendor/bin/nv_mac
     group system inet net_admin wifi net_raw
     oneshot
 
-service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service
-    override
-    class hal
-    user audioserver
-    # media gid needed for /dev/fm (radio) and for /data/misc/media (tee)
-    group audio camera drmrpc inet media mediadrm net_bt net_bt_admin net_bw_acct oem_2901 wakelock context_hub
-    capabilities BLOCK_SUSPEND SYS_NICE
-    # setting RLIMIT_RTPRIO allows binder RT priority inheritance
-    rlimit rtprio 10 10
-    ioprio rt 4
-    task_profiles ProcessCapacityHigh HighPerformance
-    onrestart restart audioserver
-    socket audio_us_socket_0 seqpacket 0666 system system
-
-service vendor.sensors-hal-2-1-multihal /vendor/bin/hw/android.hardware.sensors@2.1-service.xiaomi-multihal
-    override
-    class hal
-    user system
-    group system wakelock context_hub
-    task_profiles ServiceCapacityLow
-    capabilities BLOCK_SUSPEND
-    rlimit rtprio 10 10
-    socket audio_us_socket_1 seqpacket 0666 system system
-
 on property:ro.boot.product.hardware.sku=marble
     enable vendor.nfc_hal_service
     enable secureelement-hal_1_2

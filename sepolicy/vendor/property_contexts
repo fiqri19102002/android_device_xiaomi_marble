@@ -17,7 +17,6 @@ persist.vendor.sys.fp.info u:object_r:vendor_fp_info_prop:s0
 persist.vendor.sys.fp.uid u:object_r:vendor_fp_info_prop:s0
 vendor.fps_hal. u:object_r:vendor_fp_prop:s0
 vendor.panel.display. u:object_r:vendor_fp_prop:s0
-ro.hardware.fp.udfps u:object_r:vendor_fp_prop:s0
 
 # GNSS
 ro.vendor.gnss.edgnss.downloadQxwzAk u:object_r:vendor_edgnss_qxwz_downloadak_prop:s0
