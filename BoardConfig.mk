@@ -152,8 +152,7 @@ TARGET_KERNEL_EXT_MODULES := \
 	qcom/opensource/display-drivers/msm \
 	qcom/opensource/eva-kernel \
 	qcom/opensource/video-driver \
-	qcom/opensource/wlan/qcacld-3.0/.qca6490 \
-	qcom/opensource/wlan/qcacld-3.0/.qca6750
+	qcom/opensource/wlan/qcacld-3.0/.qca6490
 
 # Light
 TARGET_SENSOR_NOTIFIER_EXT := //device/xiaomi/marble:libsensor-notifier-ext-light
@@ -195,9 +194,6 @@ TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
 BOARD_USES_QCOM_HARDWARE := true
 TARGET_BOARD_PLATFORM := taro
 
-# Powershare
-TARGET_POWERSHARE_PATH := /sys/class/qcom-battery/reverse_chg_mode
-
 # Properties
 TARGET_ODM_PROP += $(DEVICE_PATH)/properties/odm.prop
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/properties/product.prop
@@ -230,24 +226,19 @@ BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # Sensors
 TARGET_SENSOR_NOTIFIER_EXT ?= libsensor-notifier-ext
-$(call soong_config_set, xiaomiSm8450SensorVars, extensionLibs, $(TARGET_SENSOR_NOTIFIER_EXT))
+$(call soong_config_set, marbleSensorVars, extensionLibs, $(TARGET_SENSOR_NOTIFIER_EXT))
 
 # VINTF
 DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
 
-DEVICE_MANIFEST_SKUS := taro diwali cape ukee
-$(foreach sku, $(call to-upper, $(DEVICE_MANIFEST_SKUS)), \
-    $(eval DEVICE_MANIFEST_$(sku)_FILES := \
-        $(DEVICE_PATH)/vintf/manifest.xml \
-        $(DEVICE_PATH)/vintf/manifest_xiaomi.xml \
-        $(if $(TARGET_NFC_SUPPORTED_SKUS),$(DEVICE_PATH)/vintf/manifest_no_nfc.xml,) \
-    ))
+DEVICE_MANIFEST_SKUS := ukee
+DEVICE_MANIFEST_UKEE_FILES := \
+    $(DEVICE_PATH)/vintf/manifest_ukee.xml \
+    $(DEVICE_PATH)/vintf/manifest_xiaomi.xml \
+    $(DEVICE_PATH)/vintf/manifest_no_nfc.xml
 
-ifneq ($(TARGET_NFC_SUPPORTED_SKUS),)
-ODM_MANIFEST_SKUS += $(TARGET_NFC_SUPPORTED_SKUS)
-$(foreach nfc_sku, $(call to-upper, $(TARGET_NFC_SUPPORTED_SKUS)), \
-    $(eval ODM_MANIFEST_$(nfc_sku)_FILES += $(DEVICE_PATH)/vintf/manifest_nfc.xml))
-endif
+ODM_MANIFEST_SKUS += marble
+ODM_MANIFEST_MARBLE_FILES := $(DEVICE_PATH)/vintf/manifest_nfc.xml
 
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \

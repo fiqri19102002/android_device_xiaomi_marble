@@ -12,6 +12,6 @@ cc_library_static {
     ],
     header_libs: [
         "generated_kernel_headers",
-        "//device/xiaomi/marble:xiaomi_sm8450_sensor_notifier_headers",
+        "//device/xiaomi/marble:marble_sensor_notifier_headers",
     ],
 }
