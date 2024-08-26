@@ -162,22 +162,10 @@ configure_memory_parameters
 
 if [ -f /sys/devices/soc0/chip_family ]; then
 	chipfamily=`cat /sys/devices/soc0/chip_family`
+	if [ "$chipfamily" = "0x82" ]; then
+		/vendor/bin/sh /vendor/bin/init.kernel.post_boot-cape.sh
+	else
+		echo "***WARNING***: Invalid chip family\n\t No postboot settings applied!!\n"
+	fi
 fi
-
-case "$chipfamily" in
-    "0x74")
-	/vendor/bin/sh /vendor/bin/init.kernel.post_boot-taro.sh
-	;;
-
-    "0x7B"|"0x7b")
-	/vendor/bin/sh /vendor/bin/init.kernel.post_boot-diwali.sh
-	;;
-
-    "0x82")
-	/vendor/bin/sh /vendor/bin/init.kernel.post_boot-cape.sh
-	;;
-     *)
-	echo "***WARNING***: Invalid chip family\n\t No postboot settings applied!!\n"
-	;;
-esac
 
