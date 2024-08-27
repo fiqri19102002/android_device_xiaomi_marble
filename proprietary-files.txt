@@ -1404,10 +1404,10 @@ system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml|99cfd80
 system_ext/framework/com.android.hotwordenrollment.common.util.jar|b768584073c6348713ffd0139d44039c9efc775a
 
 # Identity service - from diting V816.0.6.0.ULFMIXM
-vendor/bin/hw/android.hardware.identity-service-qti|40949904ee581ad4c93c1c1d155f68c102dc3081
+vendor/bin/hw/android.hardware.identity-service-qti|b33217c67208cb2fd3d544d665696cbc685fded1
 vendor/etc/init/android.hardware.identity-service-qti.rc|d60dadc0e2dea6be10133aaa63bccb553a888f8b
 vendor/etc/vintf/manifest/manifest_lahaina_identity.xml|1c09c965d5d3b5bdeacdeab81e039fd07c97a229
-vendor/lib64/libqtiidentitycredential.so|f672cac340af921ba5c67eeb22177e527c1233cd
+vendor/lib64/libqtiidentitycredential.so|f73498475f4e5e2da5a7701fbed284ff717fd761
 
 # IPA firmware - from diting V816.0.6.0.ULFMIXM
 vendor/etc/init/ipa_fws.rc|2ee2a89c1b3e4bdd03506c67774cd0a06022e0f0
@@ -1427,10 +1427,10 @@ vendor/lib64/libqtikeymaster4.so|7a9182465290147772068060ed6a4ae6048ec00e
 vendor/lib64/libspcom.so|69cd22b8a90d592656d060a984851c0d621a2ba0
 
 # Keymint - from diting V816.0.6.0.ULFMIXM
-vendor/bin/hw/android.hardware.security.keymint-service-qti|f650336623f666415421ad75ad478066450f285e
+vendor/bin/hw/android.hardware.security.keymint-service-qti|661804491e7fa03953c10051a8d633765a6b66be
 vendor/etc/init/android.hardware.security.keymint-service-qti.rc|28d39a691127b567b7745b1ae6da87b7a282325e
 vendor/etc/vintf/manifest/android.hardware.security.keymint-service-qti.xml|f78fe6f4b5b01884b2425950dd8fa23e185ab309
-vendor/lib64/libqtikeymint.so|a9d578f986ffb73569bd733759c0f7fe5a02202d
+vendor/lib64/libqtikeymint.so|7555716fbed7b5317a0489d12ded66d1960bbaed
 
 # Media - from diting V816.0.6.0.ULFMIXM
 vendor/bin/hw/vendor.qti.media.c2@1.0-service|a3a103902ba4d0d2a41f7e6d61798cf846cbcc0d
@@ -1729,7 +1729,7 @@ vendor/lib64/libqvrcamera_client.qti.so|4ed3f286013e7a3c568e05d6be3b809021ee394e
 vendor/lib64/libqvrservice.so|59cab455bc3d8facc0f02cd66ed64221aaddd7b9
 vendor/lib64/libqvrservice_client.qti.so|4e8d6fe6741dc91345e1d2cbca55f090e6b3b266
 vendor/lib64/libtracker_6dof_impl.so|94c559fffd23b34feb5d65a833ae3e8d4e7f5c1f
-vendor/lib64/vendor.qti.hardware.qxr-V1-ndk_platform.so|0df4a0429d8aca0b8d2237fc16809f82283046ac
+vendor/lib64/vendor.qti.hardware.qxr-V1-ndk_platform.so|a329798838e401053a27871b72a9fbb822c5f35b
 
 # RIL - from diting V816.0.6.0.ULFMIXM
 product/app/uimgbaservice/uimgbaservice.apk|b27b12da7199b0d52fd1fd2605e40ffc0b502da2

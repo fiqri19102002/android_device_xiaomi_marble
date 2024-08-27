@@ -259,8 +259,8 @@ PRODUCT_COPY_FILES += \
 
 # Identity
 PRODUCT_PACKAGES += \
-    android.hardware.identity-V3-ndk_platform.vendor:64 \
-    android.hardware.keymaster-V3-ndk_platform.vendor:64
+    android.hardware.identity-V3-ndk.vendor:64 \
+    android.hardware.keymaster-V3-ndk.vendor:64
 
 # IPACM
 PRODUCT_PACKAGES += \
@@ -287,9 +287,9 @@ PRODUCT_COPY_FILES += \
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1.vendor:64 \
-    android.hardware.security.keymint-V1-ndk_platform.vendor:64 \
-    android.hardware.security.secureclock-V1-ndk_platform.vendor:64 \
-    android.hardware.security.sharedsecret-V1-ndk_platform.vendor:64 \
+    android.hardware.security.keymint-V1-ndk.vendor:64 \
+    android.hardware.security.secureclock-V1-ndk.vendor:64 \
+    android.hardware.security.sharedsecret-V1-ndk.vendor:64 \
     android.hardware.security.rkp-V3-ndk.vendor:64 \
     libkeymaster_messages.vendor:64
 
@@ -408,7 +408,7 @@ PRODUCT_PACKAGES += \
 
 # QXR
 PRODUCT_PACKAGES += \
-    android.hardware.common-V2-ndk_platform.vendor:64
+    android.hardware.common-V2-ndk.vendor:64
 
 # Recovery
 PRODUCT_PACKAGES += \

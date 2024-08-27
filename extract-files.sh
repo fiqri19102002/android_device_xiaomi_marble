@@ -59,7 +59,14 @@ fi
 
 function blob_fixup() {
     case "${1}" in
-        vendor/bin/hw/android.hardware.security.keymint-service-qti|vendor/lib/libqtikeymint.so|vendor/lib64/libqtikeymint.so)
+        vendor/bin/hw/android.hardware.identity-service-qti|vendor/lib64/libqtiidentitycredential.so)
+            grep -q "android.hardware.identity-V3-ndk.so" "${2}" || "${PATCHELF_0_17_2}" --replace-needed "android.hardware.identity-V3-ndk_platform.so" "android.hardware.identity-V3-ndk.so" "${2}"
+            grep -q "android.hardware.keymaster-V3-ndk.so" "${2}" || "${PATCHELF_0_17_2}" --replace-needed "android.hardware.keymaster-V3-ndk_platform.so" "android.hardware.keymaster-V3-ndk.so" "${2}"
+            ;;
+        vendor/bin/hw/android.hardware.security.keymint-service-qti|vendor/lib64/libqtikeymint.so)
+            grep -q "android.hardware.security.keymint-V1-ndk.so" "${2}" || "${PATCHELF_0_17_2}" --replace-needed "android.hardware.security.keymint-V1-ndk_platform.so" "android.hardware.security.keymint-V1-ndk.so" "${2}"
+            grep -q "android.hardware.security.secureclock-V1-ndk.so" "${2}" || "${PATCHELF_0_17_2}" --replace-needed "android.hardware.security.secureclock-V1-ndk_platform.so" "android.hardware.security.secureclock-V1-ndk.so" "${2}"
+            grep -q "android.hardware.security.sharedsecret-V1-ndk.so" "${2}" || "${PATCHELF_0_17_2}" --replace-needed "android.hardware.security.sharedsecret-V1-ndk_platform.so" "android.hardware.security.sharedsecret-V1-ndk.so" "${2}"
             grep -q "android.hardware.security.rkp-V3-ndk.so" "${2}" || "${PATCHELF_0_17_2}" --add-needed "android.hardware.security.rkp-V3-ndk.so" "${2}"
             ;;
         vendor/etc/camera/marble_enhance_motiontuning.xml|vendor/etc/camera/marble_motiontuning.xml)
@@ -84,7 +91,10 @@ function blob_fixup() {
             sed -ni '/dolby/!p' "${2}"
             ;;
         vendor/lib64/libcamximageformatutils.so)
-            "${PATCHELF_0_17_2}" --replace-needed "vendor.qti.hardware.display.config-V2-ndk_platform.so" "vendor.qti.hardware.display.config-V2-ndk.so" "${2}"
+            grep -q "vendor.qti.hardware.display.config-V2-ndk.so" "${2}" || "${PATCHELF_0_17_2}" --replace-needed "vendor.qti.hardware.display.config-V2-ndk_platform.so" "vendor.qti.hardware.display.config-V2-ndk.so" "${2}"
+            ;;
+        vendor/lib64/vendor.qti.hardware.qxr-V1-ndk_platform.so)
+            grep -q "android.hardware.common-V2-ndk.so" "${2}" || "${PATCHELF_0_17_2}" --replace-needed "android.hardware.common-V2-ndk_platform.so" "android.hardware.common-V2-ndk.so" "${2}"
             ;;
     esac
 }
