@@ -10,5 +10,9 @@
   {
     "repository": "android_kernel_xiaomi_sm8450-modules",
     "target_path": "kernel/xiaomi/sm8450-modules"
+  },
+  {
+    "repository": "android_hardware_xiaomi",
+    "target_path": "hardware/xiaomi"
   }
 ]
