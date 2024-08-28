@@ -1,15 +1,15 @@
 [
   {
-    "repository": "android_kernel_xiaomi_sm8450",
-    "target_path": "kernel/xiaomi/sm8450"
+    "repository": "android_kernel_xiaomi_marble",
+    "target_path": "kernel/xiaomi/marble"
   },
   {
-    "repository": "android_kernel_xiaomi_sm8450-devicetrees",
-    "target_path": "kernel/xiaomi/sm8450-devicetrees"
+    "repository": "android_kernel_xiaomi_marble-devicetrees",
+    "target_path": "kernel/xiaomi/marble-devicetrees"
   },
   {
-    "repository": "android_kernel_xiaomi_sm8450-modules",
-    "target_path": "kernel/xiaomi/sm8450-modules"
+    "repository": "android_kernel_xiaomi_marble-modules",
+    "target_path": "kernel/xiaomi/marble-modules"
   },
   {
     "repository": "android_hardware_xiaomi",
