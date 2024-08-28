@@ -51,9 +51,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_SHIPPING_API_LEVEL := 31
 BOARD_SHIPPING_API_LEVEL := 31
 
+ifneq ($(TARGET_BUILD_VARIANT),user)
 # Atrace
 PRODUCT_PACKAGES += \
     android.hardware.atrace@1.0-service
+endif
 
 # Audio
 PRODUCT_PACKAGES += \
