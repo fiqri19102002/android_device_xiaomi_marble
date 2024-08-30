@@ -723,8 +723,10 @@ vendor/lib64/libTrueSight.so;DISABLE_CHECKELF
 vendor/lib64/libXMFaceFocus.so
 vendor/lib64/libaidenoiser.so
 vendor/lib64/libalCFR.so
-vendor/lib64/libalLDC.so
-vendor/lib64/libalhLDC.so
+# libalLDC depends oddly on libnativewindow leading to unresolved symbols
+vendor/lib64/libalLDC.so;DISABLE_CHECKELF
+# libalhLDC depends oddly on libnativewindow leading to unresolved symbols
+vendor/lib64/libalhLDC.so;DISABLE_CHECKELF
 vendor/lib64/libanc_dc_base.so
 vendor/lib64/libanc_hdr.so
 vendor/lib64/libancbase.so
