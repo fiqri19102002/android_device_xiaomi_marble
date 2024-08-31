@@ -130,16 +130,13 @@ vendor/lib64/libcapiv2svarnnvendor.so|b044ca4333afff15a5ecf3a7d04d8b9f4a7932d8
 vendor/lib64/libcapiv2uvvendor.so|5622bfe438265a926f87fb4e04f2af603ff80548
 vendor/lib64/liblx-ar_util.so|36d4368bcc41fa1860a7a721a073d67d4ac63b1e
 vendor/lib64/liblx-osal.so|a08f2f574bece90eb0a687f9bd8de121c62a5fe0
-# libmcs depends on libagm, which is decommonized
-vendor/lib64/libmcs.so;DISABLE_CHECKELF|67d8e69877a1e2c3dc66ae7d70f0040a7fb6de8a
+vendor/lib64/libmcs.so|67d8e69877a1e2c3dc66ae7d70f0040a7fb6de8a
 vendor/lib64/libmisight.so|25c592bbf2caa723374c997f837ff366fe207195
 vendor/lib64/libpal_net_if.so|0b29fc5571632ad576976902f0a3b0b5ffe8e779
-# libqtigefar depends on libar-pal, which is decommonized
-vendor/lib64/libqtigefar.so;DISABLE_CHECKELF|19dcf2b7b69188741475dda267ed21c008a809f5
+vendor/lib64/libqtigefar.so|19dcf2b7b69188741475dda267ed21c008a809f5
 vendor/lib64/libresampler.so|b38622335b7a883e06f4f48e0f8df33c179d034f
 vendor/lib64/libxlog.so|d0914183eb15708d151669b4f6c80f77b05936c5
-# vendor.qti.hardware.AGMIPC@1.0-impl depends on libagm, which is decommonized
-vendor/lib64/vendor.qti.hardware.AGMIPC@1.0-impl.so;DISABLE_CHECKELF|7655e11af91c974917a47aa1f8bf277b5ac1e54c
+vendor/lib64/vendor.qti.hardware.AGMIPC@1.0-impl.so|7655e11af91c974917a47aa1f8bf277b5ac1e54c
 
 # Audio (specific)
 # audio.primary.taro depends on vendor.qti.hardware.pal@1.0-impl, which is a gnu makefile target
