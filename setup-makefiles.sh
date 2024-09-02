@@ -7,6 +7,9 @@
 
 set -e
 
+DEVICE=marble
+VENDOR=xiaomi
+
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
@@ -23,7 +26,7 @@ source "${HELPER}"
 
 function vendor_imports() {
     cat << EOF >> "$1"
-		"device/xiaomi/sm8450-common",
+		"device/xiaomi/marble",
 		"hardware/qcom-caf/sm8450",
 		"hardware/qcom-caf/wlan",
 		"hardware/xiaomi",
@@ -51,13 +54,17 @@ function lib_to_package_fixup_vendor_variants() {
             echo "$1-vendor"
             ;;
         libagm | \
+        libagmclient | \
+        libagmmixer | \
         libar-pal | \
         libpalclient | \
         libwpa_client | \
-        libwfdaac_vendor)
+        libwfdaac_vendor | \
+        vendor.qti.hardware.pal@1.0-impl)
             ;;
         *)
             return 1
+            ;;
     esac
 }
 
@@ -67,33 +74,15 @@ function lib_to_package_fixup() {
     lib_to_package_fixup_vendor_variants "$@"
 }
 
-# Initialize the helper for common
-setup_vendor "${DEVICE_COMMON}" "${VENDOR_COMMON:-$VENDOR}" "${ANDROID_ROOT}" true
+# Initialize the helper
+setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}"
 
 # Warning headers and guards
-write_headers "cupid dagda diting marble mayfly mondrian taranis thor unicorn zeus ziyi zizhan"
+write_headers
 
-# The standard common blobs
 write_makefiles "${MY_DIR}/proprietary-files.txt" true
+
+append_firmware_calls_to_makefiles "${MY_DIR}/proprietary-firmware.txt"
 
 # Finish
 write_footers
-
-if [ -s "${MY_DIR}/../../${VENDOR}/${DEVICE}/proprietary-files.txt" ]; then
-    # Reinitialize the helper for device
-    source "${MY_DIR}/../${DEVICE}/setup-makefiles.sh"
-    setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false
-
-    # Warning headers and guards
-    write_headers
-
-    # The standard device blobs
-    write_makefiles "${MY_DIR}/../../${VENDOR}/${DEVICE}/proprietary-files.txt" true
-
-    if [ -f "${MY_DIR}/../../${VENDOR}/${DEVICE}/proprietary-firmware.txt" ]; then
-        append_firmware_calls_to_makefiles "${MY_DIR}/../../${VENDOR}/${DEVICE}/proprietary-firmware.txt"
-    fi
-
-    # Finish
-    write_footers
-fi

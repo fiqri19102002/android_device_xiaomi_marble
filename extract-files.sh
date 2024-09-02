@@ -7,6 +7,9 @@
 
 set -e
 
+DEVICE=marble
+VENDOR=xiaomi
+
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
@@ -28,23 +31,14 @@ source "${HELPER}"
 # Default to sanitizing the vendor folder before extraction
 CLEAN_VENDOR=true
 
-ONLY_COMMON=
 ONLY_FIRMWARE=
-ONLY_TARGET=
 KANG=
 SECTION=
-CARRIER_SKIP_FILES=()
 
 while [ "${#}" -gt 0 ]; do
     case "${1}" in
-        --only-common)
-            ONLY_COMMON=true
-            ;;
         --only-firmware)
             ONLY_FIRMWARE=true
-            ;;
-        --only-target)
-            ONLY_TARGET=true
             ;;
         -n | --no-cleanup)
             CLEAN_VENDOR=false
@@ -93,6 +87,14 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             sed -i -E '/media_codecs_(google_audio|google_c2|google_telephony|vendor_audio)/d' "${2}"
             ;;
+        vendor/etc/camera/marble_enhance_motiontuning.xml|vendor/etc/camera/marble_motiontuning.xml)
+            [ "$2" = "" ] && return 0
+            sed -i 's/xml=version/xml version/g' "${2}"
+            ;;
+        vendor/etc/camera/pureView_parameter.xml)
+            [ "$2" = "" ] && return 0
+            sed -i 's/=\([0-9]\+\)>/="\1">/g' "${2}"
+            ;;
         vendor/etc/qcril_database/upgrade/config/6.0_config.sql)
             [ "$2" = "" ] && return 0
             sed -i '/persist.vendor.radio.redir_party_num/ s/true/false/g' "${2}"
@@ -101,9 +103,29 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             sed -i '/dolby/d' "${2}"
             ;;
+        vendor/lib64/hw/audio.primary.taro-marble.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF_0_17_2}" --set-soname "audio.primary.taro-marble.so" "${2}"
+            ;;
+        vendor/lib64/hw/fingerprint.fpc.default.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF_0_17_2}" --set-soname "fingerprint.fpc.default.so" "${2}"
+            ;;
+        vendor/lib64/hw/fingerprint.goodix.default.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF_0_17_2}" --set-soname "fingerprint.goodix.default.so" "${2}"
+            ;;
+        vendor/lib64/libcamximageformatutils.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF_0_17_2}" --replace-needed "vendor.qti.hardware.display.config-V2-ndk_platform.so" "vendor.qti.hardware.display.config-V2-ndk.so" "${2}"
+            ;;
         vendor/lib64/libgrpc++_unsecure_prebuilt.so)
             [ "$2" = "" ] && return 0
             "${PATCHELF_0_17_2}" --set-soname "libgrpc++_unsecure_prebuilt.so" "${2}"
+            ;;
+        vendor/lib64/libkaraokepal.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF_0_17_2}" --replace-needed "audio.primary.taro.so" "audio.primary.taro-marble.so" "${2}"
             ;;
         *)
             return 1
@@ -117,25 +139,15 @@ function blob_fixup_dry() {
     blob_fixup "$1" ""
 }
 
-if [ -z "${ONLY_FIRMWARE}" ] && [ -z "${ONLY_TARGET}" ]; then
-    # Initialize the helper for common device
-    setup_vendor "${DEVICE_COMMON}" "${VENDOR_COMMON:-$VENDOR}" "${ANDROID_ROOT}" true "${CLEAN_VENDOR}"
+# Initialize the helper
+setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
 
+if [ -z "${ONLY_FIRMWARE}" ]; then
     extract "${MY_DIR}/proprietary-files.txt" "${SRC}" "${KANG}" --section "${SECTION}"
 fi
 
-if [ -z "${ONLY_COMMON}" ] && [ -s "${MY_DIR}/../../${VENDOR}/${DEVICE}/proprietary-files.txt" ]; then
-    # Reinitialize the helper for device
-    source "${MY_DIR}/../../${VENDOR}/${DEVICE}/extract-files.sh"
-    setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
-
-    if [ -z "${ONLY_FIRMWARE}" ]; then
-        extract "${MY_DIR}/../../${VENDOR}/${DEVICE}/proprietary-files.txt" "${SRC}" "${KANG}" --section "${SECTION}"
-    fi
-
-    if [ -z "${SECTION}" ] && [ -f "${MY_DIR}/../../${VENDOR}/${DEVICE}/proprietary-firmware.txt" ]; then
-        extract_firmware "${MY_DIR}/../../${VENDOR}/${DEVICE}/proprietary-firmware.txt" "${SRC}"
-    fi
+if [ -z "${SECTION}" ]; then
+    extract_firmware "${MY_DIR}/proprietary-firmware.txt" "${SRC}"
 fi
 
 "${MY_DIR}/setup-makefiles.sh"
