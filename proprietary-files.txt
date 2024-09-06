@@ -1,5 +1,20 @@
 # All unpinned blobs below are extracted from marble V816.0.8.0.UMRMIXM
 
+# Current blobs with ELF checks disabled:
+# audio.primary.taro depends on vendor.qti.hardware.pal@1.0-impl, which is a gnu makefile target
+# libar-pal depends on libagmclient, which is a gnu makefile target
+# libawcal depends on libagmmixer, which is a gnu makefile target
+# libTrueSight depends oddly on libnativewindow leading to unresolved symbols
+# libalLDC depends oddly on libnativewindow leading to unresolved symbols
+# libalhLDC depends oddly on libnativewindow leading to unresolved symbols
+# libmorpho_ubwc depends on NDK libnativewindow and build is unable to resolve its symbols
+# qms depends on libwpa_client, which is a gnu makefile target
+# libcne depends on libwpa_client, which is a gnu makefile target
+# libmasc depends on libwpa_client, which is a gnu makefile target
+# lowi-server depends on libwpa_client, which is a gnu makefile target
+# libqc2audio_hwaudiocodec depends on libpalclient, which is a gnu makefile target
+# libwfdmmsrc_proprietary depends on libwfdaac_vendor, which is a gnu makefile target
+
 # ACDB
 vendor/etc/acdbdata/Forte/Forte_acdb_cal.acdb
 vendor/etc/acdbdata/Forte/Forte_workspaceFileXml.qwsp
@@ -139,12 +154,9 @@ vendor/lib64/libxlog.so|d0914183eb15708d151669b4f6c80f77b05936c5
 vendor/lib64/vendor.qti.hardware.AGMIPC@1.0-impl.so|7655e11af91c974917a47aa1f8bf277b5ac1e54c
 
 # Audio (specific)
-# audio.primary.taro depends on vendor.qti.hardware.pal@1.0-impl, which is a gnu makefile target
 vendor/lib64/hw/audio.primary.taro.so:vendor/lib64/hw/audio.primary.taro-marble.so;DISABLE_CHECKELF
 vendor/lib64/libagm.so
-# libar-pal depends on libagmclient, which is a gnu makefile target
 vendor/lib64/libar-pal.so;DISABLE_CHECKELF
-# libawcal depends on libagmmixer, which is a gnu makefile target
 vendor/lib64/libawcal.so;DISABLE_CHECKELF
 vendor/lib64/libkaraokepal.so
 
@@ -778,14 +790,11 @@ vendor/lib64/libMiMotion.so
 vendor/lib64/libQnnHtpAltPrepV69Stub.so
 vendor/lib64/libSNPE.so
 vendor/lib64/libSnpeHtpV69Stub.so
-# libTrueSight depends oddly on libnativewindow leading to unresolved symbols
 vendor/lib64/libTrueSight.so;DISABLE_CHECKELF
 vendor/lib64/libXMFaceFocus.so
 vendor/lib64/libaidenoiser.so
 vendor/lib64/libalCFR.so
-# libalLDC depends oddly on libnativewindow leading to unresolved symbols
 vendor/lib64/libalLDC.so;DISABLE_CHECKELF
-# libalhLDC depends oddly on libnativewindow leading to unresolved symbols
 vendor/lib64/libalhLDC.so;DISABLE_CHECKELF
 vendor/lib64/libanc_dc_base.so
 vendor/lib64/libanc_hdr.so
@@ -870,7 +879,6 @@ vendor/lib64/libmmcamera_lscv35.so
 vendor/lib64/libmmcamera_mfnr.so
 vendor/lib64/libmmcamera_mfnr_t4.so
 vendor/lib64/libmmcamera_pdpc.so
-# libmorpho_ubwc depends on NDK libnativewindow and build is unable to resolve its symbols
 vendor/lib64/libmorpho_ubwc.so;DISABLE_CHECKELF
 vendor/lib64/libmorpho_video_stabilizer.so
 vendor/lib64/libmpbase.so
@@ -978,7 +986,6 @@ vendor/lib64/libsdsprpc.so|18ef16a8e890a4e8459b8609989578b1babbd25c
 # CNE - from diting V816.0.6.0.ULFMIXM
 vendor/app/CneApp/CneApp.apk;REQUIRED=CneApp.libvndfwk_detect_jni.qti_vendor_symlink|1cfbd9e13691f722bacfaf4c26794c6bcf4c1621
 vendor/bin/cnd|9d797fe460cda2e79d668a47fd8d7b63daa15170
-# qms depends on libwpa_client, which is a gnu makefile target
 vendor/bin/qms;DISABLE_CHECKELF|c33c09624f0d8815d5970ce8a50584aa7597f68d
 vendor/etc/cne/mwqem.conf|c42ad47b34b511075e5dfb9047d32f881fe0c159
 vendor/etc/cne/profileMwqem.xml|fcc3b5981d21fb110b6bee579f87a37277a8b414
@@ -1014,12 +1021,10 @@ vendor/etc/cne/wqeclient/VZW/VZW_profile7.xml|f8af1937c6913aa8eaf49cb81759877a91
 vendor/etc/default-permissions/com.qualcomm.qti.cne.xml|91d8d753cbadb174472b0e27614c4e8f1d9796ed
 vendor/etc/init/cnd.rc|3a5183df3479500fb729493bc56c71166fc10bce
 vendor/etc/init/qms.rc|7dd69c1b874e71b9ebf6a57aa31b435876aea149
-# libcne depends on libwpa_client, which is a gnu makefile target
 vendor/lib64/libcne.so;DISABLE_CHECKELF|30d348c46ef49c2e6faaf39b017de5a3bb1fce87
 vendor/lib64/libcneapiclient.so|b8c8e6246e137d9913dc110a4f98364a016ef27f
 vendor/lib64/libcneoplookup.so|3d9063a312fb7de4da55953524b04a4a6d7d6314
 vendor/lib64/libcneqmiutils.so|6a4e4a7057322ae2e40798c9ddcf74620a1df69b
-# libmasc depends on libwpa_client, which is a gnu makefile target
 vendor/lib64/libmasc.so;DISABLE_CHECKELF|89a95f02105380d2948ae941951cf1859cbb9b7e
 vendor/lib64/libshsc.so|17fa09e1975e7a6a118be4765390677676d0c415
 vendor/lib64/libwms.so|3c14a50d6a3944276cfdc0b1b97d7191016a210a
@@ -1301,7 +1306,6 @@ vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so|65466b5646a6971bdbc4
 vendor/app/CACertService/CACertService.apk|ea18679b8a6cdf4f9f00b7fb5d7a86e12be38f23
 vendor/bin/edgnss-daemon|11e295ebe350de7312a2ab97f25ccbbae48ed8a4
 vendor/bin/loc_launcher|dbc5addc025360fd04dec5b024d476514a6f613f
-# lowi-server depends on libwpa_client, which is a gnu makefile target
 vendor/bin/lowi-server;DISABLE_CHECKELF|0a8998f8190c282a14fed9e33691b54a2dc6d3e9
 vendor/bin/mlid|ab9291752d37ae8165cb78a6a635d48f7a668c70
 vendor/bin/xtra-daemon|e4a632e4b1b6ac75e1921bcd0a17fd0450ccf906
@@ -1453,7 +1457,6 @@ vendor/lib64/libqc2audio_base.so|8eda523c893863e360c9683135a01f27a8270fb1
 vendor/lib64/libqc2audio_basecodec.so|b3885ed642e34ea6ac7bf69b108cfea42a242d18
 vendor/lib64/libqc2audio_core.so|5d36387cc2c92abbbc61a584fd2c9d87ff836135
 vendor/lib64/libqc2audio_hooks.so|af60f201787cb06ce2ded96ae72dafe8eb604198
-# libqc2audio_hwaudiocodec depends on libpalclient, which is a gnu makefile target
 vendor/lib64/libqc2audio_hwaudiocodec.so;DISABLE_CHECKELF|e810ee6e48fd32b6a9eb9e25ccbb8f4873e3e994
 vendor/lib64/libqc2audio_platform.so|c5ee9c04f5b813a4cf2d9d1a14606fcc3e50658a
 vendor/lib64/libqc2audio_swaudiocodec.so|d7f12d55b6d93f691ad42d77996680cd0b46da51
@@ -2115,7 +2118,6 @@ vendor/lib64/libwfdhdcpcp.so|d29c24634de69db4e154e85720461635b3bc9faf
 vendor/lib64/libwfdhdcpservice_proprietary.so|866b96e52ac461fdd7571dc8ceb4bbec4eca2bd6
 vendor/lib64/libwfdmminterface_proprietary.so|1cef273ae9091cfe2c3e8964b31528caa749c1de
 vendor/lib64/libwfdmmservice_proprietary.so|9d88cf6f180d6d2f05b310103e29a9f3a422e64e
-# libwfdmmsrc_proprietary depends on libwfdaac_vendor, which is a gnu makefile target
 vendor/lib64/libwfdmmsrc_proprietary.so;DISABLE_CHECKELF|a17e86c32a954facc7e002f6cd806cf914accef9
 vendor/lib64/libwfdmodulehdcpsession.so|cb37841fda4a0f7f59b08aca7debdecb4af74d87
 vendor/lib64/libwfdrtsp_vendor.so|9ce8504106f9a0aa2cd84e4cb8229524aea08c45
