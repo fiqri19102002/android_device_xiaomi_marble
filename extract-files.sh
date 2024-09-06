@@ -87,6 +87,10 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             sed -i -E '/media_codecs_(google_audio|google_c2|google_telephony|vendor_audio)/d' "${2}"
             ;;
+        vendor/etc/public.libraries.txt)
+            [ "$2" = "" ] && return 0
+            sed -i '/libqti-perfd-client.so/d' "${2}"
+            ;;
         vendor/etc/camera/marble_enhance_motiontuning.xml|vendor/etc/camera/marble_motiontuning.xml)
             [ "$2" = "" ] && return 0
             sed -i 's/xml=version/xml version/g' "${2}"

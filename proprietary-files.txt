@@ -1485,7 +1485,7 @@ vendor/lib64/libmlipay.so|254d4ef0ceccde3cccb240a0bfa83a299adf910b
 vendor/lib64/libmlipay@1.1.so|190daa5025d557dabc557df31d669def19540ace
 
 # Native public libraries - from diting V816.0.6.0.ULFMIXM
-vendor/etc/public.libraries.txt|42abb3c8aa45f8cd1ff98e8d7e080cdf8ab52e64
+vendor/etc/public.libraries.txt|b4060feea552ab8cf92500906a7f5dcf2cf70777
 
 # NFC - from diting V816.0.6.0.ULFMIXM
 vendor/lib64/libsn100u_fw.so|3f2e06db925881ef846e93b39d2d5563ad8e0995
