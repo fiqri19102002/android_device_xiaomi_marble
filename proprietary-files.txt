@@ -1144,7 +1144,7 @@ system_ext/lib64/vendor.qti.diaghal@1.0.so|8afba353fd94d2e955dd626a0eb8029530219
 vendor/bin/diag-router|bb0fabb33e9e8a2355cdd83c68dd5ca8ba9096f6
 vendor/etc/init/vendor.qti.diag.rc|fa77cf69d53a72f10489c8019f883dab08b2a07e
 vendor/etc/vintf/manifest/vendor.qti.diag.hal.service.xml|cd7745bb829bc9bfb8a23ba779c796384e9b3835
-vendor/lib64/vendor.qti.diaghal@1.0.so;MODULE=vendor.qti.diaghal@1.0-vendor|6272ead540f1f91ba2bd3afc73916d8e78712b90
+vendor/lib64/vendor.qti.diaghal@1.0.so;MODULE_SUFFIX=-vendor|6272ead540f1f91ba2bd3afc73916d8e78712b90
 
 # Display configs
 product/etc/displayconfig/display_id_4630946480857061762.xml
@@ -1239,15 +1239,15 @@ vendor/bin/vendor.dpmd|d5caff66ea623fbb81dc1200e336d2bb325ea1d6
 vendor/etc/dpm_vndr/vendor.dpm.conf|1d50e6b31d195e463952af10653413ecfb5e6508
 vendor/etc/init/dpmQmiMgr.rc|676589c2e0c35bca8192bdb76aebd796053d7836
 vendor/etc/init/vendor.dpmd.rc|005aadea33bb148961bedc7a3e945141438a0f7d
-vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so;MODULE=com.qualcomm.qti.dpm.api@1.0-vendor|19430d592c7f815899844fcc22388466a8135e65
+vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so;MODULE_SUFFIX=-vendor|19430d592c7f815899844fcc22388466a8135e65
 vendor/lib64/libdpmqmihal.so|14bd1091ff1fdd0a696c0098c3c989117f5ef01e
 vendor/lib64/vendor.libdpmctmgr.so|ff655dc161c336199a676ad9d7f5f8bb33beea72
 vendor/lib64/vendor.libdpmfdmgr.so|990c25e3c7d739e9237690ff15be8bc4d685ff52
 vendor/lib64/vendor.libdpmframework.so|5e54873c105920a46340d9bd02a9655b5bc2a356
 vendor/lib64/vendor.libdpmtcm.so|f298dd6c2fc4250d2de054672b8c56a631e4ea01
 vendor/lib64/vendor.libmwqemiptablemgr.so|d41a64ec933cbf3da42e7c98f0ddef134599d583
-vendor/lib64/vendor.qti.hardware.dpmservice@1.0.so;MODULE=vendor.qti.hardware.dpmservice@1.0-vendor|1d690710fc30aef32e343734f7f72b6a16913389
-vendor/lib64/vendor.qti.hardware.dpmservice@1.1.so;MODULE=vendor.qti.hardware.dpmservice@1.1-vendor|6fea2e5f9144a841e5dbac473a2441be979ec73c
+vendor/lib64/vendor.qti.hardware.dpmservice@1.0.so;MODULE_SUFFIX=-vendor|1d690710fc30aef32e343734f7f72b6a16913389
+vendor/lib64/vendor.qti.hardware.dpmservice@1.1.so;MODULE_SUFFIX=-vendor|6fea2e5f9144a841e5dbac473a2441be979ec73c
 
 # DRM - from diting V816.0.6.0.ULFMIXM
 vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service|63325cdb65717518b2b4bda547bf56ecaa35cfee
@@ -1553,10 +1553,10 @@ vendor/etc/init/init.qdmastats.rc|d7ddb87faaedd900f1756064fe756d50efed7ca9
 vendor/lib64/hw/vendor.qti.hardware.qccvndhal@1.0-impl.so|459d506b20124520f5d650a7b30c9a490514a878
 vendor/lib64/libgrpc++_unsecure.so:vendor/lib64/libgrpc++_unsecure_prebuilt.so|e0363df07498ac7f3beb9e6f017d79e2bbc53c9c|e6363ed5a2a8d2648ab7f9d999491d2ca54d9a18
 vendor/lib64/libqcc_file_agent.so|2062da8684a791c3c8afe57f8be3d2b010337a8a
-vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so;MODULE=vendor.qti.hardware.qccsyshal@1.0-vendor|ef866bab2186db1b2c09477e36fef20945fa671e
-vendor/lib64/vendor.qti.hardware.qccsyshal@1.1.so;MODULE=vendor.qti.hardware.qccsyshal@1.1-vendor|0677ebfe099cdaa6c3776d0bd5318044a4220918
+vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so;MODULE_SUFFIX=-vendor|ef866bab2186db1b2c09477e36fef20945fa671e
+vendor/lib64/vendor.qti.hardware.qccsyshal@1.1.so;MODULE_SUFFIX=-vendor|0677ebfe099cdaa6c3776d0bd5318044a4220918
 vendor/lib64/vendor.qti.hardware.qccvndhal@1.0-halimpl.so|304ce0a1571f218ba16d0812221e4b2fae52a6d9
-vendor/lib64/vendor.qti.hardware.qccvndhal@1.0.so;MODULE=vendor.qti.hardware.qccvndhal@1.0-vendor|bfddf0a295b391bc1ed7961d547e9b56e3aa1b9c
+vendor/lib64/vendor.qti.hardware.qccvndhal@1.0.so;MODULE_SUFFIX=-vendor|bfddf0a295b391bc1ed7961d547e9b56e3aa1b9c
 
 # QCOM system daemon - from diting V816.0.6.0.ULFMIXM
 vendor/bin/qcom-system-daemon|a4c809595f4172737eab6c1b37dee7a1b1ff84d6
@@ -1845,7 +1845,7 @@ vendor/lib64/vendor.qti.ims.rcsuce@1.0.so|dbca4071c4e96d27e73f9db994050447771062
 vendor/lib64/vendor.qti.ims.rcsuce@1.1.so|d9e0e92caa757fe8467aed9b606fb250ca0412fc
 vendor/lib64/vendor.qti.ims.rcsuce@1.2.so|77c00b44571254d48e01ed8fa71a5bf6e176d26f
 vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so|4ee122d273adb5f6cec0db108d9a8068b3ff48fb
-vendor/lib64/vendor.qti.imsrtpservice@3.0.so;MODULE=vendor.qti.imsrtpservice@3.0-vendor|d0c6af735416f43fb26d4e7de5471e9bef64a539
+vendor/lib64/vendor.qti.imsrtpservice@3.0.so;MODULE_SUFFIX=-vendor|d0c6af735416f43fb26d4e7de5471e9bef64a539
 
 # Secure element - from diting V816.0.6.0.ULFMIXM
 vendor/bin/hw/vendor.qti.secure_element@1.2-service|474ec5361deeb31bebcf533d636583ffa0fcdeab
@@ -2130,7 +2130,7 @@ vendor/lib64/libwfduibcsinkinterface_vendor.so|465a8956aac171e3ecf3c52652d4b91e7
 vendor/lib64/libwfduibcsrc_vendor.so|332abdd219329bf3a781287becb3a6ce15c0d43e
 vendor/lib64/libwfduibcsrcinterface_vendor.so|b44930a217f829b43702571c67351b93536d4367
 vendor/lib64/libwfdutils_proprietary.so|87231edaec581a5b619da07dd163f297da1fae1c
-vendor/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so;MODULE=vendor.qti.hardware.wifidisplaysession@1.0-vendor|c83a5e19d589ddf503f29891655072bca5573624
+vendor/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so;MODULE_SUFFIX=-vendor|c83a5e19d589ddf503f29891655072bca5573624
 vendor/lib64/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so|21982f162daba9849b9f54dc36bfb73b9c3ec610
 
 # Xiaomi MAC address - from diting V816.0.6.0.ULFMIXM
