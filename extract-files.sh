@@ -99,6 +99,10 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             sed -i 's/=\([0-9]\+\)>/="\1">/g' "${2}"
             ;;
+        vendor/etc/seccomp_policy/c2audio.vendor.ext-arm64.policy)
+            [ "$2" = "" ] && return 0
+            grep -q "setsockopt: 1" "${2}" || echo "setsockopt: 1" >> "${2}"
+            ;;
         vendor/etc/sensors/hals.conf)
             [ "$2" = "" ] && return 0
             sed -i '$s/$/\nsensors.xiaomi.v2.so/' "${2}"
