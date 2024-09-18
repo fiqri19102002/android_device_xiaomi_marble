@@ -33,7 +33,7 @@ vendor/etc/acdbdata/ukee_mtp/MTP_ukee_workspaceFileXml.qwsp
 vendor/etc/acdbdata/ukee_qrd/QRD_ukee_acdb_cal.acdb
 vendor/etc/acdbdata/ukee_qrd/QRD_ukee_workspaceFileXml.qwsp
 
-# ADSP - from diting V816.0.6.0.ULFMIXM
+# ADSP - from diting V816.0.7.0.ULFMIXM
 vendor/bin/adsprpcd|4821003d01528b1fb5b7b409cd80e4307129ec9d
 vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc|8f0eb84d3eb5fc0f683ef7b975b75044d56f513e
 vendor/lib64/libadsp_default_listener.so|45f836a63fa31f73032e53df5053a14f5b0c84fb
@@ -124,10 +124,10 @@ vendor/lib/rfsa/adsp/misound_res_headphone.bin
 vendor/lib/rfsa/adsp/misound_res_spk.bin
 vendor/lib/rfsa/adsp/misound_res_spk4ch.bin
 
-# ANT+ - from diting V816.0.6.0.ULFMIXM
+# ANT+ - from diting V816.0.7.0.ULFMIXM
 vendor/lib64/hw/com.dsi.ant@1.0-impl.so|b1d899221388ad9f5070bf2d71acae82481d5fc2
 
-# Audio - from diting V816.0.6.0.ULFMIXM
+# Audio - from diting V816.0.7.0.ULFMIXM
 vendor/etc/models/acd/event.eai|9bf278d152e0c722ab9bcb11c19568c5ae3212c5
 vendor/etc/models/acd/music.eai|4eeea06fd59b0a600216c62241a313efe92df7fc
 vendor/etc/models/acd/speech.eai|aff5a8f19d803478415eb65c52249950fd0a2fae
@@ -175,7 +175,7 @@ vendor/etc/usecaseKvManager.xml
 # Audio firmware
 vendor/firmware/aw882xx_acf.bin
 
-# Audio soundfx - from diting V816.0.6.0.ULFMIXM
+# Audio soundfx - from diting V816.0.7.0.ULFMIXM
 vendor/lib64/soundfx/libasphere.so|5b70a2ecfd6c72a993420191618aa71a5f814012
 vendor/lib64/soundfx/libshoebox.so|5803ec39c6237cb60093f996056c4790a19eb26a
 
@@ -183,7 +183,7 @@ vendor/lib64/soundfx/libshoebox.so|5803ec39c6237cb60093f996056c4790a19eb26a
 vendor/bin/batterysecret
 vendor/etc/init/hw/init.batterysecret.rc
 
-# Bluetooth - from diting V816.0.6.0.ULFMIXM
+# Bluetooth - from diting V816.0.7.0.ULFMIXM
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|7102d9fa549fd0527598f18a7bd9e8c06fa1e246
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|f4ee3b2da2b08647447869ade86ec63f7340accc
 vendor/lib64/btaudio_offload_if.so|6eb86bb25952689134ce581ee3b73b12eefb917d
@@ -975,7 +975,7 @@ vendor/lib64/camera/com.qti.tuned.marble_ofilm_ov64b40_wide_i.bin
 vendor/lib64/camera/com.qti.tuned.marble_sunny_s5k3p9sp04_front_i.bin
 vendor/lib64/hw/com.qti.chi.override.so
 
-# CDSP - from diting V816.0.6.0.ULFMIXM
+# CDSP - from diting V816.0.7.0.ULFMIXM
 vendor/bin/cdsprpcd|8c50020fda4d4217fd85ea0df98c55237c275ff2
 vendor/etc/init/vendor.qti.cdsprpc-service.rc|782794d5568711f61e0a9d478b38b4bfb9729726
 vendor/lib64/libcdsp_default_listener.so|b6a4f036f9f9d7a60216211225b15fe5ab9add46
@@ -983,7 +983,7 @@ vendor/lib64/libcdsprpc.so|74e8b3dba2358609bd214f1a3ccce221ae2dbfcf
 vendor/lib64/libmdsprpc.so|883739ce83c6e8183d115eb5968da8029f157d19
 vendor/lib64/libsdsprpc.so|18ef16a8e890a4e8459b8609989578b1babbd25c
 
-# CNE - from diting V816.0.6.0.ULFMIXM
+# CNE - from diting V816.0.7.0.ULFMIXM
 vendor/app/CneApp/CneApp.apk;REQUIRED=CneApp.libvndfwk_detect_jni.qti_vendor_symlink|1cfbd9e13691f722bacfaf4c26794c6bcf4c1621
 vendor/bin/cnd|9d797fe460cda2e79d668a47fd8d7b63daa15170
 vendor/bin/qms;DISABLE_CHECKELF|c33c09624f0d8815d5970ce8a50584aa7597f68d
@@ -1057,7 +1057,7 @@ vendor/lib64/vendor.qti.hardware.slmadapter@1.0.so|698d144d07dbddfabe198c926a6c7
 vendor/lib64/vendor.qti.latency@2.0.so|65e94d7e71c2fc35ae05fa362de2d340b4933234
 vendor/lib64/vendor.qti.latency@2.1.so|d12f2a6a4acaadcf7e5eec19df1b17a5e2926413
 
-# Computer vision - from diting V816.0.6.0.ULFMIXM
+# Computer vision - from diting V816.0.7.0.ULFMIXM
 vendor/etc/eva/facedetection/model3.dat|f5a84a7df043e2a77a9e344a1c94dee164f141cc
 vendor/etc/face3d/qcnn_concat_file_model-0324_2_encrypted|502912d220281d07cf87604a5a85c69fe3ea5034
 vendor/lib64/libFace3DTA.so|892d66365271c752cfd1beed0cf0bfe139ab103a
@@ -1134,12 +1134,12 @@ vendor/firmware/evautil64.b06
 vendor/firmware/evautil64.b07
 vendor/firmware/evautil64.mdt
 
-# Configstore - from diting V816.0.6.0.ULFMIXM
+# Configstore - from diting V816.0.7.0.ULFMIXM
 vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service|a807136ded7a6450180a2221a59ae596a6f311f8
 vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc|4ede0250585a44b01d351bbc301d7a13cc3d783d
 vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so|bc171be67c06394beb760eb41290e137c63a0486
 
-# Diag - from diting V816.0.6.0.ULFMIXM
+# Diag - from diting V816.0.7.0.ULFMIXM
 system_ext/lib64/vendor.qti.diaghal@1.0.so|8afba353fd94d2e955dd626a0eb8029530219732
 vendor/bin/diag-router|bb0fabb33e9e8a2355cdd83c68dd5ca8ba9096f6
 vendor/etc/init/vendor.qti.diag.rc|fa77cf69d53a72f10489c8019f883dab08b2a07e
@@ -1159,7 +1159,7 @@ vendor/lib64/libgame_enhance.so|4432e47d990e98edb141becc345a92d03df26bf4
 vendor/lib64/libhdr_backlight_adapter.so|57036c19938fe40e73e9b9e3d4c6a6073d7aa858
 vendor/lib64/libhdr_tm.so|6f18ddbd3f66f4348a5b92a2ac0bafd979ed2a05
 
-# Display HDR dynamic - from diting V816.0.6.0.ULFMIXM
+# Display HDR dynamic - from diting V816.0.7.0.ULFMIXM
 vendor/lib64/libhdrdynamic.so|48b912d98089807b49d451163651dcb658008475
 vendor/lib64/libhdrdynamicootf.so|857a8d1908524590f0de56bf2e1ba1e287272e6c
 
@@ -1214,7 +1214,7 @@ vendor/lib64/libsdmextension.so|08d321d3e0da2231a29e3ec92604dca48c8895e3
 vendor/lib64/libtestutils.so|61b98f252afde4eb7c674de870e7afb590c9bb2a
 vendor/lib64/libtinyxml2_1.so|ae0c9190fd54c18a6c28dfccdfd29655abcb08de
 
-# DPM - from diting V816.0.6.0.ULFMIXM
+# DPM - from diting V816.0.7.0.ULFMIXM
 system_ext/bin/dpmd|5a42bc4e5c841573579e0718d6e80e688767eeed
 system_ext/bin/tcmd|974f4597ecce3535618c12d89d03eee463e5510b
 system_ext/etc/dpm/dpm.conf|95e27da8c989e96c6faea6f0697bce11955b62a5
@@ -1249,7 +1249,7 @@ vendor/lib64/vendor.libmwqemiptablemgr.so|d41a64ec933cbf3da42e7c98f0ddef134599d5
 vendor/lib64/vendor.qti.hardware.dpmservice@1.0.so;MODULE_SUFFIX=-vendor|1d690710fc30aef32e343734f7f72b6a16913389
 vendor/lib64/vendor.qti.hardware.dpmservice@1.1.so;MODULE_SUFFIX=-vendor|6fea2e5f9144a841e5dbac473a2441be979ec73c
 
-# DRM - from diting V816.0.6.0.ULFMIXM
+# DRM - from diting V816.0.7.0.ULFMIXM
 vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service|63325cdb65717518b2b4bda547bf56ecaa35cfee
 vendor/bin/qseecom_sample_client|3073688d22b78a7b0af30072660bd288db2c5298
 vendor/bin/qseecomd|189e33498b13458768218973dbfc0d99dab1fb45
@@ -1270,13 +1270,13 @@ vendor/lib64/libspl.so|ea975dcabe9896a1827f0db2969ed9a257572849
 vendor/lib64/libssd.so|931512da26fdca5674975a250c6c5d2b7f1d1be8
 vendor/lib64/vendor.qti.hardware.qseecom@1.0.so|c8ea02b00e97627924cd27f6338390319d269136
 
-# DSP - from diting V816.0.6.0.ULFMIXM
+# DSP - from diting V816.0.7.0.ULFMIXM
 vendor/bin/dspservice|a054e25f1e5b52db6b031ba59117a0ad65252e35
 vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc|fbf2bb38ca6bdddf98c7123da9e1f263a4eec55f
 vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy|f060101b26d3674bb173e5fc95e118f56a8ac15d
 vendor/lib64/vendor.qti.hardware.dsp@1.0.so|2e1fbb64bd9e1a3bb8d78af7d442a40fbc93fe35
 
-# ESE powermanager - from diting V816.0.6.0.ULFMIXM
+# ESE powermanager - from diting V816.0.7.0.ULFMIXM
 vendor/bin/hw/vendor.qti.esepowermanager@1.1-service|2e9f7c8a48ef76806f3e6661344d52b061546438
 vendor/etc/init/vendor.qti.esepowermanager@1.1-service.rc|ce78bc183e9cd1bece8fb0f8a743ec02c9a63b57
 vendor/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so|8e9f6bf8c44a4baeb3026f5b128e1e58690906f0
@@ -1291,13 +1291,13 @@ vendor/lib64/libgf_ca.so
 vendor/lib64/libgf_hal.so
 vendor/lib64/libgoodixhwfingerprint.so
 
-# FM - from diting V816.0.6.0.ULFMIXM
+# FM - from diting V816.0.7.0.ULFMIXM
 vendor/etc/init.qti.fm.sh|0ac820dd85ebdf5fa73b5e971f6787ff35ceb65d
 vendor/etc/init/init.qti.fm.rc|4f5459058debbea76991e69f8522126f6655fd3b
 vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so|bfbc3a85f75aec27b5f2f1aee0ba9ac9a3ac1106
 vendor/lib64/vendor.qti.hardware.fm@1.0.so|9e3a57afe69bdfad86884c58e64821a95a5210ba
 
-# Gatekeeper - from diting V816.0.6.0.ULFMIXM
+# Gatekeeper - from diting V816.0.7.0.ULFMIXM
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti|474d81249f788ce85c9a5454ab89b3361941c476
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc|1b8d5f58fe0a57906acf72b862c16a2521daa97b
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so|65466b5646a6971bdbc4ca6163b9ee05bd7bd960
@@ -1343,7 +1343,7 @@ vendor/lib64/vendor.qti.gnss-V3-ndk.so|76c929bab907bb879b27bdcc876863071d10aa29
 vendor/lib64/vendor.qti.gnss-V5-ndk.so|4854ea8bf89c800f72ee9d7d25fc94c61d2bff4f
 vendor/lib64/vendor.qti.gnss-service.so|f27f0dbdd9f638ea9207ad05933b1c42e7e6a922
 
-# Graphics (Adreno) - from diting V816.0.6.0.ULFMIXM
+# Graphics (Adreno) - from diting V816.0.7.0.ULFMIXM
 vendor/app/com.qualcomm.qti.gpudrivers.taro.api31/com.qualcomm.qti.gpudrivers.taro.api31.apk|20bf32c315c24ba11bb370c83052a8ee3776865f
 vendor/gpu/kbc/sequence_manifest.bin|17e1f9149826ef478502c750bcf9352274097c80
 vendor/gpu/kbc/unified_kbcs_32.bin|aa7b4e916fb3fab8df7700deb458d0726a549482
@@ -1396,23 +1396,23 @@ vendor/firmware/a730_zap.mbn
 vendor/firmware/a730_zap.mdt
 vendor/firmware/gmu_gen70000.bin
 
-# Graphics (Vulkan) - from diting V816.0.6.0.ULFMIXM
+# Graphics (Vulkan) - from diting V816.0.7.0.ULFMIXM
 vendor/lib64/hw/vulkan.adreno.so|689bbd9328d3083efcc894481552c8f94ddc83b3
 
-# Hotword Enrollment - from diting V816.0.6.0.ULFMIXM
+# Hotword Enrollment - from diting V816.0.7.0.ULFMIXM
 product/priv-app/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND.apk|1f9eb653ab838483ca643976bd9d7aca02755bf5
 product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND.apk|5c08b6e509409c149557c1e9895af9304df87fc5
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml|99cfd80965c170f4885a7dd62c0eaad1a0c7840f
 system_ext/framework/com.android.hotwordenrollment.common.util.jar|b768584073c6348713ffd0139d44039c9efc775a
 
-# IPA firmware - from diting V816.0.6.0.ULFMIXM
+# IPA firmware - from diting V816.0.7.0.ULFMIXM
 vendor/etc/init/ipa_fws.rc|2ee2a89c1b3e4bdd03506c67774cd0a06022e0f0
 
-# IRQ balance - from diting V816.0.6.0.ULFMIXM
+# IRQ balance - from diting V816.0.7.0.ULFMIXM
 vendor/bin/msm_irqbalance|313c3422b0dbaf7c65440bf343f2aed0679a2a4a
 vendor/etc/msm_irqbalance.conf|8394994bad2c8e32b2a04cae58b5af9c44425b6e
 
-# Keymaster - from diting V816.0.6.0.ULFMIXM
+# Keymaster - from diting V816.0.7.0.ULFMIXM
 vendor/bin/hw/android.hardware.keymaster@4.1-service-qti|078af72b56954b7bbe4fc5b86e51b5a57f8bf255
 vendor/etc/init/android.hardware.keymaster@4.1-service-qti.rc|f6907552961ba772c1ad5b493913a60d65abedb4
 vendor/lib64/libkeymasterdeviceutils.so|046cc20a4b8ca8fc28ac7fcf0d173ee1d039f0e1
@@ -1422,14 +1422,14 @@ vendor/lib64/libqcbor.so|3408c29a37fa5e806af02f5bf63e345454c62675
 vendor/lib64/libqtikeymaster4.so|7a9182465290147772068060ed6a4ae6048ec00e
 vendor/lib64/libspcom.so|69cd22b8a90d592656d060a984851c0d621a2ba0
 
-# Keymint - from diting V816.0.6.0.ULFMIXM
+# Keymint - from diting V816.0.7.0.ULFMIXM
 vendor/bin/hw/android.hardware.security.keymint-service-qti|b5327078ccf2bb640fd1a7ade43c23df621917ef
 vendor/etc/init/android.hardware.security.keymint-service-qti.rc|28d39a691127b567b7745b1ae6da87b7a282325e
 vendor/etc/permissions/android.hardware.hardware_keystore.xml:vendor/etc/permissions/android.hardware.hardware_keystore.km100.xml|672d9b78a504fbd1eef56853e710e7986a3cd2f8
 vendor/etc/vintf/manifest/android.hardware.security.keymint-service-qti.xml|f78fe6f4b5b01884b2425950dd8fa23e185ab309
 vendor/lib64/libqtikeymint.so|d6f496b9e99689f6066598ff07ff81e1b508dc4c
 
-# Media - from diting V816.0.6.0.ULFMIXM
+# Media - from diting V816.0.7.0.ULFMIXM
 vendor/bin/hw/vendor.qti.media.c2@1.0-service|a3a103902ba4d0d2a41f7e6d61798cf846cbcc0d
 vendor/bin/hw/vendor.qti.media.c2audio@1.0-service|a395d05f3004f2a5150dfd4510eed0c50d671974
 vendor/etc/init/vendor.qti.media.c2@1.0-service.rc|542d2ae2a92ee21dbb63716ff49392e8e6e433f4
@@ -1477,17 +1477,17 @@ vendor/lib64/libqcodec2_v4l2codec.so|1c18ff9ae0d11cd1613f9a00898da03e15fa431e
 vendor/lib64/libvideotxr.so|80de9b1e6c9d937f5f692b587c7100e4fec847a3
 vendor/lib64/qti.video.utils.videobufferlayout.so|72bfcd0c434048d06b9bc5555226cbe83098a8e2
 
-# Mlipay - from diting V816.0.6.0.ULFMIXM
+# Mlipay - from diting V816.0.7.0.ULFMIXM
 vendor/bin/mlipayd@1.1|c14005bff5c03ae9ce72345fee21e82757ca2be1
 vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc|b5ab5bcd031fe4d9781b5911c0595eaeac8b80ea
 vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mlipay.xml|27aaea2ab58ace6555a634dc60ea062736342eb4
 vendor/lib64/libmlipay.so|254d4ef0ceccde3cccb240a0bfa83a299adf910b
 vendor/lib64/libmlipay@1.1.so|190daa5025d557dabc557df31d669def19540ace
 
-# Native public libraries - from diting V816.0.6.0.ULFMIXM
+# Native public libraries - from diting V816.0.7.0.ULFMIXM
 vendor/etc/public.libraries.txt|42abb3c8aa45f8cd1ff98e8d7e080cdf8ab52e64
 
-# NFC - from diting V816.0.6.0.ULFMIXM
+# NFC - from diting V816.0.7.0.ULFMIXM
 vendor/lib64/libsn100u_fw.so|3f2e06db925881ef846e93b39d2d5563ad8e0995
 
 # NFC configs
@@ -1495,7 +1495,7 @@ vendor/etc/libnfc-nci.conf
 vendor/etc/libnfc-nxp.conf
 vendor/etc/libnfc-nxp_RF.conf:vendor/libnfc-nxp_RF.conf
 
-# Perf - from diting V816.0.6.0.ULFMIXM
+# Perf - from diting V816.0.7.0.ULFMIXM
 vendor/bin/hw/vendor.qti.hardware.perf-hal-service|a7de0c554f750af6fa4fe9dadf7404d327697b92
 vendor/etc/init/vendor.qti.hardware.perf-hal-service.rc|3a399b83162e776f9737cb14a6ef4020c63a0204
 vendor/etc/perf/avcsysnodesconfigs.xml|086837aca168c81ace587d612ba0787c1d4e7dac
@@ -1520,12 +1520,12 @@ vendor/lib64/libthermalclient.so|cf6b84f55093bec854238386e15b02ef961cc72c
 vendor/lib64/vendor.qti.memory.pasrmanager@1.0.so|1d5d97dd4702f1e5c0acbdbba78a793d9fe14298
 vendor/lib64/vendor.qti.memory.pasrmanager@1.1.so|e467944218f4334ab977b6480fd8df7d07acc4a3
 
-# Peripheral manager - from diting V816.0.6.0.ULFMIXM
+# Peripheral manager - from diting V816.0.7.0.ULFMIXM
 vendor/bin/pm-proxy|2e647a20a62050907a2e89f9bc2f97fff9416faa
 vendor/bin/pm-service|dfa886f157dfd13b6aac5cb6206a8bcb84f3c7d4
 vendor/lib64/libperipheral_client.so|63dc01ab96af1cd62b3bf5d18b8f1636e120aec8
 
-# Power-off alarm - from diting V816.0.6.0.ULFMIXM
+# Power-off alarm - from diting V816.0.7.0.ULFMIXM
 system_ext/app/PowerOffAlarm/PowerOffAlarm.apk|b9255470fd1c32bc7371084273e3c524b392bc4e
 system_ext/framework/vendor.qti.hardware.alarm-V1.0-java.jar|2cff0d9993e6f51e7095f43eb71014eea7cd4ea2
 vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service|c424277999be72f8ee030cb849966d5cf783bcce
@@ -1558,15 +1558,15 @@ vendor/lib64/vendor.qti.hardware.qccsyshal@1.1.so;MODULE_SUFFIX=-vendor|0677ebfe
 vendor/lib64/vendor.qti.hardware.qccvndhal@1.0-halimpl.so|304ce0a1571f218ba16d0812221e4b2fae52a6d9
 vendor/lib64/vendor.qti.hardware.qccvndhal@1.0.so;MODULE_SUFFIX=-vendor|bfddf0a295b391bc1ed7961d547e9b56e3aa1b9c
 
-# QCOM system daemon - from diting V816.0.6.0.ULFMIXM
+# QCOM system daemon - from diting V816.0.7.0.ULFMIXM
 vendor/bin/qcom-system-daemon|a4c809595f4172737eab6c1b37dee7a1b1ff84d6
 vendor/lib64/libsubsystem_control.so|f6e9a4f42d5ec0cda62a922b98e2711b7aeb6615
 
-# QCV - from diting V816.0.6.0.ULFMIXM
+# QCV - from diting V816.0.7.0.ULFMIXM
 vendor/bin/init.qti.qcv.sh|0f94fafd530f4767aa15142438ee8d8476da8cf6
 vendor/etc/init/init.qti.qcv.rc|4c793bb2c95a0ee0b7972b3427972afda3953070
 
-# QMI - from diting V816.0.6.0.ULFMIXM
+# QMI - from diting V816.0.7.0.ULFMIXM
 system/etc/sysconfig/qti_whitelist.xml|73c0f9f2c0fc08291374b01c503d24cc103a32ce
 system_ext/etc/sysconfig/qti_telephony_system_packages_config.xml|6c5084bef15012cf2a55426a35f696db3995ba16
 system_ext/etc/sysconfig/qti_whitelist_system_ext.xml|fc930929bee7d1f8ecc5b1c76193acdc2f923fe7
@@ -1594,7 +1594,7 @@ vendor/lib64/libqmi_encdec.so|7be845644af555af394f3dcd4021064cbe12f001
 vendor/lib64/libqmi_legacy.so|9af914227a980328a8c042ecddf7c11c7cffe163
 vendor/lib64/libqmiservices.so|875d72ce1386c279b47a847ee5171e6b644127c3
 
-# QSPM - from diting V816.0.6.0.ULFMIXM
+# QSPM - from diting V816.0.7.0.ULFMIXM
 vendor/bin/vendor.qti.qspmhal@1.0-service|3a3dc6934387bc82087edef764726602b8f4e02a
 vendor/etc/init/vendor.qti.qspmhal@1.0-service.rc|bdc5cbedd1688807409c72262824ca9162b20239
 vendor/etc/seccomp_policy/qspm.policy|dcb84e27bb038ee9765315a0c422ab860583e24a
@@ -1602,7 +1602,7 @@ vendor/lib/vendor.qti.qspmhal@1.0.so|fa606651599b18b997c98cb9f62c5b8299e05087
 vendor/lib64/vendor.qti.qspmhal@1.0-impl.so|9b89a25a20fcaaafb9da162d52b16b1fa144705e
 vendor/lib64/vendor.qti.qspmhal@1.0.so|c4483c88346e8aee18eb34ba097d9ec784b4d571
 
-# RIL - from diting V816.0.6.0.ULFMIXM
+# RIL - from diting V816.0.7.0.ULFMIXM
 product/app/uimgbaservice/uimgbaservice.apk|b27b12da7199b0d52fd1fd2605e40ffc0b502da2
 product/etc/permissions/UimGba.xml|03eb0916550720f168c4f66acdc3fc4abf9993ef
 product/etc/permissions/UimGbaManager.xml|b57f4d048d860d27367df0f0feee6cc78991dfe3
@@ -1750,7 +1750,7 @@ vendor/lib64/libnlnetmgr.so|feb618404257e8dec691cfadfef72829c003e100
 vendor/lib64/libpdmapper.so|36d3b8ef898b29fc2b0e1857120dcbd9699843a0
 vendor/lib64/libpdnotifier.so|d09a7a2763d35d60169356029e68fc0498846b5b
 vendor/lib64/libqcci_legacy.so|f26365051e39eca48c0d325dfaa5501f756df3dc
-vendor/lib64/libqcrilDataModule.so|6bbb5364dc78643a2134ba13b1771534658bd985
+vendor/lib64/libqcrilDataModule.so|4ae7c263e7cca0c404879f28b8159c7d85fc9b27
 vendor/lib64/libqcrilNr.so|545432488c3afbb66c0c3e4f0acc47b989815a5f
 vendor/lib64/libqcrilNrCellInfoModule.so|c714d3dae88cbe46a18e46aee754388edffa29b0
 vendor/lib64/libqcrilNrFramework.so|650e9c915f3a7896fe38f9823c16f0201890de02
@@ -1847,7 +1847,7 @@ vendor/lib64/vendor.qti.ims.rcsuce@1.2.so|77c00b44571254d48e01ed8fa71a5bf6e176d2
 vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so|4ee122d273adb5f6cec0db108d9a8068b3ff48fb
 vendor/lib64/vendor.qti.imsrtpservice@3.0.so;MODULE_SUFFIX=-vendor|d0c6af735416f43fb26d4e7de5471e9bef64a539
 
-# Secure element - from diting V816.0.6.0.ULFMIXM
+# Secure element - from diting V816.0.7.0.ULFMIXM
 vendor/bin/hw/vendor.qti.secure_element@1.2-service|474ec5361deeb31bebcf533d636583ffa0fcdeab
 vendor/etc/init/vendor.qti.secure_element@1.2-service.rc|57956894d4232496aa7a618638569e042633c881
 vendor/lib64/android.hardware.secure_element@1.0-impl.so|ecd1fed72d0e4b428cab60e3a54e492f63d87618
@@ -1855,7 +1855,7 @@ vendor/lib64/jcos_nq_client.so|a7a8903875493475bb5cf77938c32715fc7a2088
 vendor/lib64/ls_nq_client.so|5a6c63ccc4b65a28de0ae8725870b041fe5d0b61
 vendor/lib64/se_nq_extn_client.so|df1d46126c2bc4aca7dbba42ae9e274061feb106
 
-# Sensors - from diting V816.0.6.0.ULFMIXM
+# Sensors - from diting V816.0.7.0.ULFMIXM
 vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service|c925060a8a353ea6bc8b5f4582eee105b9b32d43
 vendor/bin/init.qcom.sensors.sh|454c6de8c65b9ad1c41f063544871a4ba0665689
 vendor/bin/sensors.qti|7024f031d4f95cd7e4ff9db3f99c6b9af817393a
@@ -1916,14 +1916,14 @@ vendor/etc/sensors/config/tcs3701.json
 vendor/etc/sensors/hals.conf
 vendor/etc/sensors/sns_reg_config
 
-# Sensors ultrasound - from diting V816.0.6.0.ULFMIXM
+# Sensors ultrasound - from diting V816.0.7.0.ULFMIXM
 vendor/lib64/libultrasound_notify.so|66336a6cdb2e86bdf968638dec56a9621c76085e
 vendor/lib64/sensors.ultrasoundproximity.so|93d5b08a5086adad9f4b820b603a3220ba091aff
 
 # Sensors - SSC
 vendor/lib64/libssccalapi@2.0.so
 
-# Soter - from diting V816.0.6.0.ULFMIXM
+# Soter - from diting V816.0.7.0.ULFMIXM
 vendor/app/SoterService/SoterService.apk|a333d43e7487d30a4971c2e770f16a068e5ce777
 vendor/bin/SoterProvisioningTool|5c02ab4db73791bc4a2b0c79ee0534639fe1fb3b
 vendor/bin/hw/vendor.qti.hardware.soter@1.0-service|ea47753f102b505e661586d806a3cb2a8caefd52
@@ -1932,12 +1932,12 @@ vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc|76447a61ad5529949365eeb
 vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so|5c0bfe100acdb7db8a3b84218dadcb55671ccda7
 vendor/lib64/vendor.qti.hardware.soter@1.0.so|92ccb0099a256d7281e1986582b2661b8e68e976
 
-# SSR - from diting V816.0.6.0.ULFMIXM
+# SSR - from diting V816.0.7.0.ULFMIXM
 vendor/bin/ssr_diag|19999770262f0faed692ddf53cbf0b15c1c429a6
 vendor/bin/ssr_setup|47ee21661a20dcf199339b13ba35e9183c4bb36f
 vendor/bin/subsystem_ramdump|c2116a6fe8ca4b70926feb5b54a5a32df6768971
 
-# Thermal - from diting V816.0.6.0.ULFMIXM
+# Thermal - from diting V816.0.7.0.ULFMIXM
 vendor/bin/mi_thermald|474d635c54969804e95ef489179aa65c2c583e2d
 vendor/bin/thermal-engine-v2|567dff4d0c7b84bfef0475802d778824ed03f363
 vendor/etc/init/hw/init.mi_thermald.rc|6505d89e19957888612d89f6769585a7d26af080
@@ -1975,7 +1975,7 @@ vendor/etc/thermal-videochat.conf
 vendor/etc/thermal-yuanshen.conf
 vendor/etc/thermald-devices.conf
 
-# Time services - from diting V816.0.6.0.ULFMIXM
+# Time services - from diting V816.0.7.0.ULFMIXM
 vendor/app/TimeService/TimeService.apk|1cdbeaf194866cfacf10ef6ea980188111ef9593
 vendor/bin/time_daemon|665c3040290456d24bf7d226b4da4bb44b2f91bc
 vendor/etc/init/init.time_daemon.rc|b253ca2a498757e14e1d7a051bf504ae09218f51
@@ -1987,7 +1987,7 @@ vendor/firmware/goodix_cfg_group_TM_Second.bin
 vendor/firmware/goodix_firmware_TM.bin
 vendor/firmware/goodix_firmware_TM_Second.bin
 
-# Trusted Execution Environment connector - from diting V816.0.6.0.ULFMIXM
+# Trusted Execution Environment connector - from diting V816.0.7.0.ULFMIXM
 vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service|aca4bb9f1348c1e01f2e2e286cb2b5052d64da54
 vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc|55c2f0c1e93fccb49ef9919cd56e5903ac14d517
 vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so|d9f9c448a350d49c8ff3b2607fbb967a17b3b020
@@ -1997,7 +1997,7 @@ vendor/lib64/libQTEEConnector_listener.so|ef774515ccf148732cfdc85d8558d9a6ec64d9
 vendor/lib64/libQTEEConnector_vendor.so|b6eb0ca5244de7e9abb0a44f334ee293c3627d5f
 vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so|56ef9cdf17aad71a8d666ffdf66ac4dcdaf61e3a
 
-# Trusted User Interface - from diting V816.0.6.0.ULFMIXM
+# Trusted User Interface - from diting V816.0.7.0.ULFMIXM
 vendor/lib64/libminksocket_vendor.so|beaa96c8d4e569abc7b31edf94c8b63566a3576e
 
 # Vibrator
@@ -2007,15 +2007,15 @@ vendor/firmware/3_thud_P_RTP.bin:vendor/etc/vibrator/effect_3.bin
 vendor/firmware/4_pop_P_RTP.bin:vendor/etc/vibrator/effect_4.bin
 vendor/firmware/5_heavyClick_P_RTP.bin:vendor/etc/vibrator/effect_5.bin
 
-# VM mem - from diting V816.0.6.0.ULFMIXM
+# VM mem - from diting V816.0.7.0.ULFMIXM
 vendor/lib64/libvmmem.so|cd1b80963d107b0a9ddfb0a08de266621b5a7154
 
-# VM mgr - from diting V816.0.6.0.ULFMIXM
+# VM mgr - from diting V816.0.7.0.ULFMIXM
 vendor/bin/vmmgr|2b1f2218867142d6013d1a39db040f011ce6213e
 vendor/etc/init/vmmgr.rc|538c80735fb78cfe7aac244e06a7fef2e853bb24
 vendor/etc/vmmgr.conf|012585558b38264f1924e4d2a4e05441b7c09b18
 
-# VPP - from diting V816.0.6.0.ULFMIXM
+# VPP - from diting V816.0.7.0.ULFMIXM
 vendor/bin/hw/qconfigservice|4971374c14068304d06f27a2d50ba7b414433d1e
 vendor/bin/vppservice|1300c91f158d721ef93f35de6766f41870a1cfff
 vendor/etc/configstore/vpp.configstore.xml|ed961545186c66fd9523f25866c74f2e11ee63d7
@@ -2050,7 +2050,7 @@ vendor/firmware/vpu20_4v.b19
 vendor/firmware/vpu20_4v.mbn
 vendor/firmware/vpu20_4v.mdt
 
-# Widevine DRM - from diting V816.0.6.0.ULFMIXM
+# Widevine DRM - from diting V816.0.7.0.ULFMIXM
 vendor/bin/hw/android.hardware.drm@1.4-service.widevine|f86e5d09432ab0b7958cf4b7a345d1b339bf06b3
 vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc|992f63e9700da29099e0590858a6becaaadb2976
 vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml|91d7c0996133556cb7f7c5d1b7e5d9e7f07b78b2
@@ -2060,11 +2060,11 @@ vendor/lib64/libwvhidl.so|1f2e190ec196e0027c254866de26dc4a36fef8a9
 vendor/lib64/libwvkeybox.so|bdc770cf525e0c166c1a1728b15d1fa1a1f6c425
 vendor/lib64/mediadrm/libwvdrmengine.so|8f30147864e1c937a8337d868bef67189e55f43d
 
-# WiFi - from diting V816.0.6.0.ULFMIXM
+# WiFi - from diting V816.0.7.0.ULFMIXM
 vendor/bin/cnss-daemon|1d266903d1d04dc60c7bd87dd8228b5769d34a15
 vendor/etc/init/init.vendor.wlan.rc|a4d45be8c1e12d4690adbb9a79e882b2f094b2da
 
-# WiFi Display - from diting V816.0.6.0.ULFMIXM
+# WiFi Display - from diting V816.0.7.0.ULFMIXM
 system/framework/WfdCommon.jar|08bf9850ac45396fe753e208c4d63ec43389dce2
 system_ext/bin/wfdservice64|77de5e319297d09b29712160ed0a9dbdced58911
 system_ext/etc/init/wfdservice.rc|907def8565d8f91f531ca7dfad880af05d540b0c
@@ -2133,5 +2133,5 @@ vendor/lib64/libwfdutils_proprietary.so|87231edaec581a5b619da07dd163f297da1fae1c
 vendor/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so;MODULE_SUFFIX=-vendor|c83a5e19d589ddf503f29891655072bca5573624
 vendor/lib64/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so|21982f162daba9849b9f54dc36bfb73b9c3ec610
 
-# Xiaomi MAC address - from diting V816.0.6.0.ULFMIXM
+# Xiaomi MAC address - from diting V816.0.7.0.ULFMIXM
 vendor/bin/nv_mac|c7d9a29816024887f2fde80a238d28d409aa3be9
