@@ -57,7 +57,6 @@ function lib_to_package_fixup_vendor_variants() {
         libagmmixer | \
         libpalclient | \
         libwpa_client | \
-        libwfdaac_vendor | \
         vendor.qti.hardware.pal@1.0-impl)
             ;;
         *)

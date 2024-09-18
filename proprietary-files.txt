@@ -13,7 +13,6 @@
 # libmasc depends on libwpa_client, which is a gnu makefile target
 # lowi-server depends on libwpa_client, which is a gnu makefile target
 # libqc2audio_hwaudiocodec depends on libpalclient, which is a gnu makefile target
-# libwfdmmsrc_proprietary depends on libwfdaac_vendor, which is a gnu makefile target
 
 # ACDB
 vendor/etc/acdbdata/Forte/Forte_acdb_cal.acdb
@@ -2118,7 +2117,7 @@ vendor/lib64/libwfdhdcpcp.so|d29c24634de69db4e154e85720461635b3bc9faf
 vendor/lib64/libwfdhdcpservice_proprietary.so|866b96e52ac461fdd7571dc8ceb4bbec4eca2bd6
 vendor/lib64/libwfdmminterface_proprietary.so|1cef273ae9091cfe2c3e8964b31528caa749c1de
 vendor/lib64/libwfdmmservice_proprietary.so|9d88cf6f180d6d2f05b310103e29a9f3a422e64e
-vendor/lib64/libwfdmmsrc_proprietary.so;DISABLE_CHECKELF|a17e86c32a954facc7e002f6cd806cf914accef9
+vendor/lib64/libwfdmmsrc_proprietary.so|a17e86c32a954facc7e002f6cd806cf914accef9
 vendor/lib64/libwfdmodulehdcpsession.so|cb37841fda4a0f7f59b08aca7debdecb4af74d87
 vendor/lib64/libwfdrtsp_vendor.so|9ce8504106f9a0aa2cd84e4cb8229524aea08c45
 vendor/lib64/libwfdsessionmodule.so|016b48e4c92efc2e4f0d5665bf2194c1048559e7
