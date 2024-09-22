@@ -4,14 +4,8 @@
 # audio.primary.taro depends on vendor.qti.hardware.pal@1.0-impl, which is a gnu makefile target
 # libar-pal depends on libagmclient, which is a gnu makefile target
 # libawcal depends on libagmmixer, which is a gnu makefile target
-# libTrueSight depends oddly on libnativewindow leading to unresolved symbols
-# libalLDC depends oddly on libnativewindow leading to unresolved symbols
-# libalhLDC depends oddly on libnativewindow leading to unresolved symbols
-# libmorpho_ubwc depends on NDK libnativewindow and build is unable to resolve its symbols
-# qms depends on libwpa_client, which is a gnu makefile target
-# libcne depends on libwpa_client, which is a gnu makefile target
-# libmasc depends on libwpa_client, which is a gnu makefile target
-# lowi-server depends on libwpa_client, which is a gnu makefile target
+# libTrueSight, libalLDC, libalhLDC, libmorpho_ubwc depend on libnativewindow leading to unresolved symbols
+# qms, libcne, libmasc, lowi-server depend on libwpa_client, which is a gnu makefile target
 # libqc2audio_hwaudiocodec depends on libpalclient, which is a gnu makefile target
 
 # ACDB
