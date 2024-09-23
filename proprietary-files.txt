@@ -1145,7 +1145,6 @@ vendor/etc/display/qdcm_calib_data_xiaomi_36_02_0a_video_mode_dsc_dsi_panel.json
 vendor/etc/display/qdcm_calib_data_xiaomi_36_0d_0b_video_mode_dsc_dsi_panel.json
 vendor/etc/mdss_dsi_m16t_36_02_0a_dsc_vid_mi.xml
 vendor/etc/mdss_dsi_m16t_36_0d_0b_dsc_vid_mi.xml
-vendor/lib64/libdisplayconfig.qti.so
 
 # Display HDR - from ingot-user 14 UKQ1.240227.155 155 release-keys
 vendor/lib64/libgame_enhance.so|4432e47d990e98edb141becc345a92d03df26bf4
