@@ -79,10 +79,6 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             "${PATCHELF_0_17_2}" --replace-needed "libgrpc++_unsecure.so" "libgrpc++_unsecure_prebuilt.so" "${2}"
             ;;
-        vendor/etc/media_codecs_c2_audio.xml)
-            [ "$2" = "" ] && return 0
-            sed -i '/media_codecs_dolby_audio/d' "${2}"
-            ;;
         vendor/etc/media_codecs_ukee.xml)
             [ "$2" = "" ] && return 0
             sed -i -E '/media_codecs_(google_audio|google_c2|google_telephony|vendor_audio)/d' "${2}"
