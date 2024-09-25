@@ -99,10 +99,6 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             sed -i '/persist.vendor.radio.redir_party_num/ s/true/false/g' "${2}"
             ;;
-        vendor/etc/vintf/manifest/c2_manifest_vendor.xml)
-            [ "$2" = "" ] && return 0
-            sed -i '/dolby/d' "${2}"
-            ;;
         vendor/lib64/hw/audio.primary.taro-marble.so)
             [ "$2" = "" ] && return 0
             "${PATCHELF_0_17_2}" --set-soname "audio.primary.taro-marble.so" "${2}"
