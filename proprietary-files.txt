@@ -170,6 +170,7 @@ vendor/firmware/aw882xx_acf.bin
 
 # Audio soundfx - from diting V816.0.7.0.ULFMIXM
 vendor/lib64/soundfx/libasphere.so|5b70a2ecfd6c72a993420191618aa71a5f814012
+vendor/lib64/soundfx/libmisoundfx.so|901c2065fa3169c56cad3afc808ca9ec4a3c6da8
 vendor/lib64/soundfx/libshoebox.so|5803ec39c6237cb60093f996056c4790a19eb26a
 
 # Batterysecret
