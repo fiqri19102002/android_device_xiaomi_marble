@@ -1277,7 +1277,6 @@ vendor/lib64/vendor.qti.esepowermanager@1.0.so|43976dd1464980a3d24601f1d69b7772e
 vendor/lib64/vendor.qti.esepowermanager@1.1.so|dd862aa3e89812fe9b54f27e61f1280ba6046495
 
 # Fingerprint
-odm/lib64/vendor.xiaomi.hardware.fx.tunnel@1.0.so
 vendor/lib64/hw/fingerprint.fpc.so:vendor/lib64/hw/fingerprint.fpc.default.so
 vendor/lib64/hw/fingerprint.goodix.so:vendor/lib64/hw/fingerprint.goodix.default.so
 vendor/lib64/libgf_ca.so
