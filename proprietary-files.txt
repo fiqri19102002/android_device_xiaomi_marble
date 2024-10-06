@@ -1548,6 +1548,7 @@ vendor/lib64/vendor.qti.hardware.qccvndhal@1.0.so;MODULE_SUFFIX=-vendor|bfddf0a2
 
 # QCOM system daemon - from diting V816.0.7.0.ULFMIXM
 vendor/bin/qcom-system-daemon|a4c809595f4172737eab6c1b37dee7a1b1ff84d6
+vendor/etc/seccomp_policy/qti-systemd.policy|e110e277d9e334544bff92d2906c1ce556bdaaab
 vendor/lib64/libsubsystem_control.so|f6e9a4f42d5ec0cda62a922b98e2711b7aeb6615
 
 # QCV - from diting V816.0.7.0.ULFMIXM
@@ -1564,7 +1565,6 @@ vendor/bin/qrtr-ns|4b9fceed9988a14fc95a5681e697eb20026c4e8d
 vendor/etc/init/qmipriod.debug.rc|94d421875f35fdcb170070f20a221466ad87f97e
 vendor/etc/init/qmipriod.rc|94500dd5dc514fbb506ad8259a69ca57f4db72d6
 vendor/etc/sec_config|38ed44170badad7ae9a05f53223e1addf8780083
-vendor/etc/seccomp_policy/qti-systemd.policy|e110e277d9e334544bff92d2906c1ce556bdaaab
 vendor/lib64/libdiag.so|a961c05850131b6957e5ddb81748c4bcd521add8
 vendor/lib64/libdsi_netctrl.so|4956e24fec50c3f7004177cecacd761da693ae21
 vendor/lib64/libdsutils.so|eeeb1a6d8c4be7f3cfe239fb3470f5fea0dbd916
