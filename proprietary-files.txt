@@ -1430,9 +1430,7 @@ vendor/etc/media_codecs_performance_ukee.xml|995796ff5026ad54e9591e9c88b99b95d23
 vendor/etc/media_codecs_ukee.xml|d9673afaa68015f0078d61df70c06b6b218f9b64
 vendor/etc/media_profiles_ukee.xml|19060660b7111f6cb1b07cd390c894dc9610fa57
 vendor/etc/media_ukee/video_system_specs.json|1a39bd79cec43df61a85f6edbaee322dc067970c
-vendor/etc/seccomp_policy/c2audio.vendor.base-arm.policy|2887b6fed220462b413322547603ccf064175ba2
 vendor/etc/seccomp_policy/c2audio.vendor.base-arm64.policy|e708b49cbf3879a0b4ccd8d941a46c68b9408d82
-vendor/etc/seccomp_policy/c2audio.vendor.ext-arm.policy|bb5454a7265bb9a17349c7e254412916b774ea7a
 vendor/etc/seccomp_policy/c2audio.vendor.ext-arm64.policy|bb5454a7265bb9a17349c7e254412916b774ea7a
 vendor/etc/seccomp_policy/codec2.vendor.base-arm64.policy|1bd2621778d771207bdb1ad5ae902966fe3de683
 vendor/etc/seccomp_policy/codec2.vendor.ext-arm64.policy|a134d3d5d74294ca8164056b42389b1c7dbb2b65
