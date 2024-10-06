@@ -1497,7 +1497,6 @@ vendor/etc/perf/targetconfig.xml|4593af0355cb75b8d2d22470519a8d3f0ec08d35
 vendor/etc/perf/targetresourceconfigs.xml|a4af23c017066bd6ce5537ae811d752fe9d13bf2
 vendor/etc/perf/targetsysnodesconfigs.xml|b9f5e7ba51efa170adb0ddfebd6eecc6b90b5b56
 vendor/etc/perf/thermal-boost.conf|4f9066063cca8dc086a2a5cbeb6da242507ee848
-vendor/etc/seccomp_policy/qapeservice.policy|86c021645d8d1606564ad3498077b4666823ebb4
 vendor/etc/vintf/manifest/vendor.qti.hardware.perf.xml|3cf294c1718f2c4e2ae99345043027b6279b3de1
 vendor/lib64/libperfconfig.so|7fa09b3eab7861d5bb8c0db600d5c5a914b83f8c
 vendor/lib64/libperfgluelayer.so|d68422f4f0b3367d306a46f4b5c990843130cc52
