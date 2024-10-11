@@ -95,6 +95,10 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             sed -i 's/=\([0-9]\+\)>/="\1">/g' "${2}"
             ;;
+        vendor/etc/sensors/hals.conf)
+            [ "$2" = "" ] && return 0
+            sed -i '$s/$/\nsensors.xiaomi.v2.so/' "${2}"
+            ;;
         vendor/etc/vintf/manifest/c2_manifest_vendor.xml)
             [ "$2" = "" ] && return 0
             sed -i '/dolby/d' "${2}"
