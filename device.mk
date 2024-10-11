@@ -229,7 +229,8 @@ PRODUCT_PACKAGES += \
 SPAMMY_LOG_TAGS := \
     libsensor-ssccalapi \
     sensors-hal \
-    sensors
+    sensors \
+    SensorService
 
 ifneq ($(TARGET_BUILD_VARIANT),eng)
 PRODUCT_VENDOR_PROPERTIES += \
