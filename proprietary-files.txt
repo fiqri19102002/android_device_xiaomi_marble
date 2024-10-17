@@ -147,7 +147,7 @@ vendor/lib64/libxlog.so|d0914183eb15708d151669b4f6c80f77b05936c5
 vendor/lib64/vendor.qti.hardware.AGMIPC@1.0-impl.so|7655e11af91c974917a47aa1f8bf277b5ac1e54c
 
 # Audio (specific)
-vendor/lib64/hw/audio.primary.taro.so:vendor/lib64/hw/audio.primary.taro-marble.so;DISABLE_CHECKELF;FIX_SONAME
+vendor/lib64/hw/audio.primary.taro.so;DISABLE_CHECKELF
 vendor/lib64/libagm.so
 vendor/lib64/libar-pal.so;DISABLE_CHECKELF
 vendor/lib64/libawcal.so;DISABLE_CHECKELF

@@ -111,10 +111,6 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             "${PATCHELF}" --replace-needed "vendor.qti.hardware.display.config-V2-ndk_platform.so" "vendor.qti.hardware.display.config-V2-ndk.so" "${2}"
             ;;
-        vendor/lib64/libkaraokepal.so)
-            [ "$2" = "" ] && return 0
-            "${PATCHELF}" --replace-needed "audio.primary.taro.so" "audio.primary.taro-marble.so" "${2}"
-            ;;
         *)
             return 1
             ;;

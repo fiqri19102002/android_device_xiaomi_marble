@@ -12,7 +12,6 @@ persist.vendor.audio.misoundasc=false
 ro.af.client_heap_size_kbyte=7168
 ro.audio.flinger_standbytime_ms=2000
 ro.audio.monitorRotation=true
-ro.hardware.audio.primary=taro-marble
 ro.vendor.audio.camera.loopback.support=true
 ro.vendor.audio.feature.spatial=7
 ro.vendor.audio.gain.support=true
