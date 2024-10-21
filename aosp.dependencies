@@ -1,5 +1,9 @@
 [
   {
+    "repository": "android_device_xiaomi_miuicamera-marble",
+    "target_path": "device/xiaomi/miuicamera-marble"
+  },
+  {
     "repository": "android_kernel_xiaomi_marble",
     "target_path": "kernel/xiaomi/marble"
   },
