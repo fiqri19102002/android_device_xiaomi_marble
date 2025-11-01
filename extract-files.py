@@ -18,14 +18,13 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
-    'device/xiaomi/sm8450-common',
+    'device/xiaomi/marble',
     'hardware/qcom-caf/sm8450',
     'hardware/qcom-caf/wlan',
     'hardware/xiaomi',
     'vendor/qcom/opensource/commonsys/display',
     'vendor/qcom/opensource/commonsys-intf/display',
     'vendor/qcom/opensource/dataservices',
-    'vendor/xiaomi/sm8450-common',
 ]
 
 
@@ -118,7 +117,6 @@ blob_fixups: blob_fixups_user_type = {
 
 module = ExtractUtilsModule(
     'marble',
-    'sm8450-common',
     'xiaomi',
     blob_fixups=blob_fixups,
     lib_fixups=lib_fixups,
