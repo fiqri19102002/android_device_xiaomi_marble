@@ -1323,8 +1323,6 @@ vendor/lib64/libllvm-qcom.so|210fdef3513ca2dc022e54b50779c0024a6c6730
 vendor/lib64/libllvm-qgl.so|c455e81c3e9a08c8f667416b3e700ddd65c8ab71
 
 # Graphics (Adreno firmware) - from diting OS2.0.204.0.VLFMIXM
-vendor/firmware/a660_sqe.fw|6957cb1081948943d894b7420f96b5e7e0d0768c
-vendor/firmware/a662_gmu.bin|250d057d3fc382a6ef944b52e784e0c586387171
 vendor/firmware/a730_sqe.fw|8302565a0e61eec583ef25dfc5f42aff11b6be21
 vendor/firmware/gmu_gen70000.bin|1ac8d9dd3d405f84c915a4562ff72d244e10bcbd
 
