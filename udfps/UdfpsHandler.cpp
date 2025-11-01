@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#define LOG_TAG "UdfpsHandler.xiaomi_sm8450"
+#define LOG_TAG "UdfpsHandler.marble"
 
 #include <aidl/android/hardware/biometrics/fingerprint/BnFingerprint.h>
 #include <android-base/logging.h>
@@ -79,7 +79,7 @@ struct disp_base displayBasePrimary = {
 
 }  // anonymous namespace
 
-class XiaomiSm8450UdfpsHandler : public UdfpsHandler {
+class MarbleUdfpsHandler : public UdfpsHandler {
   public:
     void init(fingerprint_device_t* device) {
         mDevice = device;
@@ -217,7 +217,7 @@ class XiaomiSm8450UdfpsHandler : public UdfpsHandler {
 };
 
 static UdfpsHandler* create() {
-    return new XiaomiSm8450UdfpsHandler();
+    return new MarbleUdfpsHandler();
 }
 
 static void destroy(UdfpsHandler* handler) {

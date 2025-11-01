@@ -206,7 +206,7 @@ DEVICE_MANIFEST_SKUS := taro diwali cape ukee
 $(foreach sku, $(call to-upper, $(DEVICE_MANIFEST_SKUS)), \
     $(eval DEVICE_MANIFEST_$(sku)_FILES := \
         $(DEVICE_PATH)/vintf/manifest.xml \
-        $(DEVICE_PATH)/vintf/manifest_xiaomi.xml \
+        $(DEVICE_PATH)/vintf/manifest_marble.xml \
         $(if $(TARGET_NFC_SUPPORTED_SKUS),$(DEVICE_PATH)/vintf/manifest_no_nfc.xml,) \
     ))
 

@@ -5,7 +5,7 @@
 //
 
 cc_library_headers {
-    name: "xiaomi_sm8450_sensor_notifier_headers",
+    name: "marble_sensor_notifier_headers",
     export_include_dirs: ["include"],
     vendor: true,
 }
@@ -33,7 +33,7 @@ cc_binary {
         "android.frameworks.sensorservice@1.0",
     ],
 
-    whole_static_libs: select(soong_config_variable("xiaomi_sm8450_sensor_notifier", "extension_lib"), {
+    whole_static_libs: select(soong_config_variable("marble_sensor_notifier", "extension_lib"), {
         any @ extension_lib: [
             extension_lib,
         ],
@@ -44,7 +44,7 @@ cc_binary {
 
     header_libs: [
         "generated_kernel_headers",
-        "xiaomi_sm8450_sensor_notifier_headers",
+        "marble_sensor_notifier_headers",
     ],
 }
 
@@ -61,6 +61,6 @@ cc_library_static {
     ],
 
     header_libs: [
-        "xiaomi_sm8450_sensor_notifier_headers",
+        "marble_sensor_notifier_headers",
     ],
 }
