@@ -62,7 +62,6 @@ void NonUiNotifier::notify() {
 
     // Enable states of touchscreen sensors
     const std::vector<const char*> paths = {
-            "/sys/class/touch/touch_dev/fod_longpress_gesture_enabled",
             "/sys/class/touch/touch_dev/gesture_single_tap_enabled",
             "/sys/class/touch/touch_dev/gesture_double_tap_enabled"};
 
