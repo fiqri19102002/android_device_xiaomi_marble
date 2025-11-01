@@ -21,6 +21,7 @@ cc_binary {
         "notifiers/AodNotifier.cpp",
         "notifiers/LightNotifier.cpp",
         "notifiers/NonUiNotifier.cpp",
+        "notifiers/RawLightNotifier.cpp",
         "SensorNotifier.cpp",
         "utils/SensorNotifierUtils.cpp",
         "utils/SscCalApiWrapper.cpp",

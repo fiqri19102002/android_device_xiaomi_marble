@@ -235,9 +235,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.keystore.app_attest_key.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.keystore.app_attest_key.xml
 
-# Light
-$(call soong_config_set,marble_sensor_notifier,extension_lib,//device/xiaomi/marble:libsensor-notifier-ext-light)
-
 # Lineage Health
 PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
