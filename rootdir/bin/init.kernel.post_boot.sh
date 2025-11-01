@@ -165,14 +165,6 @@ if [ -f /sys/devices/soc0/chip_family ]; then
 fi
 
 case "$chipfamily" in
-    "0x74")
-	/vendor/bin/sh /vendor/bin/init.kernel.post_boot-taro.sh
-	;;
-
-    "0x7B"|"0x7b")
-	/vendor/bin/sh /vendor/bin/init.kernel.post_boot-diwali.sh
-	;;
-
     "0x82")
 	/vendor/bin/sh /vendor/bin/init.kernel.post_boot-cape.sh
 	;;
