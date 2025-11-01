@@ -217,9 +217,6 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
 DEVICE_FRAMEWORK_MANIFEST_FILE += $(DEVICE_PATH)/vintf/framework_manifest.xml
 
 # Verified Boot
-ifeq ($(VENDOR_SECURITY_PATCH),)
-$(error "VENDOR_SECURITY_PATCH must be set for vbmeta rollback index")
-endif
 BOARD_AVB_ENABLE := true
 BOARD_AVB_ALGORITHM := SHA256_RSA2048
 BOARD_AVB_KEY_PATH := external/avb/test/data/testkey_rsa2048.pem
