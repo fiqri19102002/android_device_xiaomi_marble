@@ -19,7 +19,6 @@ cc_binary {
     srcs: [
         "main.cpp",
         "notifiers/AodNotifier.cpp",
-        "notifiers/LightNotifier.cpp",
         "notifiers/NonUiNotifier.cpp",
         "notifiers/RawLightNotifier.cpp",
         "SensorNotifier.cpp",
@@ -34,34 +33,8 @@ cc_binary {
         "android.frameworks.sensorservice@1.0",
     ],
 
-    whole_static_libs: select(soong_config_variable("marble_sensor_notifier", "extension_lib"), {
-        any @ extension_lib: [
-            extension_lib,
-        ],
-        default: [
-            "libsensor-notifier-ext",
-        ],
-    }),
-
     header_libs: [
         "generated_kernel_headers",
-        "marble_sensor_notifier_headers",
-    ],
-}
-
-cc_library_static {
-    name: "libsensor-notifier-ext",
-    vendor: true,
-
-    srcs: [
-        "SensorNotifierExt.cpp",
-    ],
-
-    shared_libs: [
-        "android.frameworks.sensorservice@1.0",
-    ],
-
-    header_libs: [
         "marble_sensor_notifier_headers",
     ],
 }

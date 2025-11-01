@@ -9,10 +9,8 @@
 #include <android-base/logging.h>
 #include <android-base/properties.h>
 
-#include "SensorNotifierExt.h"
 #include "SscCalApi.h"
 #include "notifiers/AodNotifier.h"
-#include "notifiers/LightNotifier.h"
 #include "notifiers/NonUiNotifier.h"
 #include "notifiers/RawLightNotifier.h"
 
@@ -28,16 +26,9 @@ int main() {
 
     std::vector<std::unique_ptr<SensorNotifier>> notifiers;
     notifiers.push_back(std::make_unique<AodNotifier>(manager));
-    notifiers.push_back(std::make_unique<LightNotifier>(manager));
     notifiers.push_back(std::make_unique<NonUiNotifier>(manager));
     notifiers.push_back(std::make_unique<RawLightNotifier>(manager));
     for (const auto& notifier : notifiers) {
-        notifier->activate();
-    }
-
-    std::unique_ptr<SensorNotifierExt> sensorNotifierExt =
-            std::make_unique<SensorNotifierExt>(manager);
-    for (const auto& notifier : sensorNotifierExt->mNotifiers) {
         notifier->activate();
     }
 
