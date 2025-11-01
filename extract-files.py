@@ -69,14 +69,7 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed(
             'libgrpc++_unsecure.so', 'libgrpc++_unsecure_prebuilt.so'
         ),
-    (
-       'vendor/etc/media_codecs_cape.xml',
-       'vendor/etc/media_codecs_diwali_v0.xml',
-       'vendor/etc/media_codecs_diwali_v1.xml',
-       'vendor/etc/media_codecs_diwali_v2.xml',
-       'vendor/etc/media_codecs_taro.xml',
-       'vendor/etc/media_codecs_ukee.xml',
-    ): blob_fixup()
+    'vendor/etc/media_codecs_ukee.xml': blob_fixup()
         .regex_replace('.+media_codecs_(google_audio|google_c2|google_telephony|vendor_audio).+\n', ''),
     (
         'vendor/etc/camera/marble_enhance_motiontuning.xml',
