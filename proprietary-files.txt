@@ -1816,7 +1816,7 @@ vendor/lib64/sensors.ssc.so|d57c32f3e5de86effb2c71170254649b2344a88d
 vendor/lib64/sensors.touch.detect.so|5f4ec3b282ae19520ae56ef1fc8f44e8c04124d2
 vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so|3d32f0a0a49661d1ff34925b6815a3e040d5269e
 
-# Sensors
+# Sensors configs
 vendor/etc/sensors/config/lightSensorConfig.json
 vendor/etc/sensors/config/lsm6dso_0.json
 vendor/etc/sensors/config/qmc6308_0.json
