@@ -1416,8 +1416,8 @@ vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mlipay.xml|27aaea2ab58
 vendor/lib64/libmlipay.so|254d4ef0ceccde3cccb240a0bfa83a299adf910b
 vendor/lib64/libmlipay@1.1.so|455d0f600de7aa7795d7c1e460df7e92f32bea7c
 
-# Native public libraries - from diting OS2.0.204.0.VLFMIXM
-vendor/etc/public.libraries.txt|42abb3c8aa45f8cd1ff98e8d7e080cdf8ab52e64
+# Native public libraries
+vendor/etc/public.libraries.txt
 
 # NFC - from diting OS2.0.204.0.VLFMIXM
 vendor/lib64/libsn100u_fw.so|3f2e06db925881ef846e93b39d2d5563ad8e0995
