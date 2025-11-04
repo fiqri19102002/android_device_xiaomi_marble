@@ -84,6 +84,7 @@ TARGET_KERNEL_CONFIG := \
     gki_defconfig \
     vendor/waipio_GKI.config \
     vendor/marble_GKI.config \
+    vendor/custom.config \
     vendor/debugfs.config
 
 BOARD_BOOT_HEADER_VERSION := 4
