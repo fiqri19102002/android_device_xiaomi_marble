@@ -286,7 +286,6 @@ PRODUCT_PACKAGES += \
     WifiResCommon
 
 PRODUCT_PACKAGES += \
-    ApertureResMarble \
     FrameworksResMarble \
     NfcResMarble \
     SettingsProviderResMarble \
