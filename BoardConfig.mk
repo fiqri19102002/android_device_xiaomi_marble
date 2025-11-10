@@ -88,7 +88,7 @@ BOARD_VENDOR_RAMDISK_FRAGMENT.dlkm.KERNEL_MODULE_DIRS := top
 
 BOARD_KERNEL_CMDLINE := \
     disable_dma32=on \
-    mtdoops.fingerprint=$(LINEAGE_VERSION)
+    mtdoops.fingerprint=$(CUSTOM_VERSION)
 BOARD_BOOTCONFIG := \
     androidboot.hardware=qcom \
     androidboot.load_modules_parallel=true \
@@ -156,8 +156,6 @@ TARGET_COPY_OUT_PRODUCT := product
 TARGET_COPY_OUT_SYSTEM_EXT := system_ext
 TARGET_COPY_OUT_VENDOR := vendor
 TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
-
--include vendor/lineage/config/BoardConfigReservedSize.mk
 
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
