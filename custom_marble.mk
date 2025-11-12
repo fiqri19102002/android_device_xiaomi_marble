@@ -10,6 +10,8 @@ $(call inherit-product, device/xiaomi/marble/device.mk)
 # Inherit from common PixelOS configuration
 $(call inherit-product, vendor/custom/config/common_full_phone.mk)
 
+TARGET_SCREEN_WIDTH := 1080
+
 PRODUCT_NAME := custom_marble
 PRODUCT_DEVICE := marble
 PRODUCT_MANUFACTURER := Xiaomi
