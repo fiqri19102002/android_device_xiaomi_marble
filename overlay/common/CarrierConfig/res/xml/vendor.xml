@@ -50,6 +50,7 @@
         <boolean name="carrier_call_progress_notification" value="true" />
         <boolean name="dtmf_type_enabled_bool" value="true" />
         <boolean name="csp_enabled_bool" value="true" />
+        <boolean name="show_4g_for_lte_data_icon_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="001" mnc="01">
         <boolean name="carrier_volte_available_bool" value="true" />
