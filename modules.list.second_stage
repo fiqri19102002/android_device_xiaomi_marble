@@ -131,7 +131,7 @@ goodix_core.ko
 pm8941-pwrkey.ko
 qcom-hv-haptics.ko
 fpc1540.ko
-goodix_tee.ko
+goodix_3626.ko
 i2c-msm-geni.ko
 i3c-master-msm-geni.ko
 ir-spi.ko
