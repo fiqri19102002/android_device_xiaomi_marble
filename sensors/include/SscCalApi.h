@@ -8,13 +8,9 @@
 
 #include <cstdint>
 
-enum notify_t {
-    REPORT_VALUE = 201,
-};
-
 struct _oem_msg {
     uint32_t sensorType;
-    notify_t notifyType;
+    uint32_t notifyType;
     float unknown1;
     float unknown2;
     float notifyTypeFloat;
