@@ -964,6 +964,7 @@ vendor/lib64/libcne.so|30d348c46ef49c2e6faaf39b017de5a3bb1fce87
 vendor/lib64/libcneapiclient.so|b8c8e6246e137d9913dc110a4f98364a016ef27f
 vendor/lib64/libcneoplookup.so|3d9063a312fb7de4da55953524b04a4a6d7d6314
 vendor/lib64/libcneqmiutils.so|6a4e4a7057322ae2e40798c9ddcf74620a1df69b
+vendor/lib64/libjnihelper.so|99811892298082b87acb70ea7f9f4e14dc97a665
 vendor/lib64/libmasc.so|89a95f02105380d2948ae941951cf1859cbb9b7e
 vendor/lib64/libshsc.so|17fa09e1975e7a6a118be4765390677676d0c415
 vendor/lib64/libwms.so|3c14a50d6a3944276cfdc0b1b97d7191016a210a
