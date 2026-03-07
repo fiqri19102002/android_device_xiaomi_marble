@@ -120,6 +120,7 @@ on property:vendor.display.lcd_density=640
    setprop dalvik.vm.heapgrowthlimit 512m
 
 on charger
+    restart vendor.charger
     start vendor.power_off_alarm
     write /sys/kernel/cnss/charger_mode 1
 
