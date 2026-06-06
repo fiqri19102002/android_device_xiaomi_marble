@@ -71,7 +71,6 @@ BOARD_VENDOR_RAMDISK_FRAGMENTS := dlkm
 BOARD_VENDOR_RAMDISK_FRAGMENT.dlkm.KERNEL_MODULE_DIRS := top
 
 BOARD_KERNEL_CMDLINE := \
-    disable_dma32=on \
     mtdoops.fingerprint=$(LINEAGE_VERSION) \
     scsi_mod.scan=sync
 BOARD_BOOTCONFIG := \
