@@ -1435,7 +1435,6 @@ vendor/etc/perf/commonresourceconfigs.xml|73d730597e56234a75f47942e02f8cc2f08015
 vendor/etc/perf/commonsysnodesconfigs.xml|31e331d17ce07f265c36c085fc10b640343ab34c
 vendor/etc/perf/perfboostsconfig.xml|68d8c776b784acf1204db0f1bb7db6cf99cac175
 vendor/etc/perf/perfboostselection.xml|56bf854c9208040bac54850c2c6701042aea2687
-vendor/etc/perf/perfconfigstore.xml|8267acbf988d1b85dba1ee6dc10f34e5f16daaf4
 vendor/etc/perf/targetconfig.xml|4593af0355cb75b8d2d22470519a8d3f0ec08d35
 vendor/etc/perf/targetresourceconfigs.xml|a4af23c017066bd6ce5537ae811d752fe9d13bf2
 vendor/etc/perf/targetsysnodesconfigs.xml|b9f5e7ba51efa170adb0ddfebd6eecc6b90b5b56
