@@ -1431,7 +1431,6 @@ vendor/etc/libnfc-nxp_RF.conf:vendor/libnfc-nxp_RF.conf
 # Perf - from diting OS3.0.5.0.VLFMIXM
 vendor/bin/hw/vendor.qti.hardware.perf-hal-service|a7de0c554f750af6fa4fe9dadf7404d327697b92
 vendor/etc/init/vendor.qti.hardware.perf-hal-service.rc|3a399b83162e776f9737cb14a6ef4020c63a0204
-vendor/etc/perf/avcsysnodesconfigs.xml|086837aca168c81ace587d612ba0787c1d4e7dac
 vendor/etc/perf/commonresourceconfigs.xml|73d730597e56234a75f47942e02f8cc2f0801548
 vendor/etc/perf/commonsysnodesconfigs.xml|31e331d17ce07f265c36c085fc10b640343ab34c
 vendor/etc/perf/perfboostsconfig.xml|68d8c776b784acf1204db0f1bb7db6cf99cac175
