@@ -1939,10 +1939,6 @@ vendor/firmware/3_thud_P_RTP.bin:vendor/etc/vibrator/effect_3.bin
 vendor/firmware/4_pop_P_RTP.bin:vendor/etc/vibrator/effect_4.bin
 vendor/firmware/5_heavyClick_P_RTP.bin:vendor/etc/vibrator/effect_5.bin
 
-# VM mem - from diting OS3.0.4.0.VLFMIXM
-vendor/lib/libvmmem.so|9eb500e56890ab2cca97371450e2a7775dd80c27
-vendor/lib64/libvmmem.so|cd1b80963d107b0a9ddfb0a08de266621b5a7154
-
 # VPP - from diting OS3.0.4.0.VLFMIXM
 vendor/bin/hw/qconfigservice|4971374c14068304d06f27a2d50ba7b414433d1e
 vendor/bin/vppservice|1300c91f158d721ef93f35de6766f41870a1cfff
