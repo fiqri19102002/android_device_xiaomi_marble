@@ -17,6 +17,7 @@ AB_OTA_PARTITIONS += \
     product \
     recovery \
     system \
+    system_dlkm \
     system_ext \
     vbmeta \
     vbmeta_system \
@@ -73,8 +74,7 @@ TARGET_KERNEL_SOURCE := kernel/xiaomi/marble
 TARGET_KERNEL_CONFIG := \
     gki_defconfig \
     vendor/waipio_GKI.config \
-    vendor/marble_GKI.config \
-    vendor/debugfs.config
+    vendor/marble_GKI.config
 
 BOARD_BOOT_HEADER_VERSION := 4
 BOARD_MKBOOTIMG_ARGS := --header_version $(BOARD_BOOT_HEADER_VERSION)
@@ -108,22 +108,35 @@ BOARD_VENDOR_RAMDISK_KERNEL_MODULES_BLOCKLIST_FILE := $(BOARD_VENDOR_KERNEL_MODU
 TARGET_KERNEL_EXT_MODULE_ROOT := kernel/xiaomi/marble-modules
 TARGET_KERNEL_EXT_MODULES := \
 	qcom/opensource/mmrm-driver \
+	qcom/opensource/mm-drivers/hw_fence \
+	qcom/opensource/mm-drivers/msm_ext_display \
+	qcom/opensource/mm-drivers/sync_fence \
 	qcom/opensource/audio-kernel \
+	qcom/opensource/securemsm-kernel \
+	qcom/opensource/synx-kernel \
 	qcom/opensource/camera-kernel \
-	qcom/opensource/cvp-kernel \
+	qcom/opensource/data-kernel/drivers/smem-mailbox \
+	qcom/opensource/datarmnet-ext/mem \
 	qcom/opensource/dataipa/drivers/platform/msm \
 	qcom/opensource/datarmnet/core \
 	qcom/opensource/datarmnet-ext/aps \
 	qcom/opensource/datarmnet-ext/offload \
-	qcom/opensource/datarmnet-ext/shs \
 	qcom/opensource/datarmnet-ext/perf \
 	qcom/opensource/datarmnet-ext/perf_tether \
 	qcom/opensource/datarmnet-ext/sch \
+	qcom/opensource/datarmnet-ext/shs \
 	qcom/opensource/datarmnet-ext/wlan \
 	qcom/opensource/display-drivers/msm \
+	qcom/opensource/dsp-kernel \
 	qcom/opensource/eva-kernel \
+	qcom/opensource/graphics-kernel \
+	qcom/opensource/spu-kernel \
+	qcom/opensource/touch-drivers \
 	qcom/opensource/video-driver \
-	qcom/opensource/wlan/qcacld-3.0/.qca6490
+	qcom/opensource/wlan/platform \
+	qcom/opensource/wlan/qcacld-3.0/.qca6490 \
+	qcom/opensource/bt-kernel \
+	nxp/opensource/driver
 
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
@@ -137,18 +150,20 @@ BOARD_SUPER_PARTITION_SIZE := 9126805504 # 0x220000000
 BOARD_VENDOR_BOOTIMAGE_PARTITION_SIZE := 0x06000000
 
 BOARD_SUPER_PARTITION_GROUPS := qti_dynamic_partitions
-BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST := odm product system system_ext vendor vendor_dlkm
+BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST := odm product system system_dlkm system_ext vendor vendor_dlkm
 BOARD_QTI_DYNAMIC_PARTITIONS_SIZE := 9122611200 # 0x21FC00000 # BOARD_SUPER_PARTITION_SIZE - overhead (4MiB)
 
 BOARD_ODMIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_PRODUCTIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_SYSTEMIMAGE_FILE_SYSTEM_TYPE := ext4
+BOARD_SYSTEM_DLKMIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_SYSTEM_EXTIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_VENDOR_DLKMIMAGE_FILE_SYSTEM_TYPE := ext4
 
 TARGET_COPY_OUT_ODM := odm
 TARGET_COPY_OUT_PRODUCT := product
+TARGET_COPY_OUT_SYSTEM_DLKM := system_dlkm
 TARGET_COPY_OUT_SYSTEM_EXT := system_ext
 TARGET_COPY_OUT_VENDOR := vendor
 TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
@@ -216,7 +231,7 @@ BOARD_AVB_RECOVERY_KEY_PATH := external/avb/test/data/testkey_rsa2048.pem
 BOARD_AVB_RECOVERY_ALGORITHM := SHA256_RSA2048
 BOARD_AVB_RECOVERY_ROLLBACK_INDEX := 1
 BOARD_AVB_RECOVERY_ROLLBACK_INDEX_LOCATION := 1
-BOARD_AVB_VBMETA_SYSTEM := system system_ext product
+BOARD_AVB_VBMETA_SYSTEM := system system_dlkm system_ext product
 BOARD_AVB_VBMETA_SYSTEM_KEY_PATH := external/avb/test/data/testkey_rsa2048.pem
 BOARD_AVB_VBMETA_SYSTEM_ALGORITHM := SHA256_RSA2048
 BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX := $(shell date -d 'TZ="GMT" $(VENDOR_SECURITY_PATCH)' +%s)
