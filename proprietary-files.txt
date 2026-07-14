@@ -1161,7 +1161,7 @@ system_ext/etc/init/dpmd.rc|738b638ff04cda368e22c03e16baf90ba157a6fc
 system_ext/etc/init/tcmd.rc|3ce262333f63be15507f6be131056c56be2672c9
 system_ext/etc/permissions/com.qti.dpmframework.xml|c4b7ad0879d00c1eba4f3fe3a88ddb8aa153629a
 system_ext/etc/permissions/dpmapi.xml|255903759a60a31c0876ec004e74554c753270fe
-system_ext/etc/seccomp_policy/tcmd.policy|0737b1836c3f97a9d5ff43bdcb714f9db604e311
+system_ext/etc/seccomp_policy/tcmd.policy|0737b1836c3f97a9d5ff43bdcb714f9db604e311|dddb7aad8526c5c403268be92d5e81a3ebb0efa9
 system_ext/framework/com.qti.dpmframework.jar|9843c8769469a6d8e3ddcd0aab709bf77c57128e
 system_ext/framework/dpmapi.jar|504f269da33eae85b458dddcc99209f21506ce5c
 system_ext/lib64/com.qualcomm.qti.dpm.api@1.0.so|c829dd39d50769ffa52e0eafe722e5e1261aa5e8
