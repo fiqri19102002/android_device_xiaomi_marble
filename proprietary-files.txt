@@ -1200,6 +1200,9 @@ vendor/lib64/libspl.so|ea975dcabe9896a1827f0db2969ed9a257572849
 vendor/lib64/libssd.so|931512da26fdca5674975a250c6c5d2b7f1d1be8
 vendor/lib64/vendor.qti.hardware.qseecom@1.0.so|c8ea02b00e97627924cd27f6338390319d269136
 
+# DRM - from PDX257 ELBE-1.1.0-REL-260522-1202
+vendor/lib64/libminkdescriptor.so|29051d50c80caa4e97184a6a9b4beecbfec2d5a2
+
 # DSP service - from PDX257 ELBE-1.1.0-REL-260522-1202
 vendor/bin/dspservice|400c1e82a56552d60ec5cbc2f5f0950fcee516cf
 vendor/etc/init/vendor.qti.hardware.dsp-service.rc|8cf97beaec8309796cf3003aed6e52baa42cc8ba
@@ -1645,7 +1648,6 @@ vendor/lib64/libconfigdb.so|3069ce787b8cfef6dec02500c9b768bb49bf28be
 vendor/lib64/liblqe.so|25ff8338ca6f70ce3627d24046b7d1f5768b7da2
 vendor/lib64/libmdmdetect.so|e2d152c9d3ed4c04f7011daa6fa94179ddc68531
 vendor/lib64/libmdmimgload.so|ea09b6e2a536048d045ec5e84fd7064f69168fac
-vendor/lib64/libminkdescriptor.so|2f58330facb9fb09376fe8925c400b437823f0eb
 vendor/lib64/libnetmgr.so|e9eefbcf27b21ec2618c9c4027a8318ae8516b79
 vendor/lib64/libnetmgr_common.so|447b42cca62ccd4e438a7656f92369eb79035e10
 vendor/lib64/libnetmgr_datapath_proxy.so|39b80ac3f2cc05f9a6458ebde95c91e3ee0c31c1
