@@ -961,7 +961,6 @@ vendor/lib64/libcneoplookup.so|3d9063a312fb7de4da55953524b04a4a6d7d6314
 vendor/lib64/libcneqmiutils.so|6a4e4a7057322ae2e40798c9ddcf74620a1df69b
 vendor/lib64/libjnihelper.so|99811892298082b87acb70ea7f9f4e14dc97a665
 vendor/lib64/libmasc.so|89a95f02105380d2948ae941951cf1859cbb9b7e
-vendor/lib64/libshsc.so|17fa09e1975e7a6a118be4765390677676d0c415
 vendor/lib64/libwms.so|3c14a50d6a3944276cfdc0b1b97d7191016a210a
 vendor/lib64/libwqe.so|82dbd8f4e470f5c2a569ca0d33f0ae6cba37cdfa
 vendor/lib64/libxml.so|e458c9cf77adafa29ed9d4e7e1aea9f005d9dca7
@@ -1070,6 +1069,11 @@ vendor/firmware/evautil64.mdt
 vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service|a807136ded7a6450180a2221a59ae596a6f311f8
 vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc|4ede0250585a44b01d351bbc301d7a13cc3d783d
 vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so|bc171be67c06394beb760eb41290e137c63a0486
+
+# Data - from PDX257 ELBE-1.1.0-REL-260522-1202
+vendor/bin/shsusrd|ab22c3e3c0c0155064e1cb23df5c24952ce9b70a
+vendor/etc/init/shsusrd.rc|22ff980a8daaf62fd091485541a4c8c10fdeb4a9
+vendor/lib64/libshsc.so|4ab216b4ed1473da5e9f767adebdede85e01814e
 
 # Diag - from diting OS3.0.7.0.VLFMIXM
 system/lib64/vendor.qti.diaghal-V1-ndk.so|ac3381b74861e15a8fb2842dd8d929c97a5f0fa1
@@ -1567,7 +1571,6 @@ vendor/bin/qti|37510de17ed583908fd9a66cabd68f9956f1cd9d
 vendor/bin/qtigetprop|2237848e3c41ec66432602063ef0827e3efe21c0
 vendor/bin/qtisetprop|04ae58c224cfb641b0939b7b24582e66d79cbaac
 vendor/bin/rmt_storage|e68dd6fa55720ab6e65ebd956c0ae92b99796466
-vendor/bin/shsusrd|a5d6470406b85f622eda60e77108474ad1f905a6
 vendor/bin/ssgqmigd64|fd4d2b78484bdfdf579d3124798e3096539fc64a
 vendor/bin/ssgtzd|68d1cc4f0a53a1d953b8694153b73ca813c10476
 vendor/bin/tftp_server|d880cf176a160c81995f653626e118bc6d3edec7
@@ -1683,7 +1686,6 @@ vendor/lib64/libril-legacy.so|ff088532d84bbca1b31829173a0daee3f275a54d
 vendor/lib64/libril-qc-ltedirectdisc.so|b0236abf5fc18b6facd01bb603e09ee1ab1d1ed9
 vendor/lib64/libril-qc-radioconfig.so|0c813744ab9a5ee6017ee1f163b3d8d32b9db3e6
 vendor/lib64/librilqmimiscservices.so|8a8d17a01e31cb156f3fd514e95b92f6946f98a2
-vendor/lib64/libshsusr_verinfo.so|293b627792fad346b2de5cdd11c5847e8b2a44e8
 vendor/lib64/libsystem_health_mon.so|24378786d285b329d5570c09116061555d89cddf
 vendor/lib64/libxiaomi_qcril.so|a3efa57f8de7c05b7182aec7f98d48a539389ca7
 vendor/lib64/qcrilInterfaces.so|64fdba960b40f5e66e192c7f3f2a331256d97254
