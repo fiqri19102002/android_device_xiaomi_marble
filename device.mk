@@ -5,8 +5,7 @@
 #
 
 # Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-TARGET_SUPPORTS_OMX_SERVICE := false
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Add common definitions for Qualcomm
@@ -50,17 +49,17 @@ BOARD_SHIPPING_API_LEVEL := 31
 
 # Audio
 PRODUCT_PACKAGES += \
-    android.hardware.audio@7.0-impl:64 \
-    android.hardware.audio.effect@7.0-impl:64 \
+    android.hardware.audio@7.0-impl \
+    android.hardware.audio.effect@7.0-impl \
     android.hardware.audio.service \
-    android.hardware.soundtrigger@2.3-impl:64 \
+    android.hardware.soundtrigger@2.3-impl \
     vendor.qti.hardware.AGMIPC@1.0-service
 
 PRODUCT_PACKAGES += \
-    audio.bluetooth.default:64 \
+    audio.bluetooth.default \
     audio.primary.taro \
-    audio.r_submix.default:64 \
-    audio.usb.default:64 \
+    audio.r_submix.default \
+    audio.usb.default \
     sound_trigger.primary.taro
 
 PRODUCT_PACKAGES += \
@@ -82,8 +81,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     firmware_aw_cali.bin_symlink
-
-$(call soong_config_set, android_hardware_audio, run_64bit, true)
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_ukee/audio_effects.xml \
@@ -109,7 +106,7 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth.audio-impl:64
+    android.hardware.bluetooth.audio-impl
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.bluetooth.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth.xml \
@@ -164,14 +161,14 @@ PRODUCT_COPY_FILES += \
 
 # GPS
 PRODUCT_PACKAGES += \
-    android.hardware.gnss@2.1-impl-qti:64 \
-    android.hardware.gnss-aidl-impl-qti:64 \
+    android.hardware.gnss@2.1-impl-qti \
+    android.hardware.gnss-aidl-impl-qti \
     android.hardware.gnss-aidl-service-qti
 
 PRODUCT_PACKAGES += \
-    libbatching:64 \
-    libgeofencing:64 \
-    libgnss:64
+    libbatching \
+    libgeofencing \
+    libgnss
 
 PRODUCT_PACKAGES += \
     apdr.conf \
@@ -332,7 +329,7 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors-service.xiaomi-multihal
 
 PRODUCT_PACKAGES += \
-    sensors.xiaomi.v2:64
+    sensors.xiaomi.v2
 
 PRODUCT_PACKAGES += \
     sensor-notifier
@@ -474,7 +471,7 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
     hostapd \
     hostapd_cli \
-    libwifi-hal-qcom:64 \
+    libwifi-hal-qcom \
     wpa_cli \
     wpa_supplicant \
     wpa_supplicant.conf
