@@ -1280,48 +1280,47 @@ vendor/lib64/vendor.qti.gnss-V3-ndk.so|76c929bab907bb879b27bdcc876863071d10aa29
 vendor/lib64/vendor.qti.gnss-V5-ndk.so|4854ea8bf89c800f72ee9d7d25fc94c61d2bff4f
 vendor/lib64/vendor.qti.gnss-service.so|f27f0dbdd9f638ea9207ad05933b1c42e7e6a922
 
-# Graphics (Adreno) - from diting OS3.0.6.0.VLFMIXM
-vendor/app/com.qualcomm.qti.gpudrivers.taro.api31/com.qualcomm.qti.gpudrivers.taro.api31.apk|20bf32c315c24ba11bb370c83052a8ee3776865f
+# Graphics (Adreno) - from ingot-user 14 UKQ1.240227.165 release-keys
 vendor/gpu/kbc/sequence_manifest.bin|17e1f9149826ef478502c750bcf9352274097c80
 vendor/gpu/kbc/unified_kbcs_32.bin|aa7b4e916fb3fab8df7700deb458d0726a549482
 vendor/gpu/kbc/unified_kbcs_64.bin|bdfadc6b8e03d7da5b8d31b4f7688e7dba4b07ce
 vendor/gpu/kbc/unified_ksqs.bin|e3470ad9fc644aea9c02dee948bb210149408dda
-vendor/lib/egl/eglSubDriverAndroid.so|6b45e7997f1f75f849eefded19dcdd048af5e498
+vendor/lib/egl/eglSubDriverAndroid.so|01df99c47f0c1c10906c5d027bfbb47783a289cb
 vendor/lib/egl/libEGL_adreno.so;SYMLINK=vendor/lib/libEGL_adreno.so|26b43987d78516aa4b9e948960a7d9106c48e256
 vendor/lib/egl/libGLESv1_CM_adreno.so|eb02bf0adfe2c71a3f58c486e243b64ce7044f0c
-vendor/lib/egl/libGLESv2_adreno.so;SYMLINK=vendor/lib/libGLESv2_adreno.so|364d431bd8ca468dd87731f8913c60ab91b1e76b
-vendor/lib/egl/libVkLayer_ADRENO_qprofiler.so|08563691d73cae060147cf488cc626bd20d30ef5
+vendor/lib/egl/libGLESv2_adreno.so;SYMLINK=vendor/lib/libGLESv2_adreno.so|cfc8c9fb07b07549f4c48bab3c6e0642d8b5c3e4
+vendor/lib/egl/libVkLayer_ADRENO_qprofiler.so|12bc547436381e95a6a4ce00a9ff2d8a6a4b106a
 vendor/lib/egl/libq3dtools_adreno.so;SYMLINK=vendor/lib/libq3dtools_adreno.so|1dbbdf989236564dd6e7b9542ab2ffbd744b6e4c
-vendor/lib/egl/libq3dtools_esx.so|711bf0980af7f5596f87014a5ca71a1f360e59c2
-vendor/lib/libCB.so|681ca0cf1b5809a837001e2be4488b1ddc6c784b
+vendor/lib/egl/libq3dtools_esx.so|8b3dea25d053f1c356d96cebe5b2c98932688a55
+vendor/lib/libCB.so|82054c0c27cec52852211f22ddf62747e75baace
 vendor/lib/libOpenCL.so|801f25596929a2f1ba990759412fc937d7115ed1
-vendor/lib/libadreno_app_profiles.so|fa6dad907b23be9fc31e97be9fff988731bd08ba
-vendor/lib/libadreno_utils.so|8457d875a8658b1af632dac1c1a63586635095db
-vendor/lib/libgpudataproducer.so|94667c10e51109843bc6da2bc7845fcf3e24c56b
-vendor/lib/libgsl.so|081ec67072c88b00e8356b005ef9aa5fd3db6880
-vendor/lib/libkcl.so|c9025ad7fff856393f9e28367ce6a1e51b61eee0
-vendor/lib/libkernelmanager.so|d4752ac743de6a1726edf6dc4cc6d33661d67302
-vendor/lib/libllvm-glnext.so|b8935bd083dda364fc24fb877e392e0753ef6b07
-vendor/lib/libllvm-qcom.so|2f6857e33e80a275f3cd6f342347ef1571d74592
-vendor/lib/libllvm-qgl.so|0b344ee9026a2a33f4a6523532e69c4e8f878818
-vendor/lib64/egl/eglSubDriverAndroid.so|21a3366b1c72b557bb5183c32e10196f42ac658f
+vendor/lib/libadreno_app_profiles.so|632d4c7a753690bd22afbcf84e12a9ca3079b385
+vendor/lib/libadreno_utils.so|ee234c7e0834039c951ba8745b5b40b09efcf1fd
+vendor/lib/libgpudataproducer.so|42d4f325b52850dfa423979c88fcadba6f44ef16
+vendor/lib/libgsl.so|210e7c0a71a40f83978c15fef05a7238bcf8aa0f
+vendor/lib/libkcl.so|bc0d0b007689b40147c02d47a1d6ed24c517cf51
+vendor/lib/libkernelmanager.so|49a08ca7f31fa3f3959608c3f02525e80c765c4e
+vendor/lib/libllvm-glnext.so|327caddefea705bdef37f9d5e61f18832968a3e3
+vendor/lib/libllvm-qcom.so|c399e5b43613ce79cb066e91f7f2451726a09ae4
+vendor/lib/libllvm-qgl.so|00cd6afc3b759a8fb7a4657a12860aec273e094d
+vendor/lib64/egl/eglSubDriverAndroid.so|167c573149e046b23280cba9f778861f5f6a5a0c
 vendor/lib64/egl/libEGL_adreno.so;SYMLINK=vendor/lib64/libEGL_adreno.so|579730142b5d41bd890530861cb8efdeef4b83e9
 vendor/lib64/egl/libGLESv1_CM_adreno.so|29a64765d2b5d35261ec98ed68031d5699954307
-vendor/lib64/egl/libGLESv2_adreno.so;SYMLINK=vendor/lib64/libGLESv2_adreno.so|5d3275a61820cfa4416075c310e050d7f648376d
-vendor/lib64/egl/libVkLayer_ADRENO_qprofiler.so|d69e1f5b8d83ba1cab388e334f3bc23a1d17cb34
+vendor/lib64/egl/libGLESv2_adreno.so;SYMLINK=vendor/lib64/libGLESv2_adreno.so|72959bfb0103ceec93cf50742f68f7852c3e73c9
+vendor/lib64/egl/libVkLayer_ADRENO_qprofiler.so|8cabc64180cd040214cce0a7e56f2b9564546f47
 vendor/lib64/egl/libq3dtools_adreno.so;SYMLINK=vendor/lib64/libq3dtools_adreno.so|7b1bca9132cb906613aac175b2fa9cc3eda3a55f
-vendor/lib64/egl/libq3dtools_esx.so|a1828e7832df78e85a2169a29b7463137f25d19a
-vendor/lib64/libCB.so|d2b35f5ed331f58bcd7c308dcc1068163e794044
+vendor/lib64/egl/libq3dtools_esx.so|9d02514642d565007412a68321c02a5f1e4ffc8a
+vendor/lib64/libCB.so|4de816fc15ecab03fb37f0ba69a35effeef5a911
 vendor/lib64/libOpenCL.so|454b8aaada3a5c449ae90e2232eb761e743fda06
-vendor/lib64/libadreno_app_profiles.so|a538ddbc811072f7090dc2cbd8246afd64a79e92
-vendor/lib64/libadreno_utils.so|fcf178d697aedb91dbf067a7b4f5c82482a8cae3
-vendor/lib64/libgpudataproducer.so|bb781de839f333135593a2922855cb6a66554fd3
-vendor/lib64/libgsl.so|bad86144a8ab801af26a91c81770f88e4ad8f32a
-vendor/lib64/libkcl.so|a82211064a4f963a023b3d74694cf2026a314943
-vendor/lib64/libkernelmanager.so|a6984e71e452d58fd282b323d8ebcce771dea252
-vendor/lib64/libllvm-glnext.so|affaa021ab9f79d676cce5cca429c2d5c8301be8
+vendor/lib64/libadreno_app_profiles.so|17963b645b7dede58329875bb55e33e393810067
+vendor/lib64/libadreno_utils.so|92b91c6d2ddad887b6edd70cd9a7a7435cf4b211
+vendor/lib64/libgpudataproducer.so|f0f196b3fbbad871b009c79c85f3d4c369afed9b
+vendor/lib64/libgsl.so|bd5ecffcd8f01223f1c31078706599a72472b266
+vendor/lib64/libkcl.so|3fea6b981eae84506511a85a7aee7dd641c81ded
+vendor/lib64/libkernelmanager.so|b23807b755bff9adb34793ab71b78cf061772e64
+vendor/lib64/libllvm-glnext.so|a8ba67b4ea293652580db9f08e43e4e928985f03
 vendor/lib64/libllvm-qcom.so|210fdef3513ca2dc022e54b50779c0024a6c6730
-vendor/lib64/libllvm-qgl.so|dc95fedf38d99736467892ee40a3169914cd86d1
+vendor/lib64/libllvm-qgl.so|b6de0d3a492cf845aa12a0abb39089b815589c96
 
 # Graphics (Adreno firmware) - from diting OS3.0.6.0.VLFMIXM
 vendor/firmware/a730_sqe.fw|8302565a0e61eec583ef25dfc5f42aff11b6be21
@@ -1335,8 +1334,8 @@ vendor/firmware/a730_zap.elf
 vendor/firmware/a730_zap.mbn
 vendor/firmware/a730_zap.mdt
 
-# Graphics (Vulkan) - from diting OS3.0.6.0.VLFMIXM
-vendor/lib64/hw/vulkan.adreno.so|0b02ded45784a003a6df908122d1beabeaca6717
+# Graphics (Vulkan) - from ingot-user 14 UKQ1.240227.165 release-keys
+vendor/lib64/hw/vulkan.adreno.so|542ef720eb111db3066f6013706d7f6b61d1d894
 
 # Hotword Enrollment - from diting OS3.0.6.0.VLFMIXM
 product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND.apk|194bbcc27ebad3952294fc3617b2a23db92e767a
