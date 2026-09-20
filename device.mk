@@ -293,8 +293,7 @@ PRODUCT_PACKAGES += \
     WifiResMarbleCN
 
 PRODUCT_PACKAGES += \
-    FrameworksResTarget \
-    WifiResTarget_spf
+    FrameworksResTarget
 
 PRODUCT_PACKAGES += \
     FrameworksResXiaomi \
