@@ -1930,13 +1930,6 @@ vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so|56ef9cdf17aad71a8d666ffdf6
 # Trusted User Interface - from diting OS3.0.6.0.VLFMIXM
 vendor/lib64/libminksocket_vendor.so|beaa96c8d4e569abc7b31edf94c8b63566a3576e
 
-# Vibrator
-vendor/firmware/0_click_P_RTP.bin:vendor/etc/vibrator/effect_0.bin
-vendor/firmware/2_tick_P_RTP.bin:vendor/etc/vibrator/effect_2.bin
-vendor/firmware/3_thud_P_RTP.bin:vendor/etc/vibrator/effect_3.bin
-vendor/firmware/4_pop_P_RTP.bin:vendor/etc/vibrator/effect_4.bin
-vendor/firmware/5_heavyClick_P_RTP.bin:vendor/etc/vibrator/effect_5.bin
-
 # VPP - from diting OS3.0.6.0.VLFMIXM
 vendor/bin/hw/qconfigservice|4971374c14068304d06f27a2d50ba7b414433d1e
 vendor/bin/vppservice|1300c91f158d721ef93f35de6766f41870a1cfff
