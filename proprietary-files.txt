@@ -1352,8 +1352,8 @@ vendor/lib64/libqtikeymint.so|28514cdad1935be971f8dfb0fc6444d19ee26a69|3916f5b4f
 # Media - from diting OS3.0.6.0.VLFMIXM
 system_ext/lib64/libmmosal.so|638c669cf9603fc94217573f047e64675fafcc9e
 system_ext/lib64/libmmparser_lite.so|b544304421692c25220ac01957a73cfd9931d8e7
-vendor/bin/hw/vendor.qti.media.c2@1.0-service|a3a103902ba4d0d2a41f7e6d61798cf846cbcc0d
-vendor/bin/hw/vendor.qti.media.c2audio@1.0-service|a395d05f3004f2a5150dfd4510eed0c50d671974
+vendor/bin/hw/vendor.qti.media.c2@1.0-service|a3a103902ba4d0d2a41f7e6d61798cf846cbcc0d|c274371d8d220ee101f61c4fa196c526b993c6df
+vendor/bin/hw/vendor.qti.media.c2audio@1.0-service|a395d05f3004f2a5150dfd4510eed0c50d671974|7ac041bb41901e0ed6649bf6410b0f018ce89e02
 vendor/etc/init/vendor.qti.media.c2@1.0-service.rc|542d2ae2a92ee21dbb63716ff49392e8e6e433f4
 vendor/etc/init/vendor.qti.media.c2audio@1.0-service.rc|51841b9c67dd26b7fe82e24109f1e0a663a3e04a
 vendor/etc/media_codecs_performance_ukee.xml|ac1e940362824300d8b27463e2273ef044af8b30
