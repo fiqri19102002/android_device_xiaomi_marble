@@ -1566,7 +1566,6 @@ vendor/bin/ks|070b7d4e4b4f658d3da4cb2f7c6b489e5afe372a
 vendor/bin/mdm_helper|7a5a4614d3017907bd8016c54c50809d6df30769
 vendor/bin/mdm_helper_proxy|1a6116051b41ce88f7332e511cb58a01429596d3
 vendor/bin/netmgrd|d1a34b6db04d4c548d29db216fe07e3652614acd
-vendor/bin/pd-mapper|6f9c8a02e3353c1e0b05785284bad19e448b95f7
 vendor/bin/port-bridge|85d88158fe7d6c6df69e0024e4d211edc33c9b63
 vendor/bin/qti|37510de17ed583908fd9a66cabd68f9956f1cd9d
 vendor/bin/qtigetprop|2237848e3c41ec66432602063ef0827e3efe21c0
