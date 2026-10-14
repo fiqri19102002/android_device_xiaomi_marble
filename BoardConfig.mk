@@ -63,18 +63,15 @@ BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := default
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_RAMDISK_USE_LZ4 := true
 BOARD_USES_GENERIC_KERNEL_IMAGE := true
-BOARD_USES_QCOM_MERGE_DTBS_SCRIPT := true
-TARGET_NEEDS_DTBOIMAGE := true
 
 BOARD_KERNEL_BASE        := 0x00000000
 BOARD_KERNEL_PAGESIZE    := 4096
 BOARD_KERNEL_IMAGE_NAME := Image
+BOARD_KERNEL_SEPARATED_DTBO := true
 
-TARGET_KERNEL_SOURCE := kernel/xiaomi/marble
-TARGET_KERNEL_CONFIG := \
-    gki_defconfig \
-    vendor/waipio_GKI.config \
-    vendor/marble_GKI.config
+TARGET_KERNEL_PLATFORM_TARGET := marble
+TARGET_KERNEL_SOURCE := vendor/xiaomi/marble-build
+TARGET_KERNEL_VERSION := 6.6
 
 BOARD_BOOT_HEADER_VERSION := 4
 BOARD_MKBOOTIMG_ARGS := --header_version $(BOARD_BOOT_HEADER_VERSION)
@@ -92,51 +89,16 @@ BOARD_BOOTCONFIG := \
     androidboot.usbcontroller=a600000.dwc3
 
 # Kernel modules
-first_stage_modules := $(strip $(shell cat $(TARGET_KERNEL_SOURCE)/modules.list.msm.waipio))
-second_stage_modules := $(strip $(shell cat $(DEVICE_PATH)/modules.list.second_stage))
-vendor_dlkm_exclusive_modules := $(strip $(shell cat $(DEVICE_PATH)/modules.list.vendor_dlkm))
+# FIXME: Split from kernel source and sort kernel modules list.
+BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.load.vendor_boot))
+BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.load.recovery))
+BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.load))
 
-BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD += $(first_stage_modules)
-BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD += $(first_stage_modules) $(second_stage_modules)
-BOARD_VENDOR_KERNEL_MODULES_LOAD += $(second_stage_modules) $(vendor_dlkm_exclusive_modules)
+BOOT_KERNEL_MODULES := $(BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD)
 
-BOOT_KERNEL_MODULES += $(first_stage_modules) $(second_stage_modules)
-
+BOARD_SYSTEM_KERNEL_MODULES_BLOCKLIST_FILE := $(DEVICE_PATH)/modules.blocklist.system_dlkm
 BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE := $(TARGET_KERNEL_SOURCE)/modules.vendor_blocklist.msm.waipio
 BOARD_VENDOR_RAMDISK_KERNEL_MODULES_BLOCKLIST_FILE := $(BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE)
-
-TARGET_KERNEL_EXT_MODULE_ROOT := kernel/xiaomi/marble-modules
-TARGET_KERNEL_EXT_MODULES := \
-	qcom/opensource/mmrm-driver \
-	qcom/opensource/mm-drivers/hw_fence \
-	qcom/opensource/mm-drivers/msm_ext_display \
-	qcom/opensource/mm-drivers/sync_fence \
-	qcom/opensource/audio-kernel \
-	qcom/opensource/securemsm-kernel \
-	qcom/opensource/synx-kernel \
-	qcom/opensource/camera-kernel \
-	qcom/opensource/data-kernel/drivers/smem-mailbox \
-	qcom/opensource/datarmnet-ext/mem \
-	qcom/opensource/dataipa/drivers/platform/msm \
-	qcom/opensource/datarmnet/core \
-	qcom/opensource/datarmnet-ext/aps \
-	qcom/opensource/datarmnet-ext/offload \
-	qcom/opensource/datarmnet-ext/perf \
-	qcom/opensource/datarmnet-ext/perf_tether \
-	qcom/opensource/datarmnet-ext/sch \
-	qcom/opensource/datarmnet-ext/shs \
-	qcom/opensource/datarmnet-ext/wlan \
-	qcom/opensource/display-drivers/msm \
-	qcom/opensource/dsp-kernel \
-	qcom/opensource/eva-kernel \
-	qcom/opensource/graphics-kernel \
-	qcom/opensource/spu-kernel \
-	qcom/opensource/touch-drivers \
-	qcom/opensource/video-driver \
-	qcom/opensource/wlan/platform \
-	qcom/opensource/wlan/qcacld-3.0/.qca6490 \
-	qcom/opensource/bt-kernel \
-	nxp/opensource/driver
 
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
