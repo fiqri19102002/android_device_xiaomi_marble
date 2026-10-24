@@ -116,6 +116,15 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/libcamxcommonutils.so',
         'vendor/lib64/libmialgoengine.so',
     ): blob_fixup().add_needed('libprocessgroup_shim.so'),
+    'vendor/lib64/hw/vulkan.adreno.so': blob_fixup()
+        .binary_regex_replace( # BV CP_WAIT_TIMESTAMP onchip 1 -> CP_NOP
+              b'\x03\x80\x94\x70\x12\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00',
+              b'\x03\x80\x10\x70\x12\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00',
+        )
+        .binary_regex_replace( # BV CP_WAIT_TIMESTAMP onchip 3 -> CP_NOP
+              b'\x03\x80\x94\x70\x12\x00\x00\x00\x03\x00\x00\x00\x00\x00\x00\x00',
+              b'\x03\x80\x10\x70\x12\x00\x00\x00\x03\x00\x00\x00\x00\x00\x00\x00',
+        ),
     'vendor/lib64/libcamximageformatutils.so': blob_fixup().replace_needed(
         'android.hardware.graphics.allocator-V1-ndk.so',
         'android.hardware.graphics.allocator-V2-ndk.so',
