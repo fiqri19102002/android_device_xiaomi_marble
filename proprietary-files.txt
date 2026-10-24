@@ -1313,7 +1313,7 @@ vendor/firmware/a730_zap.mbn
 vendor/firmware/a730_zap.mdt
 
 # Graphics (Vulkan) - from PDX257 ELBE-1.1.0-REL-260522-1202
-vendor/lib64/hw/vulkan.adreno.so|45a1ca85d825f2ca559b4dfdf068f2125459d199
+vendor/lib64/hw/vulkan.adreno.so|45a1ca85d825f2ca559b4dfdf068f2125459d199|c338b642bec1f3f8cde50246231d155c7a7a51ac
 
 # Hotword Enrollment - from diting OS3.0.7.0.VLFMIXM
 product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND.apk|194bbcc27ebad3952294fc3617b2a23db92e767a
