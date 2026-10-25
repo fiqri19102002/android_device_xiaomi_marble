@@ -11,6 +11,7 @@ $(call inherit-product, device/xiaomi/marble/device.mk)
 $(call inherit-product, vendor/custom/config/common_full_phone.mk)
 
 TARGET_SCREEN_WIDTH := 1080
+TARGET_PROVIDES_FACE_UNLOCK_HAL := true
 
 PRODUCT_NAME := custom_marble
 PRODUCT_DEVICE := marble
