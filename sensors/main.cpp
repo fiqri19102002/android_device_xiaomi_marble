@@ -10,7 +10,6 @@
 #include <android-base/properties.h>
 
 #include "SscCalApi.h"
-#include "notifiers/AodNotifier.h"
 #include "notifiers/NonUiNotifier.h"
 #include "notifiers/RawLightNotifier.h"
 
@@ -25,7 +24,6 @@ int main() {
             android::base::GetBoolProperty("persist.vendor.debug.ssccalapi", false));
 
     std::vector<std::unique_ptr<SensorNotifier>> notifiers;
-    notifiers.push_back(std::make_unique<AodNotifier>(manager));
     notifiers.push_back(std::make_unique<NonUiNotifier>(manager));
     notifiers.push_back(std::make_unique<RawLightNotifier>(manager));
     for (const auto& notifier : notifiers) {
