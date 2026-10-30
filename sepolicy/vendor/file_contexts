@@ -30,10 +30,6 @@
 # Diag
 /data/vendor/modem(/.*)? u:object_r:vendor_modem_data_file:s0
 
-# Display
-/dev/mi_display/disp_feature u:object_r:vendor_displayfeature_device:s0
-/sys/devices/virtual/mi_display/disp_feature/disp-DSI-+[0-1](/.*)? u:object_r:vendor_sysfs_displayfeature:s0
-
 # Face unlock
 /data/vendor/face(/.*)? u:object_r:vendor_face_data_file:s0
 /vendor/etc/faceunlock(/.*)? u:object_r:vendor_face_resources_file:s0
