@@ -1,18 +1,26 @@
 [
   {
+    "type": "kernel",
+    "version": "6.6"
+  },
+  {
     "repository": "android_hardware_xiaomi",
     "target_path": "hardware/xiaomi"
   },
   {
     "repository": "android_kernel_xiaomi_marble",
-    "target_path": "kernel/xiaomi/marble"
+    "target_path": "kernel/platform/kernel-6.6/vendor/xiaomi/marble-kernel"
+  },
+  {
+    "repository": "android_kernel_xiaomi_marble-build",
+    "target_path": "kernel/platform/kernel-6.6/vendor/xiaomi/marble-build"
   },
   {
     "repository": "android_kernel_xiaomi_marble-devicetrees",
-    "target_path": "kernel/xiaomi/marble-devicetrees"
+    "target_path": "kernel/platform/kernel-6.6/vendor/xiaomi/marble-devicetrees"
   },
   {
     "repository": "android_kernel_xiaomi_marble-modules",
-    "target_path": "kernel/xiaomi/marble-modules"
+    "target_path": "kernel/platform/kernel-6.6/vendor/xiaomi/marble-modules"
   }
 ]
