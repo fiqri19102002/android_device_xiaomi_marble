@@ -90,12 +90,12 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_ukee/audio_policy_configuration.xml \
     $(LOCAL_PATH)/audio/mixer_paths_waipio_mtp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_ukee/mixer_paths_ukee_mtp.xml \
     $(LOCAL_PATH)/audio/resourcemanager_waipio_mtp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_ukee/resourcemanager_ukee_mtp.xml \
+    $(LOCAL_PATH)/audio/vendor_audio_interfaces.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_ukee/vendor_audio_interfaces.xml \
     $(LOCAL_PATH)/audio/usecaseKvManager.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usecaseKvManager.xml
 
 PRODUCT_COPY_FILES += \
     hardware/qcom-caf/sm8450-6.6/audio/primary-hal/configs/parrot/audio_effects_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_ukee/audio_effects_config.xml \
-    hardware/qcom-caf/sm8450-6.6/audio/primary-hal/configs/parrot/audio_module_config_primary.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_ukee/audio_module_config_primary.xml \
-    hardware/qcom-caf/sm8450-6.6/audio/primary-hal/configs/parrot/vendor_audio_interfaces.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_ukee/vendor_audio_interfaces.xml
+    hardware/qcom-caf/sm8450-6.6/audio/primary-hal/configs/parrot/audio_module_config_primary.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_ukee/audio_module_config_primary.xml
 
 PRODUCT_COPY_FILES += \
     hardware/qcom-caf/sm8450-6.6/audio/primary-hal/configs/common/codec2/media_codecs_c2_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2_audio.xml \
