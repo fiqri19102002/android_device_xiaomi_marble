@@ -1341,6 +1341,9 @@ vendor/etc/permissions/android.hardware.hardware_keystore.xml:vendor/etc/permiss
 vendor/etc/vintf/manifest/android.hardware.security.keymint-service-qti.xml|f78fe6f4b5b01884b2425950dd8fa23e185ab309
 vendor/lib64/libqtikeymint.so|28514cdad1935be971f8dfb0fc6444d19ee26a69|3916f5b4f48709a7a0b026c050a4c858fd62952b
 
+# Listen - from ingot-user 14 UKQ1.240227.165 release-keys
+vendor/lib64/liblistensoundmodel2vendor.so|5da2dd0c654427c1ad347de2212e0d25bfb4cf32
+
 # Media - from diting OS3.0.7.0.VLFMIXM
 vendor/etc/media_codecs_performance_ukee.xml|ac1e940362824300d8b27463e2273ef044af8b30
 vendor/etc/media_codecs_ukee.xml|2a98209e4853ae1c27a56f7d864e4ab56df95787|d9673afaa68015f0078d61df70c06b6b218f9b64
