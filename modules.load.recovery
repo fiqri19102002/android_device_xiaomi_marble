@@ -6,6 +6,7 @@ atmel_mxt_ts.ko
 bam_dma.ko
 bcl_pmic5.ko
 bcl_soc.ko
+block2mtd.ko
 boot_stats.ko
 bwmon.ko
 camcc-waipio.ko
