@@ -918,13 +918,13 @@ vendor/lib64/camera/com.qti.tuned.marble_ofilm_ov64b40_wide_i.bin
 vendor/lib64/camera/com.qti.tuned.marble_sunny_s5k3p9sp04_front_i.bin
 vendor/lib64/hw/com.qti.chi.override.so
 
-# CDSP - from diting OS3.0.7.0.VLFMIXM
-vendor/bin/cdsprpcd|8c50020fda4d4217fd85ea0df98c55237c275ff2
-vendor/etc/init/vendor.qti.cdsprpc-service.rc|782794d5568711f61e0a9d478b38b4bfb9729726
-vendor/lib64/libcdsp_default_listener.so|b6a4f036f9f9d7a60216211225b15fe5ab9add46
-vendor/lib64/libcdsprpc.so|74e8b3dba2358609bd214f1a3ccce221ae2dbfcf
-vendor/lib64/libmdsprpc.so|883739ce83c6e8183d115eb5968da8029f157d19
-vendor/lib64/libsdsprpc.so|18ef16a8e890a4e8459b8609989578b1babbd25c
+# CDSP - from PDX257 ELBE-1.1.0-REL-260522-1202
+vendor/bin/cdsprpcd|d4a649fdee9a2384da1599fc1eb33708aa174f59
+vendor/etc/init/vendor.qti.cdsprpc-service.rc|842f4411746605c370f6bae57df6f9c1a276d51a
+vendor/lib64/libcdsp_default_listener.so|ca7b1060c0bdfd05c20de81495074dc6e89ca270
+vendor/lib64/libcdsprpc.so|d5ae903f995aed8b87ba1f0e66ed823f81557f29
+vendor/lib64/libfastcvdsp_stub.so|18d5afc0b2b3f69ba122221b4a64b10b5f06fb0f
+vendor/lib64/libfastcvopt.so|6dee3ab1ed787a83200983354b860b512c799a88
 
 # CNE - from diting OS3.0.7.0.VLFMIXM
 vendor/app/CACertService/CACertService.apk|875317870c5dcf503eaeebf5971310c04ae5e331
@@ -1016,8 +1016,6 @@ vendor/lib64/libeva.so|e97c45877688dde8ead5d6070a41ff63d6659713
 vendor/lib64/libeva_util.so|1ba60c3c176173ed2697a31dfcb07c8f0d3b1fb8
 vendor/lib64/libface3d_dev.so|960a304b53c97e072a344a7fafe142aa22c7b03c
 vendor/lib64/libfastcrc.so|ab0a2648d275d1768c5dc18d170f5ff75a9aad4b
-vendor/lib64/libfastcvdsp_stub.so|b71d08a7a32d795e90b9b20b5b651ef2f7479a8c
-vendor/lib64/libfastcvopt.so|4115095e871a3ffe75ccacdb8fda9408da2b2e43
 vendor/lib64/libscveCommon.so|64df2008cffc3ca18629e831e6c95cc8e798b199
 vendor/lib64/libscveCommon_stub.so|f4ca6b46eb6c7d87f9e1aff84bfe9feccac13f45
 vendor/lib64/libscveObjectSegmentation.so|4d031350c73b7c885a44d6d84962538d21203f33
@@ -1764,6 +1762,9 @@ vendor/lib64/vendor.qti.ims.rcsuce@1.1.so|d9e0e92caa757fe8467aed9b606fb250ca0412
 vendor/lib64/vendor.qti.ims.rcsuce@1.2.so|77c00b44571254d48e01ed8fa71a5bf6e176d26f
 vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so|4ee122d273adb5f6cec0db108d9a8068b3ff48fb
 vendor/lib64/vendor.qti.imsrtpservice@3.0.so;MODULE_SUFFIX=_vendor|d0c6af735416f43fb26d4e7de5471e9bef64a539
+
+# SDSP - from diting OS3.0.7.0.VLFMIXM
+vendor/lib64/libsdsprpc.so|18ef16a8e890a4e8459b8609989578b1babbd25c
 
 # Secure element - from diting OS3.0.7.0.VLFMIXM
 vendor/bin/hw/vendor.qti.secure_element@1.2-service|f5c65dbff982c8bfc94338893a16cd54a445f6e6
