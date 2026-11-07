@@ -105,17 +105,21 @@ vendor/lib/rfsa/adsp/misound_res_spk4ch.bin
 vendor/lib64/hw/com.dsi.ant@1.0-impl.so|b1d899221388ad9f5070bf2d71acae82481d5fc2
 
 # Audio - from diting OS3.0.7.0.VLFMIXM
-vendor/etc/models/acd/event.eai|9bf278d152e0c722ab9bcb11c19568c5ae3212c5
-vendor/etc/models/acd/music.eai|4eeea06fd59b0a600216c62241a313efe92df7fc
-vendor/etc/models/acd/speech.eai|aff5a8f19d803478415eb65c52249950fd0a2fae
-vendor/lib64/libadm.so|c091297a473cde3f42856aa02740496e18020628
-vendor/lib64/libaudio_log_utils.so|b63ceb3da32934cbd059f26f23b6625951509867
 vendor/lib64/libcapiv2svacnnvendor.so|53c27d0f2b97300a4694dc27cdb79210a82d42ab
 vendor/lib64/libcapiv2svarnnvendor.so|b044ca4333afff15a5ecf3a7d04d8b9f4a7932d8
 vendor/lib64/libcapiv2uvvendor.so|5622bfe438265a926f87fb4e04f2af603ff80548
-vendor/lib64/libmcs.so|67d8e69877a1e2c3dc66ae7d70f0040a7fb6de8a
-vendor/lib64/libqtigefar.so|19dcf2b7b69188741475dda267ed21c008a809f5
-vendor/lib64/soundfx/libasphere.so|5b70a2ecfd6c72a993420191618aa71a5f814012
+
+# Audio - from PDX257 ELBE-1.1.0-REL-260522-1202
+vendor/etc/models/acd/event.eai|9bf278d152e0c722ab9bcb11c19568c5ae3212c5
+vendor/etc/models/acd/music.eai|4eeea06fd59b0a600216c62241a313efe92df7fc
+vendor/etc/models/acd/speech.eai|aff5a8f19d803478415eb65c52249950fd0a2fae
+vendor/lib64/libadm.so|01dd47a5781d510404626a4b7b7447916ef0f82f
+vendor/lib64/libaudio_log_utils.so|1d75484064a6d1afaa4bf5d435342d8a04c7d471
+vendor/lib64/liblistensoundmodelaidl.so|50503c39fc351f9ad66ba68c54de59a30642339c
+vendor/lib64/libmcs.so|a4b5525bdf3bc3edde7747ba11f6629043352eed
+vendor/lib64/libpal_net_if.so|68613cea56dc04aaf260b2c2f3489aec15fac214
+vendor/lib64/libqtigefar.so|c36c9aa952d6909d90bbbcc6df3493b9068c55fa
+vendor/lib64/vendor.qti.hardware.ListenSoundModelAidl-V1-ndk.so|fd33609cc0b001db44e0b0f21e310497e95e4e98
 
 # Audio firmware
 vendor/firmware/aw882xx_acf.bin
@@ -1270,7 +1274,6 @@ vendor/lib64/liblocdiagiface.so|d7f1a5e5fc50fc60b1d07bebab3532f97b788118
 vendor/lib64/liblowi_client.so|65ed08928d01224d9d69e4520260c730b0f91eb3
 vendor/lib64/liblowi_common.so|85283ad9594dffd5c34741ebfd680ac154bd8b84
 vendor/lib64/liblowi_wifihal.so|f348c1a940e43a053dc18f46290c57e748935b0f
-vendor/lib64/libpal_net_if.so|c9e4bfc810ce90be4bab3f43a6a87dc523ae1a83
 vendor/lib64/libqppe.so|6cd36b618b3e50378f347316fcd11dffd0e4866e
 vendor/lib64/libsynergy_loc_api.so|884a2bd9cd9c0331c8c0cdb672b68257482c06b2
 vendor/lib64/libsys_info_cache.so|99b7796e09317215c4c8fd61359c2ceebcbe4dfe
