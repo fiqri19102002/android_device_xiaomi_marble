@@ -111,6 +111,8 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace('Param66', 'Param73'), # ddr5_camera_total_bw
     'vendor/etc/sensors/hals.conf': blob_fixup()
         .add_line_if_missing('sensors.xiaomi.v2.so'),
+    'vendor/lib64/hw/camera.qcom.so': blob_fixup()
+        .add_needed('libcamximageformatutils_shim.so'),
     (
         'vendor/lib64/hw/com.qti.chi.override.so',
         'vendor/lib64/libcamxcommonutils.so',
