@@ -513,5 +513,6 @@ PRODUCT_COPY_FILES += \
 
 # WiFi firmware symlinks
 PRODUCT_PACKAGES += \
+    firmware_qca6490_image_symlink \
     firmware_qca6490_WCNSS_qcom_cfg.ini_symlink \
     firmware_qca6490_wlan_mac.bin_symlink
