@@ -77,18 +77,7 @@ blob_fixups: blob_fixups_user_type = {
         )
         .add_needed('android.hardware.security.rkp-V1-ndk.so'),
     (
-        'vendor/bin/hw/vendor.qti.camera.provider@2.7-service_64',
         'vendor/lib64/camera/plugins/com.xiaomi.plugin.mialgosnsc.so',
-        'vendor/lib64/camx.device@3.4-ext-impl.so',
-        'vendor/lib64/camx.device@3.5-ext-impl.so',
-        'vendor/lib64/camx.device@3.6-ext-impl.so',
-        'vendor/lib64/camx.provider@2.4-external.so',
-        'vendor/lib64/camx.provider@2.4-impl.so',
-        'vendor/lib64/camx.provider@2.4-legacy.so',
-        'vendor/lib64/camx.provider@2.5-external.so',
-        'vendor/lib64/camx.provider@2.5-legacy.so',
-        'vendor/lib64/camx.provider@2.6-legacy.so',
-        'vendor/lib64/camx.provider@2.7-legacy.so',
         'vendor/lib64/com.qti.feature2.anchorsync.so',
         'vendor/lib64/libdpps.so',
         'vendor/lib64/libsnapdragoncolor-manager.so',
@@ -124,8 +113,8 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/libmialgoengine.so',
     ): blob_fixup().add_needed('libprocessgroup_shim.so'),
     'vendor/lib64/libcamximageformatutils.so': blob_fixup().replace_needed(
-        'vendor.qti.hardware.display.config-V2-ndk_platform.so',
-        'vendor.qti.hardware.display.config-V2-ndk.so',
+        'android.hardware.graphics.allocator-V1-ndk.so',
+        'android.hardware.graphics.allocator-V2-ndk.so',
     ),
     'vendor/lib64/libdisplayqos.so': blob_fixup()
         .sig_replace(
@@ -171,6 +160,15 @@ blob_fixups: blob_fixups_user_type = {
     .clear_symbol_version('AHardwareBuffer_unlock'),
     'vendor/lib64/vendor.libdpmframework.so': blob_fixup()
         .add_needed('libhidlbase_shim.so'),
+    'vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so': blob_fixup()
+        .replace_needed(
+            'android.hardware.camera.common-V2-ndk.so',
+            'android.hardware.camera.common-V1-ndk.so',
+        )
+        .replace_needed(
+            'android.hardware.graphics.allocator-V1-ndk.so',
+            'android.hardware.graphics.allocator-V2-ndk.so',
+        ),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
