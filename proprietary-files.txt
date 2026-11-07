@@ -108,6 +108,7 @@ vendor/lib64/hw/com.dsi.ant@1.0-impl.so|b1d899221388ad9f5070bf2d71acae82481d5fc2
 vendor/lib64/libcapiv2svacnnvendor.so|53c27d0f2b97300a4694dc27cdb79210a82d42ab
 vendor/lib64/libcapiv2svarnnvendor.so|b044ca4333afff15a5ecf3a7d04d8b9f4a7932d8
 vendor/lib64/libcapiv2uvvendor.so|5622bfe438265a926f87fb4e04f2af603ff80548
+vendor/lib64/liblistensoundmodel2vendor.so|5da2dd0c654427c1ad347de2212e0d25bfb4cf32
 
 # Audio - from PDX257 ELBE-1.1.0-REL-260522-1202
 vendor/etc/models/acd/event.eai|9bf278d152e0c722ab9bcb11c19568c5ae3212c5
