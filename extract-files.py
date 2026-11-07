@@ -93,12 +93,6 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/libdpps.so',
         'vendor/lib64/libsnapdragoncolor-manager.so',
     ): blob_fixup().replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
-    (
-        'vendor/bin/hw/vendor.qti.media.c2@1.0-service',
-        'vendor/bin/hw/vendor.qti.media.c2audio@1.0-service',
-    ): blob_fixup().binary_regex_replace(
-        b'\x00\x21\x80\x52', b'\x00\x24\x80\x52',
-    ),
     'vendor/bin/qcc-trd': blob_fixup()
         .replace_needed(
             'libgrpc++_unsecure.so', 'libgrpc++_unsecure_prebuilt.so'
@@ -107,6 +101,8 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace('DEVICE_HOST_WHITE_LIST', 'DEVICE_HOST_ALLOW_LIST'),
     'vendor/etc/media_codecs_ukee.xml': blob_fixup()
         .regex_replace('.+media_codecs_(google_audio|google_c2|google_telephony|vendor_audio).+\n', ''),
+    'vendor/etc/media_ukee/video_system_specs.json': blob_fixup()
+        .regex_replace('.*"libqc2vppfilter.so"\n', ''),
     (
         'vendor/etc/camera/marble_enhance_motiontuning.xml',
         'vendor/etc/camera/marble_motiontuning.xml',
@@ -122,8 +118,6 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace('Param66', 'Param73'), # ddr5_camera_total_bw
     'vendor/etc/sensors/hals.conf': blob_fixup()
         .add_line_if_missing('sensors.xiaomi.v2.so'),
-    'vendor/etc/vintf/manifest/c2_manifest_vendor.xml': blob_fixup()
-        .regex_replace('.+dolby.+\n', ''),
     (
         'vendor/lib64/hw/com.qti.chi.override.so',
         'vendor/lib64/libcamxcommonutils.so',
@@ -146,6 +140,11 @@ blob_fixups: blob_fixups_user_type = {
         rb'\[%s\] openat: %s xiaomi_sysfs_fd,failed:\[fingerdown\]',
         b'[%s] openat: xiaomi_sysfs_fd,failed:[fingerdown]\x00\x00\x00',
     ),
+    'vendor/lib64/libqcodec2_core.so': blob_fixup()
+        .replace_needed(
+            'android.hardware.graphics.common-V5-ndk.so',
+            'android.hardware.graphics.common-V7-ndk.so',
+        ),
     'vendor/lib64/libssc.so': blob_fixup()
         .sig_replace('C2 09 00 94', '1F 20 03 D5')
         .sig_replace('F4 05 00 94', '1F 20 03 D5')
