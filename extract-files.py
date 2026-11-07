@@ -114,6 +114,12 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/etc/camera/pureView_parameter.xml': blob_fixup().regex_replace(
         r'=([0-9]+)>', r'="\1">'
     ),
+    'vendor/etc/display/DPU8__.xml': blob_fixup()
+        .regex_replace('.*<Param62>.*\n', '') # max_fps, dropped
+        .regex_replace('Param63', 'Param70') # ddr4_default_total_bw
+        .regex_replace('Param64', 'Param71') # ddr4_camera_total_bw
+        .regex_replace('Param65', 'Param72') # ddr5_default_total_bw
+        .regex_replace('Param66', 'Param73'), # ddr5_camera_total_bw
     'vendor/etc/sensors/hals.conf': blob_fixup()
         .add_line_if_missing('sensors.xiaomi.v2.so'),
     'vendor/etc/vintf/manifest/c2_manifest_vendor.xml': blob_fixup()
@@ -127,6 +133,15 @@ blob_fixups: blob_fixups_user_type = {
         'vendor.qti.hardware.display.config-V2-ndk_platform.so',
         'vendor.qti.hardware.display.config-V2-ndk.so',
     ),
+    'vendor/lib64/libdisplayqos.so': blob_fixup()
+        .sig_replace(
+            '68 00 b0 52', # 0x80030000 (parrot)
+            'a8 00 b0 52', # 0x80050000 (cape)
+        )
+        .sig_replace(
+            '44 50 55 38 33 30 2e 78 6d 6c', # DPU830.xml
+            '44 50 55 38 5f 5f 2e 78 6d 6c', # DPU8__.xml
+        ),
     'vendor/lib64/libgf_hal.so': blob_fixup().binary_regex_replace(
         rb'\[%s\] openat: %s xiaomi_sysfs_fd,failed:\[fingerdown\]',
         b'[%s] openat: xiaomi_sysfs_fd,failed:[fingerdown]\x00\x00\x00',
