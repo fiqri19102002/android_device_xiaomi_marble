@@ -107,6 +107,7 @@ mtdblock.ko
 mtdoops.ko
 nb7vpq904m.ko
 nvmem_qfprom.ko
+nxp-nci.ko
 panel_event_notifier.ko
 pci-msm-drv.ko
 pdr_interface.ko
