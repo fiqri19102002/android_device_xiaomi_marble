@@ -1508,12 +1508,14 @@ vendor/lib64/libqmi_encdec.so|7be845644af555af394f3dcd4021064cbe12f001
 vendor/lib64/libqmi_legacy.so|9af914227a980328a8c042ecddf7c11c7cffe163
 vendor/lib64/libqmiservices.so|875d72ce1386c279b47a847ee5171e6b644127c3
 
-# QSPM - from diting OS3.0.7.0.VLFMIXM
-vendor/bin/vendor.qti.qspmhal@1.0-service|3a3dc6934387bc82087edef764726602b8f4e02a
-vendor/etc/init/vendor.qti.qspmhal@1.0-service.rc|bdc5cbedd1688807409c72262824ca9162b20239
-vendor/etc/seccomp_policy/qspm.policy|dcb84e27bb038ee9765315a0c422ab860583e24a
-vendor/lib64/vendor.qti.qspmhal@1.0-impl.so|9b89a25a20fcaaafb9da162d52b16b1fa144705e
-vendor/lib64/vendor.qti.qspmhal@1.0.so|c4483c88346e8aee18eb34ba097d9ec784b4d571
+# QSPM - from PDX257 ELBE-1.1.0-REL-260522-1202
+vendor/bin/vendor.qti.qspmhal-service|6997db60bccd14cadef6d1bb68d22f280dc7d427
+vendor/etc/init/vendor.qti.qspmhal-service.rc|b9fd698739169d1485f437c437d2b83548670f5a
+vendor/etc/seccomp_policy/qspm.policy|87f5c78589f9efabee61683942a5b63ffeb5f22e
+vendor/etc/vintf/manifest/vendor.qti.qspmhal-service.xml|c35d488de20351b3e5be97811d5c4609c7834c16
+vendor/lib64/libqspm-mem-utils-vendor.so|182370137f6665971052e6d8aea7b36daf9fcc66
+vendor/lib64/vendor.qti.qspmhal-V1-ndk.so|318a94e6908d233d2b680b6e97cb0826078d8a0e
+vendor/lib64/vendor.qti.qspmhal-impl.so|0e6ad39e3d2521d6dcbbf1c4d7c7b069f219e4ea
 
 # RIL - from diting OS3.0.7.0.VLFMIXM
 product/app/uimgbaservice/uimgbaservice.apk|34ee0fbed345230a4fc537696e285aaa0778a756
