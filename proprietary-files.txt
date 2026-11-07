@@ -1209,11 +1209,12 @@ vendor/lib64/libspl.so|ea975dcabe9896a1827f0db2969ed9a257572849
 vendor/lib64/libssd.so|931512da26fdca5674975a250c6c5d2b7f1d1be8
 vendor/lib64/vendor.qti.hardware.qseecom@1.0.so|c8ea02b00e97627924cd27f6338390319d269136
 
-# DSP - from diting OS3.0.7.0.VLFMIXM
-vendor/bin/dspservice|a054e25f1e5b52db6b031ba59117a0ad65252e35
-vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc|fbf2bb38ca6bdddf98c7123da9e1f263a4eec55f
-vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy|f060101b26d3674bb173e5fc95e118f56a8ac15d
-vendor/lib64/vendor.qti.hardware.dsp@1.0.so|2e1fbb64bd9e1a3bb8d78af7d442a40fbc93fe35
+# DSP service - from PDX257 ELBE-1.1.0-REL-260522-1202
+vendor/bin/dspservice|400c1e82a56552d60ec5cbc2f5f0950fcee516cf
+vendor/etc/init/vendor.qti.hardware.dsp-service.rc|8cf97beaec8309796cf3003aed6e52baa42cc8ba
+vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy|cacb134fab84cb55f607fcff11b80481e2a8114d
+vendor/etc/vintf/manifest/vendor.qti.hardware.dsp-service.xml|c02c767856a1e8ef25441f3e0243487ac3829367
+vendor/lib64/vendor.qti.hardware.dsp-V1-ndk.so|cdf78fd543aa541925a3a4232221bbe1ae0bcb74
 
 # ESE powermanager - from diting OS3.0.7.0.VLFMIXM
 vendor/bin/hw/vendor.qti.esepowermanager@1.1-service|a8744750b772a25012e84c225b3ba525b1c6e3a0
