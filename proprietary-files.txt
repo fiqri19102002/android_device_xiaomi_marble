@@ -1305,8 +1305,8 @@ vendor/lib64/libllvm-glnext.so|419527802ac78bb058a10a76022c2e9508562b2c
 vendor/lib64/libllvm-qcom.so|76ce4cf0044d782150a6838f39806a734c27b75f
 vendor/lib64/libllvm-qgl.so|a4a57682c1463b2ee1c296b20f9938ebc83360fe
 
-# Graphics (Adreno firmware) - from diting OS3.0.7.0.VLFMIXM
-vendor/firmware/a730_sqe.fw|8302565a0e61eec583ef25dfc5f42aff11b6be21
+# Graphics (Adreno firmware) - from linux-firmware 20261019
+vendor/firmware/a730_sqe.fw|920d6db39c8852be3a898d782b58378a39629ec6
 vendor/firmware/gmu_gen70000.bin|1ac8d9dd3d405f84c915a4562ff72d244e10bcbd
 
 # Graphics (Adreno firmware)
