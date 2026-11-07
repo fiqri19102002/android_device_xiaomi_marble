@@ -42,7 +42,7 @@ lib_fixups: lib_fixups_user_type = {
         'vendor.qti.hardware.qccvndhal@1.0',
         'vendor.qti.imsrtpservice@3.0',
         'vendor.qti.diaghal@1.0',
-        'vendor.qti.hardware.wifidisplaysession@1.0',
+        'vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk',
         'com.qualcomm.qti.dpm.api@1.0',
     ): lib_fixup_vendor_suffix,
 }
@@ -153,6 +153,11 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/lib64/libssccalapi@2.0.so': blob_fixup()
         .sig_replace('A0 7F 00 94', '1F 20 03 D5')
         .sig_replace('94 7F 00 94', '1F 20 03 D5'),
+    'vendor/lib64/libwfdmmsrc_proprietary.so': blob_fixup()
+        .replace_needed(
+            'android.media.audio.common.types-V2-ndk.so',
+            'android.media.audio.common.types-V3-ndk.so',
+        ),
     (
         'vendor/lib64/libTrueSight.so',
         'vendor/lib64/libalLDC.so',
