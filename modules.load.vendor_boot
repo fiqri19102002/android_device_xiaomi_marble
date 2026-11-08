@@ -20,6 +20,7 @@ gh_dbl.ko
 gh_msgq.ko
 gh_rm_drv.ko
 gh_virt_wdt.ko
+hwid.ko
 icc-bcm-voter.ko
 icc-debug.ko
 icc-rpmh.ko
