@@ -34,6 +34,8 @@
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #===============================================================================
 
+low_ram=`getprop ro.config.low_ram`
+
 if [ -f /sys/devices/soc0/soc_id ]; then
     soc_hwid=`cat /sys/devices/soc0/soc_id` 2> /dev/null
 else
@@ -54,12 +56,48 @@ case "$target" in
                 ;;
         esac
         ;;
+    "blair")
+        setprop vendor.mm.target.enable.qcom_parser 0
+        setprop vendor.netflix.bsp_rev ""
+        case "$soc_hwid" in
+            507|565)
+                setprop vendor.media.target_variant "_blair"
+                setprop vendor.netflix.bsp_rev "Q4350-32962-1"
+                ;;
+            578)
+                setprop vendor.media.target_variant "_blair_lite"
+                setprop vendor.netflix.bsp_rev "Q4350-32962-1"
+                ;;
+            454)
+                setprop vendor.media.target_variant "_holi"
+                setprop vendor.netflix.bsp_rev "Q4350-32962-1"
+                ;;
+            472)
+                setprop vendor.media.target_variant "_holi_pro"
+                setprop vendor.netflix.bsp_rev "Q4350-32962-1"
+                ;;
+        esac
+        ;;
+    # TODO-MB: Update below fields later
+    "pitti")
+        setprop vendor.mm.target.enable.qcom_parser 0
+        setprop vendor.netflix.bsp_rev ""
+        case "$soc_hwid" in
+            623)
+                if [ "$low_ram" == "true" ]; then
+                    setprop vendor.media.target_variant "_pitti_32go"
+                else
+                    setprop vendor.media.target_variant "_pitti"
+                    setprop vendor.netflix.bsp_rev "Q4350-32962-1"
+                fi
+                ;;
+        esac
+        ;;
     "parrot")
-        setprop vendor.mm.target.enable.qcom_parser 958531
+        setprop vendor.mm.target.enable.qcom_parser 0
         case "$soc_hwid" in
             568|602|581|582)
                 setprop vendor.media.target_variant "_ravelin"
-                setprop vendor.netflix.bsp_rev "Q4450-37037-1"
                 ;;
             *)
                 setprop vendor.media.target_variant "_parrot_v2"
@@ -75,11 +113,11 @@ case "$target" in
         esac
         ;;
     "taro")
-        setprop vendor.mm.target.enable.qcom_parser 0
+        setprop vendor.mm.target.enable.qcom_parser 1040463
         case "$soc_hwid" in
             506|547|564)
                 setprop vendor.media.target_variant "_diwali_v2"
-                setprop vendor.netflix.bsp_rev "Q7450-35705-1"
+                setprop vendor.netflix.bsp_rev ""
                 sku_ver=`cat /sys/devices/platform/soc/aa00000.qcom,vidc/sku_version` 2> /dev/null
                 if [ $sku_ver -eq 0 ]; then
                     setprop vendor.media.target_variant "_diwali_v0"
@@ -138,5 +176,14 @@ case "$target" in
         ;;
     "monaco")
         setprop vendor.media.target_variant "_monaco"
+        ;;
+    "vienna")
+        setprop vendor.mm.target.enable.qcom_parser 0
+        setprop vendor.netflix.bsp_rev ""
+        case "$soc_hwid" in
+            669|670)
+                setprop vendor.media.target_variant "_vienna"
+            ;;
+        esac
         ;;
 esac
