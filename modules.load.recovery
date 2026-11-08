@@ -56,6 +56,7 @@ gh_rm_drv.ko
 gh_virt_wdt.ko
 glink_pkt.ko
 glink_probe.ko
+goodix_ts.ko
 gpr_dlkm.ko
 gpucc-waipio.ko
 gunyah_loader.ko
@@ -63,6 +64,7 @@ hdcp_qseecom_dlkm.ko
 heap_mem_ext_v01.ko
 hung_task_enh.ko
 hvc_gunyah.ko
+hwid.ko
 hwmon.ko
 i2c-msm-geni.ko
 i3c-master-msm-geni.ko
@@ -70,6 +72,7 @@ icc-bcm-voter.ko
 icc-debug.ko
 icc-rpmh.ko
 iommu-logger.ko
+ir-spi.ko
 leds-qpnp-vibrator-ldo.ko
 leds-qti-flash.ko
 leds-qti-tri-led.ko
@@ -88,6 +91,7 @@ memlat.ko
 memory_dump_v2.ko
 mhi.ko
 mhi_dev_uci.ko
+mi_thermal_interface.ko
 minidump.ko
 msm-mmrm.ko
 msm_dma_iommu_mapping.ko
@@ -103,6 +107,10 @@ msm_sharedmem.ko
 msm_show_epoch.ko
 msm_show_resume_irq.ko
 msm_sysstats.ko
+mtd.ko
+mtd_blkdevs.ko
+mtdblock.ko
+mtdoops.ko
 nb7vpq904m.ko
 nvmem_qcom-spmi-sdam.ko
 nvmem_qfprom.ko
@@ -196,6 +204,7 @@ qti_pmic_glink.ko
 qti_qmi_cdev.ko
 qti_qmi_sensor_v2.ko
 qti_userspace_cdev.ko
+qts.ko
 rdbg.ko
 reboot-mode.ko
 redriver.ko
@@ -245,5 +254,6 @@ usb_f_cdev.ko
 usb_f_gsi.ko
 usb_f_qdss.ko
 videocc-waipio.ko
+xiaomi_touch.ko
 zram.ko
 zsmalloc.ko

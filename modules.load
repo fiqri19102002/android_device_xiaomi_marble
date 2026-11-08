@@ -5,6 +5,7 @@ atmel_mxt_ts.ko
 audio_pkt_dlkm.ko
 audio_prm_dlkm.ko
 audpkt_ion_dlkm.ko
+aw882xx_dlkm.ko
 bam_dma.ko
 bcl_soc.ko
 boot_stats.ko
@@ -41,12 +42,15 @@ drm_dp_aux_bus.ko
 dwc3-msm.ko
 ehset.ko
 eud.ko
+fpc1540.ko
 frpc-adsprpc.ko
 fsa4480-i2c.ko
 gh_irq_lend.ko
 gh_mem_notifier.ko
 glink_pkt.ko
 glink_probe.ko
+goodix_3626.ko
+goodix_ts.ko
 governor_gpubw_mon.ko
 governor_msm_adreno_tz.ko
 gpr_dlkm.ko
@@ -63,6 +67,7 @@ i2c-msm-geni.ko
 i3c-master-msm-geni.ko
 ipam.ko
 ipanetm.ko
+ir-spi.ko
 leds-qpnp-vibrator-ldo.ko
 leds-qti-flash.ko
 leds-qti-tri-led.ko
@@ -81,6 +86,7 @@ mdt_loader.ko
 memlat.ko
 mhi.ko
 mhi_dev_uci.ko
+mi_thermal_interface.ko
 msm-eva.ko
 msm-mmrm.ko
 msm_drm.ko
@@ -95,6 +101,10 @@ msm_show_epoch.ko
 msm_show_resume_irq.ko
 msm_sysstats.ko
 msm_video.ko
+mtd.ko
+mtd_blkdevs.ko
+mtdblock.ko
+mtdoops.ko
 nb7vpq904m.ko
 nvmem_qfprom.ko
 panel_event_notifier.ko
@@ -161,6 +171,7 @@ qti_pmic_glink.ko
 qti_qmi_cdev.ko
 qti_qmi_sensor_v2.ko
 qti_userspace_cdev.ko
+qts.ko
 rdbg.ko
 redriver.ko
 repeater-i2c-eusb2.ko
@@ -222,3 +233,4 @@ wcd9xxx_dlkm.ko
 wcd_core_dlkm.ko
 wlan_firmware_service.ko
 wsa883x_dlkm.ko
+xiaomi_touch.ko
