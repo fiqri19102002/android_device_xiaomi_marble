@@ -19,7 +19,7 @@ from extract_utils.main import (
 
 namespace_imports = [
     'device/xiaomi/marble',
-    'hardware/qcom-caf/sm8450',
+    'hardware/qcom-caf/sm8450-6.6',
     'hardware/qcom-caf/wlan',
     'hardware/xiaomi',
     'vendor/qcom/opensource/commonsys/display',
