@@ -8,3 +8,15 @@ cc_library_shared {
     srcs: ["camx_imageformatutils.cpp"],
     cflags: ["-Wall", "-Wextra", "-Werror"],
 }
+
+cc_library_shared {
+    name: "libsnpe_cxxabi_shim",
+    vendor: true,
+    compile_multilib: "64",
+    srcs: ["snpe_cxxabi.c"],
+    shared_libs: [
+        "libdl",
+        "liblog",
+    ],
+    cflags: ["-Wall", "-Wextra", "-Werror"],
+}
