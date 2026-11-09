@@ -4,6 +4,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+import os
+import tempfile
+
 from extract_utils.fixups_blob import (
     blob_fixup,
     blob_fixups_user_type,
@@ -16,6 +19,11 @@ from extract_utils.main import (
     ExtractUtils,
     ExtractUtilsModule,
 )
+from extract_utils.tools import (
+    DEFAULT_PATCHELF_VERSION,
+    patchelf_version_path_map,
+)
+from extract_utils.utils import run_cmd
 
 namespace_imports = [
     'device/xiaomi/marble',
@@ -30,6 +38,45 @@ namespace_imports = [
 
 def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
     return f'{lib}_{partition}' if partition == 'vendor' else None
+
+
+# C++ ABI imports of libSNPE.so routed to its own libc++_shared.so by
+# libsnpe_cxxabi_shim
+snpe_cxxabi_symbols = [
+    '__gxx_personality_v0',
+    '__cxa_allocate_exception',
+    '__cxa_free_exception',
+    '__cxa_throw',
+    '__cxa_rethrow',
+    '__cxa_begin_catch',
+    '__cxa_end_catch',
+    '__cxa_bad_cast',
+    '_ZSt17current_exceptionv',
+    '_ZSt17rethrow_exceptionSt13exception_ptr',
+    '_ZSt18uncaught_exceptionv',
+    '_ZNSt13exception_ptrC1ERKS_',
+    '_ZNSt13exception_ptrD1Ev',
+    '_ZNSt13exception_ptraSERKS_',
+    '_Znwm',
+    '_Znam',
+]
+
+
+def rename_snpe_cxxabi_symbols(ctx, file, file_path, *args, **kwargs):
+    with tempfile.NamedTemporaryFile('w', delete=False) as name_map:
+        for symbol in snpe_cxxabi_symbols:
+            name_map.write(f'{symbol} snpe_cxxabi_{symbol}\n')
+    try:
+        run_cmd(
+            [
+                patchelf_version_path_map[DEFAULT_PATCHELF_VERSION],
+                '--rename-dynamic-symbols',
+                name_map.name,
+                file_path,
+            ]
+        )
+    finally:
+        os.unlink(name_map.name)
 
 
 lib_fixups: lib_fixups_user_type = {
@@ -149,6 +196,9 @@ blob_fixups: blob_fixups_user_type = {
             'android.hardware.graphics.common-V5-ndk.so',
             'android.hardware.graphics.common-V7-ndk.so',
         ),
+    'vendor/lib64/libSNPE.so': blob_fixup()
+        .call(rename_snpe_cxxabi_symbols, need_tmp_dir=False)
+        .add_needed('libsnpe_cxxabi_shim.so'),
     'vendor/lib64/libssc.so': blob_fixup()
         .sig_replace('C2 09 00 94', '1F 20 03 D5')
         .sig_replace('F4 05 00 94', '1F 20 03 D5')
