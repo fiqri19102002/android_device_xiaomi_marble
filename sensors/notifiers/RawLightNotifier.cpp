@@ -101,7 +101,7 @@ void RawLightNotifier::notify() {
             }
         }
 
-        if (poll(&powerStatePoll, 1, -1) < 0) {
+        if (poll(&powerStatePoll, 1, 500) < 0) {
             PLOG(ERROR) << "failed to poll " << kPanelPowerState;
         }
     }

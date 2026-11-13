@@ -7,6 +7,7 @@
 #pragma once
 
 #include <cstdint>
+#include <mutex>
 
 struct _oem_msg {
     uint32_t sensorType;
@@ -37,4 +38,5 @@ class SscCalApiWrapper {
     void* mSscCalApiHandle;
     process_msg_t process_msg;
     init_current_sensors_t init_current_sensors;
+    std::mutex mMutex;
 };
