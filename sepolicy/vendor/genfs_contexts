@@ -1,4 +1,5 @@
 # Display
+genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/backlight u:object_r:vendor_sysfs_graphics:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display-primary/panel_power_state u:object_r:vendor_sysfs_displayfeature:s0
 
 # Fingerprint
