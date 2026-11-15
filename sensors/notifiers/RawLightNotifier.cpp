@@ -37,7 +37,7 @@ namespace {
 class RawLightSensorCallback : public IEventQueueCallback {
   public:
     Return<void> onEvent(const Event& e) {
-        _oem_msg msg;
+        _oem_msg msg{};
         msg.notifyType = kNotifyTypeReportValue;
         msg.value = e.u.vec4.y;
         msg.notifyTypeFloat = msg.notifyType;
