@@ -19,6 +19,13 @@ install_symlink {
 }
 
 install_symlink {
+    name: "firmware_qca6490_image_symlink",
+    vendor: true,
+    installed_location: "firmware/qca6490",
+    symlink_target: "/vendor/firmware_mnt/image",
+}
+
+install_symlink {
     name: "firmware_qca6490_WCNSS_qcom_cfg.ini_symlink",
     vendor: true,
     installed_location: "firmware/wlan/qca_cld/qca6490/WCNSS_qcom_cfg.ini",
@@ -30,15 +37,4 @@ install_symlink {
     vendor: true,
     installed_location: "firmware/wlan/qca_cld/qca6490/wlan_mac.bin",
     symlink_target: "/mnt/vendor/persist/qca6490/wlan_mac.bin",
-}
-
-cc_library_shared {
-    name: "libqti_c2_store_abi_check",
-    vendor: true,
-    defaults: ["libcodec2-hidl-defaults@1.0"],
-    shared_libs: ["libcodec2_hidl@1.2"],
-    srcs: [
-        "c2_store_abi_check/abi_check_1_0.cpp",
-        "c2_store_abi_check/abi_check_1_2.cpp",
-    ],
 }

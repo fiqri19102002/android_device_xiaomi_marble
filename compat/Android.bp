@@ -1,0 +1,23 @@
+// Copyright (C) 2026 The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+
+cc_library_shared {
+    name: "libcamximageformatutils_shim",
+    vendor: true,
+    compile_multilib: "64",
+    srcs: ["camx_imageformatutils.cpp"],
+    shared_libs: ["//vendor/xiaomi/marble:libcamximageformatutils"],
+    cflags: ["-Wall", "-Wextra", "-Werror"],
+}
+
+cc_library_shared {
+    name: "libsnpe_cxxabi_shim",
+    vendor: true,
+    compile_multilib: "64",
+    srcs: ["snpe_cxxabi.c"],
+    shared_libs: [
+        "libdl",
+        "liblog",
+    ],
+    cflags: ["-Wall", "-Wextra", "-Werror"],
+}

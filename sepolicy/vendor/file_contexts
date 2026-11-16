@@ -7,6 +7,7 @@
 /vendor/lib(64)?/libQnnHtpV69Stub\.so u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libQnnHtp\.so u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libSNPE\.so u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libsnpe_cxxabi_shim\.so u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libSnpeGpu\.so u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libSnpeHtpPrepare\.so u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libSnpeHtpV68Stub\.so u:object_r:same_process_hal_file:s0
@@ -14,6 +15,8 @@
 /vendor/lib(64)?/libc\+\+_shared\.so u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libmialgo_ai_vision\.so u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libmialgo_utils\.so u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libmialgoengine\.so u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libprocessgroup_shim\.so u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libsnpe_dsp_domains_v2\.so u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libsnpe_dsp_domains_v3\.so u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libxmi_slow_motion_mein\.so u:object_r:same_process_hal_file:s0
@@ -29,10 +32,6 @@
 
 # Diag
 /data/vendor/modem(/.*)? u:object_r:vendor_modem_data_file:s0
-
-# Display
-/dev/mi_display/disp_feature u:object_r:vendor_displayfeature_device:s0
-/sys/devices/virtual/mi_display/disp_feature/disp-DSI-+[0-1](/.*)? u:object_r:vendor_sysfs_displayfeature:s0
 
 # Fingerprint
 /data/vendor/fpc(/.*)? u:object_r:vendor_fingerprint_data_file:s0
@@ -53,9 +52,15 @@
 # Modem
 /dev/smd8 u:object_r:vendor_radio_smd_device:s0
 
+# Secure Element
+/(vendor|system/vendor)/bin/hw/vendor\.qti\.esepowermanager@1\.1-service u:object_r:vendor_hal_esepowermanager_qti_exec:s0
+
 # Sensors
 /(vendor|system/vendor)/bin/hw/android\.hardware\.sensors-service\.xiaomi-multihal u:object_r:hal_sensors_default_exec:s0
 /(vendor|system/vendor)/bin/sensor-notifier u:object_r:vendor_sensor_notifier_exec:s0
+
+# SSG
+/vendor/bin/ssgqmigd64 u:object_r:vendor_ssgqmigd_exec:s0
 
 # Thermal
 /(vendor|system/vendor)/bin/mi_thermald u:object_r:mi_thermald_exec:s0
