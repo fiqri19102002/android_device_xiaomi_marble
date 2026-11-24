@@ -137,6 +137,7 @@ qcom-spmi-adc-tm5.ko
 qcom-spmi-adc5.ko
 qcom-spmi-temp-alarm.ko
 qcom-vadc-common.ko
+qcom_dynamic_ramoops.ko
 qcom_edac.ko
 qcom_glink.ko
 qcom_glink_smem.ko
