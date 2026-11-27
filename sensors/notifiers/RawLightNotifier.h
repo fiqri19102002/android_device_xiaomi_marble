@@ -6,7 +6,13 @@
 
 #pragma once
 
+#include <cstdint>
+#include <memory>
+#include <optional>
+
 #include "SensorNotifier.h"
+#include "../udals/CwbClient.h"
+#include "../udals/UDalsBleedCompensator.h"
 
 class RawLightNotifier : public SensorNotifier {
   public:
@@ -14,5 +20,14 @@ class RawLightNotifier : public SensorNotifier {
     ~RawLightNotifier();
 
   protected:
-    void notify();
+    void notify() override;
+
+  private:
+    uint32_t normalizeBacklight(uint32_t raw) const;
+    void resolveBacklightScale();
+    void updateBacklight(uint32_t rawBacklight);
+
+    std::optional<uint32_t> mDeviceNormalMaxBacklight;
+    std::shared_ptr<UDalsBleedCompensator> mCompensator;
+    std::shared_ptr<CwbClient> mCwbClient;
 };
