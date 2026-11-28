@@ -213,6 +213,7 @@ telephony.lteOnCdmaDevice=1
 persist.vendor.rcs.singlereg.feature=1
 
 # Sensors
+ro.vendor.sensors.notifier.udals.max_bleed_rgb=51.1,238.1,27.5
 ro.vendor.sensors.xiaomi.double_tap=true
 ro.vendor.sensors.xiaomi.single_tap=true
 
